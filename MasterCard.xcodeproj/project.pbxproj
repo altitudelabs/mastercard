@@ -1,0 +1,446 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D645D62F1ABC0D4300890532 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D645D62E1ABC0D4300890532 /* main.m */; };
+		D645D6321ABC0D4300890532 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D645D6311ABC0D4300890532 /* AppDelegate.m */; };
+		D645D6351ABC0D4300890532 /* MasterCard.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D645D6331ABC0D4300890532 /* MasterCard.xcdatamodeld */; };
+		D645D6381ABC0D4300890532 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D645D6371ABC0D4300890532 /* ViewController.m */; };
+		D645D63B1ABC0D4300890532 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D645D6391ABC0D4300890532 /* Main.storyboard */; };
+		D645D63D1ABC0D4300890532 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D645D63C1ABC0D4300890532 /* Images.xcassets */; };
+		D645D6401ABC0D4300890532 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D645D63E1ABC0D4300890532 /* LaunchScreen.xib */; };
+		D645D64C1ABC0D4300890532 /* MasterCardTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D645D64B1ABC0D4300890532 /* MasterCardTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D645D6461ABC0D4300890532 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D645D6211ABC0D4300890532 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D645D6281ABC0D4300890532;
+			remoteInfo = MasterCard;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D645D6291ABC0D4300890532 /* MasterCard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MasterCard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D645D62D1ABC0D4300890532 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D645D62E1ABC0D4300890532 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D645D6301ABC0D4300890532 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D645D6311ABC0D4300890532 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D645D6341ABC0D4300890532 /* MasterCard.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MasterCard.xcdatamodel; sourceTree = "<group>"; };
+		D645D6361ABC0D4300890532 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D645D6371ABC0D4300890532 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D645D63A1ABC0D4300890532 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D645D63C1ABC0D4300890532 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D645D63F1ABC0D4300890532 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		D645D6451ABC0D4300890532 /* MasterCardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MasterCardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D645D64A1ABC0D4300890532 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D645D64B1ABC0D4300890532 /* MasterCardTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterCardTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D645D6261ABC0D4300890532 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D645D6421ABC0D4300890532 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D645D6201ABC0D4300890532 = {
+			isa = PBXGroup;
+			children = (
+				D645D62B1ABC0D4300890532 /* MasterCard */,
+				D645D6481ABC0D4300890532 /* MasterCardTests */,
+				D645D62A1ABC0D4300890532 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D645D62A1ABC0D4300890532 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D645D6291ABC0D4300890532 /* MasterCard.app */,
+				D645D6451ABC0D4300890532 /* MasterCardTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D645D62B1ABC0D4300890532 /* MasterCard */ = {
+			isa = PBXGroup;
+			children = (
+				D645D6301ABC0D4300890532 /* AppDelegate.h */,
+				D645D6311ABC0D4300890532 /* AppDelegate.m */,
+				D645D6361ABC0D4300890532 /* ViewController.h */,
+				D645D6371ABC0D4300890532 /* ViewController.m */,
+				D645D6391ABC0D4300890532 /* Main.storyboard */,
+				D645D63C1ABC0D4300890532 /* Images.xcassets */,
+				D645D63E1ABC0D4300890532 /* LaunchScreen.xib */,
+				D645D6331ABC0D4300890532 /* MasterCard.xcdatamodeld */,
+				D645D62C1ABC0D4300890532 /* Supporting Files */,
+			);
+			path = MasterCard;
+			sourceTree = "<group>";
+		};
+		D645D62C1ABC0D4300890532 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D645D62D1ABC0D4300890532 /* Info.plist */,
+				D645D62E1ABC0D4300890532 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D645D6481ABC0D4300890532 /* MasterCardTests */ = {
+			isa = PBXGroup;
+			children = (
+				D645D64B1ABC0D4300890532 /* MasterCardTests.m */,
+				D645D6491ABC0D4300890532 /* Supporting Files */,
+			);
+			path = MasterCardTests;
+			sourceTree = "<group>";
+		};
+		D645D6491ABC0D4300890532 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D645D64A1ABC0D4300890532 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D645D6281ABC0D4300890532 /* MasterCard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D645D64F1ABC0D4300890532 /* Build configuration list for PBXNativeTarget "MasterCard" */;
+			buildPhases = (
+				D645D6251ABC0D4300890532 /* Sources */,
+				D645D6261ABC0D4300890532 /* Frameworks */,
+				D645D6271ABC0D4300890532 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MasterCard;
+			productName = MasterCard;
+			productReference = D645D6291ABC0D4300890532 /* MasterCard.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D645D6441ABC0D4300890532 /* MasterCardTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D645D6521ABC0D4300890532 /* Build configuration list for PBXNativeTarget "MasterCardTests" */;
+			buildPhases = (
+				D645D6411ABC0D4300890532 /* Sources */,
+				D645D6421ABC0D4300890532 /* Frameworks */,
+				D645D6431ABC0D4300890532 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D645D6471ABC0D4300890532 /* PBXTargetDependency */,
+			);
+			name = MasterCardTests;
+			productName = MasterCardTests;
+			productReference = D645D6451ABC0D4300890532 /* MasterCardTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D645D6211ABC0D4300890532 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = MasterCard;
+				TargetAttributes = {
+					D645D6281ABC0D4300890532 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					D645D6441ABC0D4300890532 = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = D645D6281ABC0D4300890532;
+					};
+				};
+			};
+			buildConfigurationList = D645D6241ABC0D4300890532 /* Build configuration list for PBXProject "MasterCard" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D645D6201ABC0D4300890532;
+			productRefGroup = D645D62A1ABC0D4300890532 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D645D6281ABC0D4300890532 /* MasterCard */,
+				D645D6441ABC0D4300890532 /* MasterCardTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D645D6271ABC0D4300890532 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D645D63B1ABC0D4300890532 /* Main.storyboard in Resources */,
+				D645D6401ABC0D4300890532 /* LaunchScreen.xib in Resources */,
+				D645D63D1ABC0D4300890532 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D645D6431ABC0D4300890532 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D645D6251ABC0D4300890532 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D645D6351ABC0D4300890532 /* MasterCard.xcdatamodeld in Sources */,
+				D645D6321ABC0D4300890532 /* AppDelegate.m in Sources */,
+				D645D6381ABC0D4300890532 /* ViewController.m in Sources */,
+				D645D62F1ABC0D4300890532 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D645D6411ABC0D4300890532 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D645D64C1ABC0D4300890532 /* MasterCardTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D645D6471ABC0D4300890532 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D645D6281ABC0D4300890532 /* MasterCard */;
+			targetProxy = D645D6461ABC0D4300890532 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D645D6391ABC0D4300890532 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D645D63A1ABC0D4300890532 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D645D63E1ABC0D4300890532 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D645D63F1ABC0D4300890532 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D645D64D1ABC0D4300890532 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D645D64E1ABC0D4300890532 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D645D6501ABC0D4300890532 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MasterCard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D645D6511ABC0D4300890532 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MasterCard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		D645D6531ABC0D4300890532 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MasterCardTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MasterCard.app/MasterCard";
+			};
+			name = Debug;
+		};
+		D645D6541ABC0D4300890532 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MasterCardTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MasterCard.app/MasterCard";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D645D6241ABC0D4300890532 /* Build configuration list for PBXProject "MasterCard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D645D64D1ABC0D4300890532 /* Debug */,
+				D645D64E1ABC0D4300890532 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D645D64F1ABC0D4300890532 /* Build configuration list for PBXNativeTarget "MasterCard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D645D6501ABC0D4300890532 /* Debug */,
+				D645D6511ABC0D4300890532 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D645D6521ABC0D4300890532 /* Build configuration list for PBXNativeTarget "MasterCardTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D645D6531ABC0D4300890532 /* Debug */,
+				D645D6541ABC0D4300890532 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D645D6331ABC0D4300890532 /* MasterCard.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D645D6341ABC0D4300890532 /* MasterCard.xcdatamodel */,
+			);
+			currentVersion = D645D6341ABC0D4300890532 /* MasterCard.xcdatamodel */;
+			path = MasterCard.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = D645D6211ABC0D4300890532 /* Project object */;
+}
