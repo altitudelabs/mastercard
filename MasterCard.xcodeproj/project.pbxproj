@@ -15,6 +15,8 @@
 		D645D63D1ABC0D4300890532 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D645D63C1ABC0D4300890532 /* Images.xcassets */; };
 		D645D6401ABC0D4300890532 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D645D63E1ABC0D4300890532 /* LaunchScreen.xib */; };
 		D645D64C1ABC0D4300890532 /* MasterCardTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D645D64B1ABC0D4300890532 /* MasterCardTests.m */; };
+		D645D6571ABC0E8A00890532 /* TestingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D645D6561ABC0E8A00890532 /* TestingViewController.m */; };
+		D645D6591ABC0EFF00890532 /* tt.png in Resources */ = {isa = PBXBuildFile; fileRef = D645D6581ABC0EFF00890532 /* tt.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +44,9 @@
 		D645D6451ABC0D4300890532 /* MasterCardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MasterCardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D645D64A1ABC0D4300890532 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D645D64B1ABC0D4300890532 /* MasterCardTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterCardTests.m; sourceTree = "<group>"; };
+		D645D6551ABC0E8A00890532 /* TestingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestingViewController.h; sourceTree = "<group>"; };
+		D645D6561ABC0E8A00890532 /* TestingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestingViewController.m; sourceTree = "<group>"; };
+		D645D6581ABC0EFF00890532 /* tt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tt.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,10 +88,13 @@
 		D645D62B1ABC0D4300890532 /* MasterCard */ = {
 			isa = PBXGroup;
 			children = (
+				D645D6581ABC0EFF00890532 /* tt.png */,
 				D645D6301ABC0D4300890532 /* AppDelegate.h */,
 				D645D6311ABC0D4300890532 /* AppDelegate.m */,
 				D645D6361ABC0D4300890532 /* ViewController.h */,
 				D645D6371ABC0D4300890532 /* ViewController.m */,
+				D645D6551ABC0E8A00890532 /* TestingViewController.h */,
+				D645D6561ABC0E8A00890532 /* TestingViewController.m */,
 				D645D6391ABC0D4300890532 /* Main.storyboard */,
 				D645D63C1ABC0D4300890532 /* Images.xcassets */,
 				D645D63E1ABC0D4300890532 /* LaunchScreen.xib */,
@@ -203,6 +211,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D645D63B1ABC0D4300890532 /* Main.storyboard in Resources */,
+				D645D6591ABC0EFF00890532 /* tt.png in Resources */,
 				D645D6401ABC0D4300890532 /* LaunchScreen.xib in Resources */,
 				D645D63D1ABC0D4300890532 /* Images.xcassets in Resources */,
 			);
@@ -226,6 +235,7 @@
 				D645D6321ABC0D4300890532 /* AppDelegate.m in Sources */,
 				D645D6381ABC0D4300890532 /* ViewController.m in Sources */,
 				D645D62F1ABC0D4300890532 /* main.m in Sources */,
+				D645D6571ABC0E8A00890532 /* TestingViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
