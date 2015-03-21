@@ -182,6 +182,7 @@ static NSString * const version = @"/api/v3/";              // Change this to ma
 }
 
 - (void)resetUserPairing{
+    NSLog(@"Reset user pairing");
 }
 
 - (NSArray *)supportedDataTypes{

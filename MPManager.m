@@ -154,6 +154,8 @@ NSInteger const MPErrorCodeBadRequest = 400;
 
 - (void)precheckoutDataCallback:(void (^)(NSArray *cards, NSArray *addresses, NSDictionary *contactInfo, NSDictionary *walletInfo, NSError *error))callback{
     
+    NSLog(@"DATA CALLBACK");
+    
     NSAssert([self isAppPaired], @"User must be paired with MasterPass before calling precheckout");
     
     [self checkDelegateSanity];
@@ -369,28 +371,46 @@ NSInteger const MPErrorCodeBadRequest = 400;
 
 -(void)pairCheckoutForOrder:(NSString *)orderNumber
        showInViewController:(UIViewController*)viewController{
-    [self requestPairCheckoutForOrder:orderNumber callback:^(NSDictionary *pairingDetails, NSError *error) {
-        if (error) {
-            NSLog(@"Error Requesting Pair Checkout: %@",[error localizedDescription]);
-            [self checkDelegateSanity];
-            if ([self.delegate respondsToSelector:@selector(pairingView:didCompletePairing:error:)]) {
-                [self.delegate pairingDidComplete:NO error:error];
-            }
-        }
-        else {
-            NSDictionary *lightBoxParams = @{@"requestToken":pairingDetails[@"checkout_request_token"],
-                                             @"merchantCheckoutId":pairingDetails[@"merchant_checkout_id"],
-                                             @"requestedDataTypes":[self.delegate supportedDataTypes],
-                                             @"callbackUrl":pairingDetails[@"callback_url"],
-                                             @"pairingRequestToken":pairingDetails[@"pairing_request_token"],
-                                             @"allowedCardTypes":[self.delegate supportedCardTypes],
-                                             @"requestPairing":@1,
-                                             @"version":MPVersion};
-            dispatch_async(dispatch_get_main_queue(), ^{
-                [self showLightboxWindowOfType:MPLightBoxTypePreCheckout options:lightBoxParams inViewController:viewController];
-            });
-        }
-    }];
+    
+    /////////////////////////// HACK ////////////////////////
+    NSDictionary *params = @{
+                             @"allowedCardTypes": @[@"amex", @"discover", @"master", @"maestro"],
+                             @"callbackUrl": @"https://gadgetshop.anypresenceapp.com/masterpass/checkout_callback",
+                             @"merchantCheckoutId": @"a466w4xy5ex04i2z936ao1i3adi17b1jpd",
+                             @"pairingRequestToken": @"84eec9ee9f952052a3edfdafc334f8c85a488081",
+                             @"requestPairing": @"1",
+                             @"requestToken": @"01a4494e75b85b06cec0dcfd3ade15e7a5154a44",
+                             @"requestedDataTypes": @[@"CARD", @"ADDRESS", @"PROFILE"],
+                             @"version": @"v6"
+                             };
+    
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [self showLightboxWindowOfType:MPLightBoxTypePreCheckout options:params inViewController:viewController];
+    });
+    /////////////////////////// HACK ////////////////////////
+    
+//    [self requestPairCheckoutForOrder:orderNumber callback:^(NSDictionary *pairingDetails, NSError *error) {
+//        if (error) {
+//            NSLog(@"Error Requesting Pair Checkout: %@",[error localizedDescription]);
+//            [self checkDelegateSanity];
+//            if ([self.delegate respondsToSelector:@selector(pairingView:didCompletePairing:error:)]) {
+//                [self.delegate pairingDidComplete:NO error:error];
+//            }
+//        }
+//        else {
+//            NSDictionary *lightBoxParams = @{@"requestToken":pairingDetails[@"checkout_request_token"],
+//                                             @"merchantCheckoutId":pairingDetails[@"merchant_checkout_id"],
+//                                             @"requestedDataTypes":[self.delegate supportedDataTypes],
+//                                             @"callbackUrl":pairingDetails[@"callback_url"],
+//                                             @"pairingRequestToken":pairingDetails[@"pairing_request_token"],
+//                                             @"allowedCardTypes":[self.delegate supportedCardTypes],
+//                                             @"requestPairing":@1,
+//                                             @"version":MPVersion};
+//            dispatch_async(dispatch_get_main_queue(), ^{
+//                [self showLightboxWindowOfType:MPLightBoxTypePreCheckout options:lightBoxParams inViewController:viewController];
+//            });
+//        }
+//    }];
 }
 
 - (void)requestPairCheckoutForOrder:(NSString *)orderNumber callback:(void (^)(NSDictionary *pairingDetails, NSError *error))callback{

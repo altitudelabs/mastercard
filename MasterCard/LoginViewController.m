@@ -42,9 +42,18 @@
 }
 
 - (void)renderNavigationBar {
-    [[DataManager sharedInstance] moneysendApi];
-    [[DataManager sharedInstance] fraudApi];
-    [[DataManager sharedInstance] matchApi];
+    [[DataManager sharedInstance] moneysendApi:^(BOOL success) {
+        NSLog(@"Moneysend API Callback %d", success);
+    }];
+    [[DataManager sharedInstance] fraudApi:^(BOOL success) {
+        NSLog(@"Fraud API Callback %d", success);
+    }];
+    [[DataManager sharedInstance] matchApi:^(BOOL success) {
+        NSLog(@"Match API Callback %d", success);
+    }];
+    [[DataManager sharedInstance] lostAccountApi:^(BOOL success) {
+        NSLog(@"Lost account API Callback %d", success);
+    }];
     [[DataManager sharedInstance] merchantCheckoutApiWithViewController:self];
     
     // Hide navigation bar

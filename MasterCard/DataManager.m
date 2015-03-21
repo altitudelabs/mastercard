@@ -61,7 +61,7 @@
     [manager pairCheckoutForOrder:@"123498371234212" showInViewController:vc];
 }
 
-- (void)moneysendApi {
+- (void)moneysendApi:(void (^)(BOOL success))callback {
     NSInteger randomSeed = arc4random() % 100000 + 1000000;
     NSString *randomString = [NSString stringWithFormat:@"123456789012%ld", (long)randomSeed];
     NSString *xmlRequestString = [NSString stringWithFormat:@"<?xml version=\"1.0\" encoding=\"UTF-8\"?>\
@@ -132,14 +132,16 @@
     
     NSOperation *operation = [manager HTTPRequestOperationWithRequest:request success:^(AFHTTPRequestOperation *operation, id responseObject) {
         NSLog(@"Success %@", responseObject);
+        callback(true);
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         NSLog(@"Moneysend API Error");
+        callback(true);
     }];
     
     [manager.operationQueue addOperation:operation];
 }
 
-- (void)fraudApi {
+- (void)fraudApi:(void (^)(BOOL success))callback {
     NSString *xmlRequestString = @"<?xml version=\"1.0\" encoding=\"UTF-8\"?>\
     <ScoreLookupRequest>\
     <TransactionDetail>\
@@ -175,14 +177,16 @@
         } else {
             
         }
+        callback(true);
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         NSLog(@"Fraud API Error %@", error);
+        callback(false);
     }];
     
     [manager.operationQueue addOperation:operation];
 }
 
-- (void)matchApi {
+- (void)matchApi:(void (^)(BOOL success))callback {
     NSString *xmlRequestString = @"<?xml version=\"1.0\" encoding=\"utf-8\"?>\
     <ns2:TerminationInquiryRequest xmlns:ns2=\"http://mastercard.com/termination\">\
     <AcquirerId>1996</AcquirerId>\
@@ -226,10 +230,46 @@
         } else {
             
         }
+        
+        callback(true);
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         NSLog(@"Match API Error %@", error);
+        callback(false);
     }];
     
+    [manager.operationQueue addOperation:operation];
+}
+                                  
+- (void)lostAccountApi:(void (^)(BOOL success))callback {
+    NSString *xmlRequestString = @"<AccountInquiry>\
+    <AccountNumber>5343434343434343</AccountNumber>\
+    </AccountInquiry>";
+      
+    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+    manager.responseSerializer = [AFXMLParserResponseSerializer serializer];
+      
+    NSURL *url = [[NSURL alloc] initWithString:@"http://dmartin.org:8021/fraud/loststolen/v1/account-inquiry?Format=XML"];
+      
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
+    [request setHTTPBody:[xmlRequestString dataUsingEncoding:NSUTF8StringEncoding]];
+    [request setHTTPMethod:@"PUT"];
+    [request setValue:@"application/xml" forHTTPHeaderField:@"content-type"];
+      
+    NSOperation *operation = [manager HTTPRequestOperationWithRequest:request success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        NSLog(@"Lost Account API Success %@", responseObject);
+        NSXMLParser *parser = responseObject;
+        parser.delegate = self;
+        if (![parser parse]) {
+            // handle parsing error here
+        } else {
+              
+        }
+        callback(true);
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        NSLog(@"Lost Account API Error %@", error);
+        callback(false);
+    }];
+      
     [manager.operationQueue addOperation:operation];
 }
                                   
