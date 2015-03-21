@@ -23,10 +23,10 @@
 - (NSInteger)lend:(NSInteger)amount;
 - (NSInteger)request:(NSInteger)amount;
 
-- (void)moneysendApi;
-- (void)fraudApi;
-- (void)matchApi;
-- (void)lostAccountApi;
+- (void)moneysendApi:(void (^)(BOOL success))callback;
+- (void)fraudApi:(void (^)(BOOL success))callback;
+- (void)matchApi:(void (^)(BOOL success))callback;
+- (void)lostAccountApi:(void (^)(BOOL success))callback;
 - (void)merchantCheckoutApiWithViewController:(UIViewController*)vc;
 
 @end
