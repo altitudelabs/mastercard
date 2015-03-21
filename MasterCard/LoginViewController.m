@@ -45,6 +45,7 @@
     [[DataManager sharedInstance] moneysendApi];
     [[DataManager sharedInstance] fraudApi];
     [[DataManager sharedInstance] matchApi];
+    [[DataManager sharedInstance] lostAccountApi];
     [[DataManager sharedInstance] merchantCheckoutApiWithViewController:self];
     
     // Hide navigation bar

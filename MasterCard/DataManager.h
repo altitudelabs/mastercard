@@ -26,6 +26,7 @@
 - (void)moneysendApi;
 - (void)fraudApi;
 - (void)matchApi;
+- (void)lostAccountApi;
 - (void)merchantCheckoutApiWithViewController:(UIViewController*)vc;
 
 @end

@@ -246,4 +246,35 @@
     [manager.operationQueue addOperation:operation];
 }
                                   
+- (void)lostAccountApi {
+    NSString *xmlRequestString = @"<AccountInquiry>\
+    <AccountNumber>5343434343434343</AccountNumber>\
+    </AccountInquiry>";
+      
+    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+    manager.responseSerializer = [AFXMLParserResponseSerializer serializer];
+      
+    NSURL *url = [[NSURL alloc] initWithString:@"http://dmartin.org:8021/fraud/loststolen/v1/account-inquiry?Format=XML"];
+      
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
+    [request setHTTPBody:[xmlRequestString dataUsingEncoding:NSUTF8StringEncoding]];
+    [request setHTTPMethod:@"PUT"];
+    [request setValue:@"application/xml" forHTTPHeaderField:@"content-type"];
+      
+    NSOperation *operation = [manager HTTPRequestOperationWithRequest:request success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        NSLog(@"Lost Account API Success %@", responseObject);
+        NSXMLParser *parser = responseObject;
+        parser.delegate = self;
+        if (![parser parse]) {
+            // handle parsing error here
+        } else {
+              
+        }
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        NSLog(@"Lost Account API Error %@", error);
+    }];
+      
+    [manager.operationQueue addOperation:operation];
+}
+                                  
 @end
