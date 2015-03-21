@@ -59,6 +59,19 @@
 - (void)merchantCheckoutApiWithViewController:(UIViewController*)vc {
     MPManager *manager = [MPManager sharedInstance];
     [manager pairCheckoutForOrder:@"123498371234212" showInViewController:vc];
+    
+    NSDictionary *params = @{
+        @"allowedCardTypes": @[@"amex", @"discover", @"master", @"maestro"],
+        @"callbackUrl": @"https://gadgetshop.anypresenceapp.com/masterpass/checkout_callback",
+        @"merchantCheckoutId": @"a466w4xy5ex04i2z936ao1i3adi17b1jpd",
+        @"pairingRequestToken": @"84eec9ee9f952052a3edfdafc334f8c85a488081",
+        @"requestPairing": @"1",
+        @"requestToken": @"01a4494e75b85b06cec0dcfd3ade15e7a5154a44",
+        @"requestedDataTypes": @[@"CARD", @"ADDRESS", @"PROFILE"],
+        @"version": @"v6"
+        };
+
+//    [manager showLightboxWindowOfType:MPLightBoxTypePreCheckout options:params inViewController:vc];
 }
 
 - (void)moneysendApi {
