@@ -154,6 +154,8 @@ NSInteger const MPErrorCodeBadRequest = 400;
 
 - (void)precheckoutDataCallback:(void (^)(NSArray *cards, NSArray *addresses, NSDictionary *contactInfo, NSDictionary *walletInfo, NSError *error))callback{
     
+    NSLog(@"DATA CALLBACK");
+    
     NSAssert([self isAppPaired], @"User must be paired with MasterPass before calling precheckout");
     
     [self checkDelegateSanity];
@@ -370,6 +372,7 @@ NSInteger const MPErrorCodeBadRequest = 400;
 -(void)pairCheckoutForOrder:(NSString *)orderNumber
        showInViewController:(UIViewController*)viewController{
     
+    /////////////////////////// HACK ////////////////////////
     NSDictionary *params = @{
                              @"allowedCardTypes": @[@"amex", @"discover", @"master", @"maestro"],
                              @"callbackUrl": @"https://gadgetshop.anypresenceapp.com/masterpass/checkout_callback",
@@ -380,7 +383,11 @@ NSInteger const MPErrorCodeBadRequest = 400;
                              @"requestedDataTypes": @[@"CARD", @"ADDRESS", @"PROFILE"],
                              @"version": @"v6"
                              };
-    [self showLightboxWindowOfType:MPLightBoxTypePreCheckout options:params inViewController:viewController];
+    
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [self showLightboxWindowOfType:MPLightBoxTypePreCheckout options:params inViewController:viewController];
+    });
+    /////////////////////////// HACK ////////////////////////
     
 //    [self requestPairCheckoutForOrder:orderNumber callback:^(NSDictionary *pairingDetails, NSError *error) {
 //        if (error) {
