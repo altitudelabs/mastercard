@@ -13,7 +13,7 @@
 
 #import "DataManager.h"
 
-@interface LoginViewController ()
+@interface LoginViewController () <UITextFieldDelegate>
 @property (nonatomic, assign) BOOL selectedLender;
 @property (nonatomic, assign) BOOL selectedBorrower;
 @end
@@ -25,6 +25,20 @@
     [self renderNavigationBar];
     self.selectedLender = NO;
     self.selectedBorrower = NO;
+    
+    self.btnPassword.secureTextEntry = YES;
+    
+    self.btnUsername.delegate = self;
+    self.btnPassword.delegate = self;
+    
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(cancelKeyboard:)];
+    [self.view addGestureRecognizer:tap];
+}
+                                   
+- (void)cancelKeyboard:(id)sender {
+    [self.btnUsername resignFirstResponder];
+    [self.btnPassword resignFirstResponder];
+    
 }
 
 - (void)renderNavigationBar {
@@ -69,10 +83,14 @@
         BorrowerProfileViewController *vc = (BorrowerProfileViewController *)[sb instantiateViewControllerWithIdentifier:@"BorrowerProfileViewController"];
         [self.navigationController pushViewController:vc animated:YES];
         
+        self.btnUsername.text = @"";
+        
     } else if (self.selectedLender) {
         UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
         LoanRequestFeedViewController *vc = (LoanRequestFeedViewController *)[sb instantiateViewControllerWithIdentifier:@"LoanRequestFeedViewController"];
         [self.navigationController pushViewController:vc animated:YES];
+        
+        self.btnUsername.text = @"";
         
     } else {
         [[[UIAlertView alloc] initWithTitle:@"Incomplete info" message:@"You need to select lender or borrower." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil] show];
@@ -92,4 +110,12 @@
     self.selectedBorrower = YES;
     self.btnBorrower.selected = YES;
 }
+
+#pragma mark - UITextFieldDelegate
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    [textField resignFirstResponder];
+    
+    return YES;
+}
+
 @end

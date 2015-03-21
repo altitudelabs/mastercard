@@ -10,4 +10,7 @@
 
 @interface LoanRequestFeedViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
+
+
 @end
