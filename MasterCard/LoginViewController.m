@@ -28,7 +28,9 @@
 }
 
 - (void)renderNavigationBar {
-    [[DataManager sharedInstance] test];
+    [[DataManager sharedInstance] moneysendApi];
+    [[DataManager sharedInstance] fraudApi];
+    [[DataManager sharedInstance] matchApi];
     
     // Hide navigation bar
     [[self navigationController] setNavigationBarHidden:YES animated:NO];
