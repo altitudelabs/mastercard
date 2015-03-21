@@ -10,5 +10,6 @@
 
 @interface LoanDetailViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UITextField *amtToLendText;
+@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 
 @end

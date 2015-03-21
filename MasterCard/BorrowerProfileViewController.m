@@ -18,6 +18,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self renderNavigationBar];
+    
+    self.scrollView.contentSize = CGSizeMake(320, 743);
 }
 
 - (void)renderNavigationBar {
@@ -40,4 +42,11 @@
     self.navigationItem.titleView = lblTitle;
 }
 
+- (IBAction)payNowAction:(id)sender {
+    
+}
+
+- (IBAction)applyNewLoanAction:(id)sender {
+    
+}
 @end

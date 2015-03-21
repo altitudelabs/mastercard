@@ -14,8 +14,10 @@
 @property (weak, nonatomic) IBOutlet UIButton *btnLender;
 @property (weak, nonatomic) IBOutlet UIButton *btnBorrower;
 
+@property (weak, nonatomic) IBOutlet UITextField *btnUsername;
+@property (weak, nonatomic) IBOutlet UITextField *btnPassword;
+
 - (IBAction)btnLenderTouchUpInside:(id)sender;
 - (IBAction)btnBorrowerTouchUpInside:(id)sender;
-
 
 @end

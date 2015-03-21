@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D631855A1ABD8BDD00331BF5 /* Loan_Detail@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D63185571ABD8BDD00331BF5 /* Loan_Detail@2x.png */; };
+		D631855F1ABD948200331BF5 /* filterBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = D631855D1ABD948200331BF5 /* filterBtn.png */; };
+		D63185601ABD948200331BF5 /* Loan_Request@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D631855E1ABD948200331BF5 /* Loan_Request@2x.png */; };
+		D63185621ABD996800331BF5 /* My_Profile@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D63185611ABD996800331BF5 /* My_Profile@2x.png */; };
+		D63185641ABD9A4100331BF5 /* Borrower's_Profile.png in Resources */ = {isa = PBXBuildFile; fileRef = D63185631ABD9A4100331BF5 /* Borrower's_Profile.png */; };
 		D645D62F1ABC0D4300890532 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D645D62E1ABC0D4300890532 /* main.m */; };
 		D645D6321ABC0D4300890532 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D645D6311ABC0D4300890532 /* AppDelegate.m */; };
 		D645D6351ABC0D4300890532 /* MasterCard.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D645D6331ABC0D4300890532 /* MasterCard.xcdatamodeld */; };
@@ -18,8 +23,6 @@
 		D6485BF01ABD55CC001FC4C0 /* LoanDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6485BEF1ABD55CC001FC4C0 /* LoanDetailViewController.m */; };
 		D6485BF31ABD5605001FC4C0 /* LeaderProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6485BF21ABD5605001FC4C0 /* LeaderProfileViewController.m */; };
 		D6485BFA1ABD5FC6001FC4C0 /* filter@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D6485BF51ABD5FC6001FC4C0 /* filter@2x.png */; };
-		D6485BFB1ABD5FC6001FC4C0 /* Loan_Detail.png in Resources */ = {isa = PBXBuildFile; fileRef = D6485BF61ABD5FC6001FC4C0 /* Loan_Detail.png */; };
-		D6485BFC1ABD5FC6001FC4C0 /* Loan_Request.png in Resources */ = {isa = PBXBuildFile; fileRef = D6485BF71ABD5FC6001FC4C0 /* Loan_Request.png */; };
 		D6485BFD1ABD5FC6001FC4C0 /* menu@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D6485BF81ABD5FC6001FC4C0 /* menu@2x.png */; };
 		D6485BFE1ABD5FC6001FC4C0 /* profile@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D6485BF91ABD5FC6001FC4C0 /* profile@2x.png */; };
 		D6485C031ABD662C001FC4C0 /* AppConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = D6485C021ABD662C001FC4C0 /* AppConfig.m */; };
@@ -56,6 +59,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D63185571ABD8BDD00331BF5 /* Loan_Detail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Loan_Detail@2x.png"; sourceTree = "<group>"; };
+		D631855D1ABD948200331BF5 /* filterBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = filterBtn.png; sourceTree = "<group>"; };
+		D631855E1ABD948200331BF5 /* Loan_Request@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Loan_Request@2x.png"; sourceTree = "<group>"; };
+		D63185611ABD996800331BF5 /* My_Profile@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "My_Profile@2x.png"; sourceTree = "<group>"; };
+		D63185631ABD9A4100331BF5 /* Borrower's_Profile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Borrower's_Profile.png"; sourceTree = "<group>"; };
 		D645D6291ABC0D4300890532 /* MasterCard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MasterCard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D645D62D1ABC0D4300890532 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D645D62E1ABC0D4300890532 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -75,8 +83,6 @@
 		D6485BF11ABD5605001FC4C0 /* LeaderProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeaderProfileViewController.h; sourceTree = "<group>"; };
 		D6485BF21ABD5605001FC4C0 /* LeaderProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeaderProfileViewController.m; sourceTree = "<group>"; };
 		D6485BF51ABD5FC6001FC4C0 /* filter@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "filter@2x.png"; sourceTree = "<group>"; };
-		D6485BF61ABD5FC6001FC4C0 /* Loan_Detail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Loan_Detail.png; sourceTree = "<group>"; };
-		D6485BF71ABD5FC6001FC4C0 /* Loan_Request.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Loan_Request.png; sourceTree = "<group>"; };
 		D6485BF81ABD5FC6001FC4C0 /* menu@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu@2x.png"; sourceTree = "<group>"; };
 		D6485BF91ABD5FC6001FC4C0 /* profile@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "profile@2x.png"; sourceTree = "<group>"; };
 		D6485C011ABD662C001FC4C0 /* AppConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppConfig.h; sourceTree = "<group>"; };
@@ -212,10 +218,13 @@
 		D6485BF41ABD5FBB001FC4C0 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				D63185631ABD9A4100331BF5 /* Borrower's_Profile.png */,
+				D63185611ABD996800331BF5 /* My_Profile@2x.png */,
+				D631855D1ABD948200331BF5 /* filterBtn.png */,
+				D631855E1ABD948200331BF5 /* Loan_Request@2x.png */,
+				D63185571ABD8BDD00331BF5 /* Loan_Detail@2x.png */,
 				D6485C041ABD6D9F001FC4C0 /* back@2x.png */,
 				D6485BF51ABD5FC6001FC4C0 /* filter@2x.png */,
-				D6485BF61ABD5FC6001FC4C0 /* Loan_Detail.png */,
-				D6485BF71ABD5FC6001FC4C0 /* Loan_Request.png */,
 				D6485BF81ABD5FC6001FC4C0 /* menu@2x.png */,
 				D6485BF91ABD5FC6001FC4C0 /* profile@2x.png */,
 			);
@@ -371,15 +380,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				D645D63B1ABC0D4300890532 /* Main.storyboard in Resources */,
-				D6485BFC1ABD5FC6001FC4C0 /* Loan_Request.png in Resources */,
+				D63185641ABD9A4100331BF5 /* Borrower's_Profile.png in Resources */,
+				D63185601ABD948200331BF5 /* Loan_Request@2x.png in Resources */,
 				D645D6401ABC0D4300890532 /* LaunchScreen.xib in Resources */,
-				D6485BFB1ABD5FC6001FC4C0 /* Loan_Detail.png in Resources */,
 				D6485BFD1ABD5FC6001FC4C0 /* menu@2x.png in Resources */,
 				D645D63D1ABC0D4300890532 /* Images.xcassets in Resources */,
 				D6485BFA1ABD5FC6001FC4C0 /* filter@2x.png in Resources */,
 				FC954E371ABD9671001321E5 /* mp_lightbox_base.html in Resources */,
 				D6485BFE1ABD5FC6001FC4C0 /* profile@2x.png in Resources */,
+				D631855A1ABD8BDD00331BF5 /* Loan_Detail@2x.png in Resources */,
 				D6485C051ABD6D9F001FC4C0 /* back@2x.png in Resources */,
+				D631855F1ABD948200331BF5 /* filterBtn.png in Resources */,
+				D63185621ABD996800331BF5 /* My_Profile@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

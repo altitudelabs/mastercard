@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="Hth-md-nr0">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Login View Controller-->
@@ -94,6 +93,8 @@
                     <connections>
                         <outlet property="btnBorrower" destination="Vwf-FF-k3l" id="xKe-bP-Zk0"/>
                         <outlet property="btnLender" destination="7zM-YB-qUh" id="dgu-3k-3kT"/>
+                        <outlet property="btnPassword" destination="xiO-0V-038" id="6Rc-tP-3hE"/>
+                        <outlet property="btnUsername" destination="y85-7I-MWh" id="9Pn-eA-Baa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -112,15 +113,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OIo-bJ-yjE">
-                                <rect key="frame" x="126" y="168" width="69" height="30"/>
-                                <state key="normal" title="next page">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="eFG-xn-RT7" kind="push" id="WcC-73-AOy"/>
-                                </connections>
-                            </button>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ma9-MN-NJQ">
+                                <rect key="frame" x="0.0" y="18" width="320" height="568"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Loan_Request.png" translatesAutoresizingMaskIntoConstraints="NO" id="dVV-Zy-HeR">
+                                        <rect key="frame" x="0.0" y="-25" width="320" height="568"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OIo-bJ-yjE">
+                                        <rect key="frame" x="0.0" y="76" width="320" height="88"/>
+                                        <color key="backgroundColor" red="1" green="0.34901960780000002" blue="0.6705882353" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="eFG-xn-RT7" kind="push" id="WcC-73-AOy"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -128,6 +138,9 @@
                         <barButtonItem key="backBarButtonItem" title=" " id="4Qo-r7-zcT"/>
                         <barButtonItem key="leftBarButtonItem" id="iNe-kf-JmZ"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="scrollView" destination="Ma9-MN-NJQ" id="Vha-YI-AQv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jOW-dh-cHZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -145,93 +158,37 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xWp-Me-bR7">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="182"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DAg-fw-tZI">
-                                <rect key="frame" x="125" y="56" width="70" height="70"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="70" id="rhz-EL-zWU"/>
-                                </constraints>
-                                <state key="normal" title="Button">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ndp-9N-FFQ">
-                                <rect key="frame" x="16" y="190" width="288" height="378"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hpp-Ly-ORR">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TNb-xB-gg9">
-                                        <rect key="frame" x="0.0" y="0.0" width="288" height="18"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="18" id="olC-ze-DGy"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="13"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mFW-sw-WmI">
-                                        <rect key="frame" x="0.0" y="18" width="288" height="18"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="18" id="TXo-eg-vjB"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="13"/>
-                                        <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N3m-Jx-46F">
-                                        <rect key="frame" x="0.0" y="44" width="280" height="84"/>
-                                        <string key="text">I am bra bar ba I am bra bar ba I am bra bar ba I am bra bar ba I am bra bar ba I am bra bar ba I am bra bar ba I am bra bar ba I am bra bar ba I am bra bar ba I am bra bar ba I am bra bar ba</string>
-                                        <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="13"/>
-                                        <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="d4r-M7-8dd">
-                                        <rect key="frame" x="45" y="159" width="150" height="2"/>
-                                    </progressView>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iTW-fE-Mvd">
-                                        <rect key="frame" x="64" y="295" width="152" height="30"/>
-                                        <state key="normal" title="Lend now masterpass">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Loan_Detail.png" translatesAutoresizingMaskIntoConstraints="NO" id="J9J-Ln-gV3">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="656"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DAg-fw-tZI" userLabel="master pay">
+                                        <rect key="frame" x="0.0" y="600" width="320" height="50"/>
+                                        <color key="backgroundColor" red="1" green="0.34901960780000002" blue="0.6705882353" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                     </button>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BDr-Jn-eaj">
-                                        <rect key="frame" x="64" y="257" width="163" height="30"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="e.g. $800" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fHu-j8-088">
+                                        <rect key="frame" x="100" y="510" width="191" height="30"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="12"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                     </textField>
                                 </subviews>
-                                <color key="backgroundColor" red="1" green="0.91516755756578949" blue="0.92202919407894723" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="mFW-sw-WmI" secondAttribute="trailing" id="D7z-iT-gnS"/>
-                                    <constraint firstItem="TNb-xB-gg9" firstAttribute="top" secondItem="Ndp-9N-FFQ" secondAttribute="top" id="DPl-gJ-u4v"/>
-                                    <constraint firstItem="mFW-sw-WmI" firstAttribute="top" secondItem="TNb-xB-gg9" secondAttribute="bottom" id="GOl-M3-4Xj"/>
-                                    <constraint firstAttribute="trailing" secondItem="TNb-xB-gg9" secondAttribute="trailing" id="Tpq-5E-gLh"/>
-                                    <constraint firstItem="mFW-sw-WmI" firstAttribute="leading" secondItem="Ndp-9N-FFQ" secondAttribute="leading" id="Zj2-Y1-LRp"/>
-                                    <constraint firstItem="TNb-xB-gg9" firstAttribute="leading" secondItem="Ndp-9N-FFQ" secondAttribute="leading" id="dNf-fL-NZT"/>
-                                </constraints>
-                            </view>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="xtL-ui-b0R" firstAttribute="top" secondItem="xWp-Me-bR7" secondAttribute="bottom" constant="386" id="117-Pf-xQL"/>
-                            <constraint firstItem="DAg-fw-tZI" firstAttribute="top" secondItem="rHB-kD-dDr" secondAttribute="bottom" constant="36" id="4Rd-e6-lTf"/>
-                            <constraint firstItem="xWp-Me-bR7" firstAttribute="leading" secondItem="ZB4-tI-4S1" secondAttribute="leading" id="87e-PY-aHa"/>
-                            <constraint firstItem="Ndp-9N-FFQ" firstAttribute="centerX" secondItem="DAg-fw-tZI" secondAttribute="centerX" id="QN8-Ze-kGQ"/>
-                            <constraint firstItem="DAg-fw-tZI" firstAttribute="centerY" secondItem="xWp-Me-bR7" secondAttribute="centerY" id="WIh-9w-MQ1"/>
-                            <constraint firstItem="Ndp-9N-FFQ" firstAttribute="leading" secondItem="ZB4-tI-4S1" secondAttribute="leadingMargin" id="e8F-Vc-FJ0"/>
-                            <constraint firstItem="Ndp-9N-FFQ" firstAttribute="bottom" secondItem="xtL-ui-b0R" secondAttribute="top" id="feK-c6-koZ"/>
-                            <constraint firstAttribute="trailing" secondItem="xWp-Me-bR7" secondAttribute="trailing" id="hba-QO-Bqc"/>
-                            <constraint firstItem="DAg-fw-tZI" firstAttribute="centerX" secondItem="xWp-Me-bR7" secondAttribute="centerX" id="wN9-Lr-3rg"/>
-                            <constraint firstItem="Ndp-9N-FFQ" firstAttribute="top" secondItem="xWp-Me-bR7" secondAttribute="bottom" constant="8" symbolic="YES" id="xXB-s0-b4D"/>
-                            <constraint firstItem="xWp-Me-bR7" firstAttribute="top" secondItem="ZB4-tI-4S1" secondAttribute="top" id="xtN-L4-Rsj"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="RdE-OU-NIJ">
                         <barButtonItem key="backBarButtonItem" title=" " id="8MZ-sf-RYK"/>
                         <barButtonItem key="leftBarButtonItem" id="ekw-Ly-o9B"/>
                     </navigationItem>
                     <connections>
-                        <outlet property="amtToLendText" destination="BDr-Jn-eaj" id="uDI-Tp-2hl"/>
+                        <outlet property="amtToLendText" destination="fHu-j8-088" id="cgo-gr-L6Q"/>
+                        <outlet property="scrollView" destination="Hpp-Ly-ORR" id="czs-Ag-WAz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2K6-hc-Dyj" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -267,8 +224,21 @@
                     <view key="view" contentMode="scaleToFill" id="iU7-BN-gA6">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PAa-VS-VMV">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="My_Profile.png" translatesAutoresizingMaskIntoConstraints="NO" id="n5g-KI-GYj">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                    </imageView>
+                                </subviews>
+                            </scrollView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="scrollView" destination="PAa-VS-VMV" id="fza-BW-EFv"/>
+                    </connections>
                 </viewController>
                 <navigationItem id="Z6y-6q-AkE">
                     <barButtonItem key="backBarButtonItem" title=" " id="05e-qe-tVp"/>
@@ -290,21 +260,35 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V14-1L-1eG">
-                                <rect key="frame" x="86" y="160" width="149" height="30"/>
-                                <state key="normal" title="Pay now Mastercard">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z0Z-SE-mLP">
-                                <rect key="frame" x="70" y="240" width="180" height="30"/>
-                                <state key="normal" title="Apply for new loan">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="NET-dJ-kvY" kind="push" id="PDQ-xe-u0D"/>
-                                </connections>
-                            </button>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mG1-XR-x64">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Borrower's_Profile.png" translatesAutoresizingMaskIntoConstraints="NO" id="6qV-W8-KXd">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="740"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V14-1L-1eG" userLabel="paynowmaster">
+                                        <rect key="frame" x="8" y="664" width="300" height="60"/>
+                                        <color key="backgroundColor" red="1" green="0.74403782894736847" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="payNowAction:" destination="Yxd-pL-x6d" eventType="touchUpInside" id="Ust-fp-GYD"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z0Z-SE-mLP" userLabel="applyfornewload">
+                                        <rect key="frame" x="8" y="595" width="300" height="60"/>
+                                        <color key="backgroundColor" red="0.47165398848684209" green="0.74403782894736847" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="applyNewLoanAction:" destination="Yxd-pL-x6d" eventType="touchUpInside" id="xzK-js-ubn"/>
+                                            <segue destination="NET-dJ-kvY" kind="push" id="PDQ-xe-u0D"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -312,6 +296,11 @@
                         <barButtonItem key="backBarButtonItem" title=" " id="aWT-5f-7od"/>
                         <barButtonItem key="leftBarButtonItem" id="huN-Mi-zFA"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="btnApplyNow" destination="z0Z-SE-mLP" id="JR4-vp-m6c"/>
+                        <outlet property="btnPayNow" destination="V14-1L-1eG" id="YdQ-qo-zBf"/>
+                        <outlet property="scrollView" destination="mG1-XR-x64" id="iuy-Ii-VEg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lia-VR-mY2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -391,6 +380,12 @@
             <point key="canvasLocation" x="1688" y="1037"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Borrower's_Profile.png" width="1502" height="3483"/>
+        <image name="Loan_Detail.png" width="751" height="1537"/>
+        <image name="Loan_Request.png" width="751" height="1303"/>
+        <image name="My_Profile.png" width="751" height="1393"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

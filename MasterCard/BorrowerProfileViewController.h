@@ -10,4 +10,14 @@
 
 @interface BorrowerProfileViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
+
+@property (weak, nonatomic) IBOutlet UIButton *btnPayNow;
+
+@property (weak, nonatomic) IBOutlet UIButton *btnApplyNow;
+
+- (IBAction)payNowAction:(id)sender;
+
+- (IBAction)applyNewLoanAction:(id)sender;
+
 @end
