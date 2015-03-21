@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C1E49FB040A749BCAE142BEC /* libPods-MasterCard.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4C91C4BBD6B05AE15CB9698 /* libPods-MasterCard.a */; };
 		D645D62F1ABC0D4300890532 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D645D62E1ABC0D4300890532 /* main.m */; };
 		D645D6321ABC0D4300890532 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D645D6311ABC0D4300890532 /* AppDelegate.m */; };
 		D645D6351ABC0D4300890532 /* MasterCard.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D645D6331ABC0D4300890532 /* MasterCard.xcdatamodeld */; };
@@ -28,6 +29,16 @@
 		D6485C0B1ABD714C001FC4C0 /* BorrowerNewLoanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6485C0A1ABD714C001FC4C0 /* BorrowerNewLoanViewController.m */; };
 		D6485C0E1ABD715D001FC4C0 /* BorrowerPayLoanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6485C0D1ABD715D001FC4C0 /* BorrowerPayLoanViewController.m */; };
 		FC822D941ABD3AFC00A7293D /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FC822D931ABD3AFC00A7293D /* DataManager.m */; };
+		FCCA441D1ABD546E004B2D59 /* mp_lightbox_base.html in Resources */ = {isa = PBXBuildFile; fileRef = FCCA44141ABD546E004B2D59 /* mp_lightbox_base.html */; };
+		FCCA441E1ABD546E004B2D59 /* MPAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCA44161ABD546E004B2D59 /* MPAddress.m */; };
+		FCCA441F1ABD546E004B2D59 /* MPCreditCard.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCA44181ABD546E004B2D59 /* MPCreditCard.m */; };
+		FCCA44201ABD546E004B2D59 /* MPLightboxViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCA441A1ABD546E004B2D59 /* MPLightboxViewController.m */; };
+		FCCA44211ABD546E004B2D59 /* MPManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCA441C1ABD546E004B2D59 /* MPManager.m */; };
+		FCCA442C1ABD54BC004B2D59 /* MPECommerceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCA44251ABD54BC004B2D59 /* MPECommerceManager.m */; };
+		FCCA442D1ABD54BC004B2D59 /* OrderDetail+NormalizedPrice.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCA44271ABD54BC004B2D59 /* OrderDetail+NormalizedPrice.m */; };
+		FCCA442E1ABD54BC004B2D59 /* OrderHeader+NormalizedTotals.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCA44291ABD54BC004B2D59 /* OrderHeader+NormalizedTotals.m */; };
+		FCCA442F1ABD54BC004B2D59 /* Product+NormalizedPrice.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCA442B1ABD54BC004B2D59 /* Product+NormalizedPrice.m */; };
+		FCCA44321ABD55BF004B2D59 /* APSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCCA44311ABD55BF004B2D59 /* APSDK.framework */; };
 		FCCFE6D51ABD4AD500810E38 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCFE6D41ABD4AD500810E38 /* LoginViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +53,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1528F4962AEA79C0A406DF27 /* Pods-MasterCard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MasterCard.release.xcconfig"; path = "Pods/Target Support Files/Pods-MasterCard/Pods-MasterCard.release.xcconfig"; sourceTree = "<group>"; };
+		24EE036DFAEC204899EACFBA /* Pods-MasterCard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MasterCard.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MasterCard/Pods-MasterCard.debug.xcconfig"; sourceTree = "<group>"; };
 		D645D6291ABC0D4300890532 /* MasterCard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MasterCard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D645D62D1ABC0D4300890532 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D645D62E1ABC0D4300890532 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -74,8 +87,27 @@
 		D6485C0A1ABD714C001FC4C0 /* BorrowerNewLoanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BorrowerNewLoanViewController.m; sourceTree = "<group>"; };
 		D6485C0C1ABD715D001FC4C0 /* BorrowerPayLoanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BorrowerPayLoanViewController.h; sourceTree = "<group>"; };
 		D6485C0D1ABD715D001FC4C0 /* BorrowerPayLoanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BorrowerPayLoanViewController.m; sourceTree = "<group>"; };
+		E4C91C4BBD6B05AE15CB9698 /* libPods-MasterCard.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MasterCard.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC822D921ABD3AFC00A7293D /* DataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataManager.h; sourceTree = "<group>"; };
 		FC822D931ABD3AFC00A7293D /* DataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataManager.m; sourceTree = "<group>"; };
+		FCCA44141ABD546E004B2D59 /* mp_lightbox_base.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = mp_lightbox_base.html; sourceTree = "<group>"; };
+		FCCA44151ABD546E004B2D59 /* MPAddress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPAddress.h; sourceTree = "<group>"; };
+		FCCA44161ABD546E004B2D59 /* MPAddress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPAddress.m; sourceTree = "<group>"; };
+		FCCA44171ABD546E004B2D59 /* MPCreditCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPCreditCard.h; sourceTree = "<group>"; };
+		FCCA44181ABD546E004B2D59 /* MPCreditCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPCreditCard.m; sourceTree = "<group>"; };
+		FCCA44191ABD546E004B2D59 /* MPLightboxViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPLightboxViewController.h; sourceTree = "<group>"; };
+		FCCA441A1ABD546E004B2D59 /* MPLightboxViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPLightboxViewController.m; sourceTree = "<group>"; };
+		FCCA441B1ABD546E004B2D59 /* MPManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPManager.h; sourceTree = "<group>"; };
+		FCCA441C1ABD546E004B2D59 /* MPManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPManager.m; sourceTree = "<group>"; };
+		FCCA44241ABD54BC004B2D59 /* MPECommerceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPECommerceManager.h; sourceTree = "<group>"; };
+		FCCA44251ABD54BC004B2D59 /* MPECommerceManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPECommerceManager.m; sourceTree = "<group>"; };
+		FCCA44261ABD54BC004B2D59 /* OrderDetail+NormalizedPrice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OrderDetail+NormalizedPrice.h"; sourceTree = "<group>"; };
+		FCCA44271ABD54BC004B2D59 /* OrderDetail+NormalizedPrice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "OrderDetail+NormalizedPrice.m"; sourceTree = "<group>"; };
+		FCCA44281ABD54BC004B2D59 /* OrderHeader+NormalizedTotals.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OrderHeader+NormalizedTotals.h"; sourceTree = "<group>"; };
+		FCCA44291ABD54BC004B2D59 /* OrderHeader+NormalizedTotals.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "OrderHeader+NormalizedTotals.m"; sourceTree = "<group>"; };
+		FCCA442A1ABD54BC004B2D59 /* Product+NormalizedPrice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Product+NormalizedPrice.h"; sourceTree = "<group>"; };
+		FCCA442B1ABD54BC004B2D59 /* Product+NormalizedPrice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Product+NormalizedPrice.m"; sourceTree = "<group>"; };
+		FCCA44311ABD55BF004B2D59 /* APSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = APSDK.framework; sourceTree = "<group>"; };
 		FCCFE6D31ABD4AD500810E38 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		FCCFE6D41ABD4AD500810E38 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -85,6 +117,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCCA44321ABD55BF004B2D59 /* APSDK.framework in Frameworks */,
+				C1E49FB040A749BCAE142BEC /* libPods-MasterCard.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,12 +132,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		281FA38AF6C68534895DD41F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				24EE036DFAEC204899EACFBA /* Pods-MasterCard.debug.xcconfig */,
+				1528F4962AEA79C0A406DF27 /* Pods-MasterCard.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		D645D6201ABC0D4300890532 = {
 			isa = PBXGroup;
 			children = (
 				D645D62B1ABC0D4300890532 /* MasterCard */,
 				D645D6481ABC0D4300890532 /* MasterCardTests */,
 				D645D62A1ABC0D4300890532 /* Products */,
+				FCCA44301ABD55B4004B2D59 /* Frameworks */,
+				281FA38AF6C68534895DD41F /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -119,10 +164,15 @@
 		D645D62B1ABC0D4300890532 /* MasterCard */ = {
 			isa = PBXGroup;
 			children = (
+
 				D645D6391ABC0D4300890532 /* Main.storyboard */,
 				FCCFE6D31ABD4AD500810E38 /* LoginViewController.h */,
 				FCCFE6D41ABD4AD500810E38 /* LoginViewController.m */,
 				D6485BF41ABD5FBB001FC4C0 /* images */,
+
+				FCCA44231ABD549B004B2D59 /* Ecommerce */,
+				FCCA44221ABD5472004B2D59 /* MasterPass */,
+
 				FCCFE6D61ABD4B1F00810E38 /* Lender */,
 				FCCFE6D81ABD4B2E00810E38 /* Borrower */,
 				D645D6301ABC0D4300890532 /* AppDelegate.h */,
@@ -165,6 +215,7 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+
 		D6485BF41ABD5FBB001FC4C0 /* images */ = {
 			isa = PBXGroup;
 			children = (
@@ -176,6 +227,46 @@
 				D6485BF91ABD5FC6001FC4C0 /* profile@2x.png */,
 			);
 			name = images;
+
+		FCCA44221ABD5472004B2D59 /* MasterPass */ = {
+			isa = PBXGroup;
+			children = (
+				FCCA44141ABD546E004B2D59 /* mp_lightbox_base.html */,
+				FCCA44151ABD546E004B2D59 /* MPAddress.h */,
+				FCCA44161ABD546E004B2D59 /* MPAddress.m */,
+				FCCA44171ABD546E004B2D59 /* MPCreditCard.h */,
+				FCCA44181ABD546E004B2D59 /* MPCreditCard.m */,
+				FCCA44191ABD546E004B2D59 /* MPLightboxViewController.h */,
+				FCCA441A1ABD546E004B2D59 /* MPLightboxViewController.m */,
+				FCCA441B1ABD546E004B2D59 /* MPManager.h */,
+				FCCA441C1ABD546E004B2D59 /* MPManager.m */,
+			);
+			name = MasterPass;
+			sourceTree = "<group>";
+		};
+		FCCA44231ABD549B004B2D59 /* Ecommerce */ = {
+			isa = PBXGroup;
+			children = (
+				FCCA44241ABD54BC004B2D59 /* MPECommerceManager.h */,
+				FCCA44251ABD54BC004B2D59 /* MPECommerceManager.m */,
+				FCCA44261ABD54BC004B2D59 /* OrderDetail+NormalizedPrice.h */,
+				FCCA44271ABD54BC004B2D59 /* OrderDetail+NormalizedPrice.m */,
+				FCCA44281ABD54BC004B2D59 /* OrderHeader+NormalizedTotals.h */,
+				FCCA44291ABD54BC004B2D59 /* OrderHeader+NormalizedTotals.m */,
+				FCCA442A1ABD54BC004B2D59 /* Product+NormalizedPrice.h */,
+				FCCA442B1ABD54BC004B2D59 /* Product+NormalizedPrice.m */,
+			);
+			name = Ecommerce;
+			sourceTree = "<group>";
+		};
+		FCCA44301ABD55B4004B2D59 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FCCA44311ABD55BF004B2D59 /* APSDK.framework */,
+				E4C91C4BBD6B05AE15CB9698 /* libPods-MasterCard.a */,
+			);
+			name = Frameworks;
+
 			sourceTree = "<group>";
 		};
 		FCCFE6D61ABD4B1F00810E38 /* Lender */ = {
@@ -211,9 +302,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D645D64F1ABC0D4300890532 /* Build configuration list for PBXNativeTarget "MasterCard" */;
 			buildPhases = (
+				0C0C011F921E8D2D7357EAF1 /* Check Pods Manifest.lock */,
 				D645D6251ABC0D4300890532 /* Sources */,
 				D645D6261ABC0D4300890532 /* Frameworks */,
 				D645D6271ABC0D4300890532 /* Resources */,
+				DC2511FD7134B52DA2CB0F0E /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -290,9 +383,13 @@
 				D6485BFB1ABD5FC6001FC4C0 /* Loan_Detail.png in Resources */,
 				D6485BFD1ABD5FC6001FC4C0 /* menu@2x.png in Resources */,
 				D645D63D1ABC0D4300890532 /* Images.xcassets in Resources */,
+
 				D6485BFA1ABD5FC6001FC4C0 /* filter@2x.png in Resources */,
 				D6485BFE1ABD5FC6001FC4C0 /* profile@2x.png in Resources */,
 				D6485C051ABD6D9F001FC4C0 /* back@2x.png in Resources */,
+
+				FCCA441D1ABD546E004B2D59 /* mp_lightbox_base.html in Resources */,
+
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,23 +402,68 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0C0C011F921E8D2D7357EAF1 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DC2511FD7134B52DA2CB0F0E /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MasterCard/Pods-MasterCard-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D645D6251ABC0D4300890532 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCCA442C1ABD54BC004B2D59 /* MPECommerceManager.m in Sources */,
+				FCCFE6DE1ABD4B6E00810E38 /* LenderMainViewController.m in Sources */,
+				FCCA442E1ABD54BC004B2D59 /* OrderHeader+NormalizedTotals.m in Sources */,
 				D645D6351ABC0D4300890532 /* MasterCard.xcdatamodeld in Sources */,
 				D6485BF31ABD5605001FC4C0 /* LeaderProfileViewController.m in Sources */,
 				D6485C081ABD7137001FC4C0 /* BorrowerProfileViewController.m in Sources */,
 				D6485C0E1ABD715D001FC4C0 /* BorrowerPayLoanViewController.m in Sources */,
 				D6485C031ABD662C001FC4C0 /* AppConfig.m in Sources */,
 				FC822D941ABD3AFC00A7293D /* DataManager.m in Sources */,
+				FCCA442D1ABD54BC004B2D59 /* OrderDetail+NormalizedPrice.m in Sources */,
 				FCCFE6D51ABD4AD500810E38 /* LoginViewController.m in Sources */,
 				D6485BED1ABD55BC001FC4C0 /* LoanRequestFeedViewController.m in Sources */,
 				D6485BF01ABD55CC001FC4C0 /* LoanDetailViewController.m in Sources */,
 				D6485C0B1ABD714C001FC4C0 /* BorrowerNewLoanViewController.m in Sources */,
 				D645D6321ABC0D4300890532 /* AppDelegate.m in Sources */,
+				FCCA441E1ABD546E004B2D59 /* MPAddress.m in Sources */,
+				FCCA442F1ABD54BC004B2D59 /* Product+NormalizedPrice.m in Sources */,
+				D645D6321ABC0D4300890532 /* AppDelegate.m in Sources */,
+				FCCFE6E11ABD4B8700810E38 /* BorrowerMainViewController.m in Sources */,
+				FCCA441F1ABD546E004B2D59 /* MPCreditCard.m in Sources */,
+				D645D6381ABC0D4300890532 /* ViewController.m in Sources */,
 				D645D62F1ABC0D4300890532 /* main.m in Sources */,
+				FCCA44211ABD546E004B2D59 /* MPManager.m in Sources */,
+				FCCA44201ABD546E004B2D59 /* MPLightboxViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -443,20 +585,42 @@
 		};
 		D645D6501ABC0D4300890532 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24EE036DFAEC204899EACFBA /* Pods-MasterCard.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = MasterCard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"Pods-MasterCard-ObjectiveSugar\"",
+					"-licucore",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
 		D645D6511ABC0D4300890532 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1528F4962AEA79C0A406DF27 /* Pods-MasterCard.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = MasterCard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"Pods-MasterCard-ObjectiveSugar\"",
+					"-licucore",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
