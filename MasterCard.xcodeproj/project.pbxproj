@@ -37,6 +37,11 @@
 		FC954E2B1ABD883C001321E5 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = FC954E201ABD883C001321E5 /* AFURLRequestSerialization.m */; };
 		FC954E2C1ABD883C001321E5 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = FC954E221ABD883C001321E5 /* AFURLResponseSerialization.m */; };
 		FC954E2D1ABD883C001321E5 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FC954E241ABD883C001321E5 /* AFURLSessionManager.m */; };
+		FC954E371ABD9671001321E5 /* mp_lightbox_base.html in Resources */ = {isa = PBXBuildFile; fileRef = FC954E2E1ABD9671001321E5 /* mp_lightbox_base.html */; };
+		FC954E381ABD9671001321E5 /* MPAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = FC954E301ABD9671001321E5 /* MPAddress.m */; };
+		FC954E391ABD9671001321E5 /* MPCreditCard.m in Sources */ = {isa = PBXBuildFile; fileRef = FC954E321ABD9671001321E5 /* MPCreditCard.m */; };
+		FC954E3A1ABD9671001321E5 /* MPLightboxViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC954E341ABD9671001321E5 /* MPLightboxViewController.m */; };
+		FC954E3B1ABD9671001321E5 /* MPManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FC954E361ABD9671001321E5 /* MPManager.m */; };
 		FCCFE6D51ABD4AD500810E38 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCFE6D41ABD4AD500810E38 /* LoginViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -104,6 +109,15 @@
 		FC954E221ABD883C001321E5 /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
 		FC954E231ABD883C001321E5 /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
 		FC954E241ABD883C001321E5 /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
+		FC954E2E1ABD9671001321E5 /* mp_lightbox_base.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = mp_lightbox_base.html; path = ../mp_lightbox_base.html; sourceTree = "<group>"; };
+		FC954E2F1ABD9671001321E5 /* MPAddress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MPAddress.h; path = ../MPAddress.h; sourceTree = "<group>"; };
+		FC954E301ABD9671001321E5 /* MPAddress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MPAddress.m; path = ../MPAddress.m; sourceTree = "<group>"; };
+		FC954E311ABD9671001321E5 /* MPCreditCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MPCreditCard.h; path = ../MPCreditCard.h; sourceTree = "<group>"; };
+		FC954E321ABD9671001321E5 /* MPCreditCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MPCreditCard.m; path = ../MPCreditCard.m; sourceTree = "<group>"; };
+		FC954E331ABD9671001321E5 /* MPLightboxViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MPLightboxViewController.h; path = ../MPLightboxViewController.h; sourceTree = "<group>"; };
+		FC954E341ABD9671001321E5 /* MPLightboxViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MPLightboxViewController.m; path = ../MPLightboxViewController.m; sourceTree = "<group>"; };
+		FC954E351ABD9671001321E5 /* MPManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MPManager.h; path = ../MPManager.h; sourceTree = "<group>"; };
+		FC954E361ABD9671001321E5 /* MPManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MPManager.m; path = ../MPManager.m; sourceTree = "<group>"; };
 		FCCFE6D31ABD4AD500810E38 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		FCCFE6D41ABD4AD500810E38 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -148,6 +162,7 @@
 		D645D62B1ABC0D4300890532 /* MasterCard */ = {
 			isa = PBXGroup;
 			children = (
+				FC954E3D1ABD967F001321E5 /* Masterpass */,
 				D645D6391ABC0D4300890532 /* Main.storyboard */,
 				FCCFE6D31ABD4AD500810E38 /* LoginViewController.h */,
 				FCCFE6D41ABD4AD500810E38 /* LoginViewController.m */,
@@ -231,6 +246,22 @@
 				FC954E241ABD883C001321E5 /* AFURLSessionManager.m */,
 			);
 			path = AFNetworking;
+			sourceTree = "<group>";
+		};
+		FC954E3D1ABD967F001321E5 /* Masterpass */ = {
+			isa = PBXGroup;
+			children = (
+				FC954E2E1ABD9671001321E5 /* mp_lightbox_base.html */,
+				FC954E2F1ABD9671001321E5 /* MPAddress.h */,
+				FC954E301ABD9671001321E5 /* MPAddress.m */,
+				FC954E311ABD9671001321E5 /* MPCreditCard.h */,
+				FC954E321ABD9671001321E5 /* MPCreditCard.m */,
+				FC954E331ABD9671001321E5 /* MPLightboxViewController.h */,
+				FC954E341ABD9671001321E5 /* MPLightboxViewController.m */,
+				FC954E351ABD9671001321E5 /* MPManager.h */,
+				FC954E361ABD9671001321E5 /* MPManager.m */,
+			);
+			name = Masterpass;
 			sourceTree = "<group>";
 		};
 		FCCFE6D61ABD4B1F00810E38 /* Lender */ = {
@@ -346,6 +377,7 @@
 				D6485BFD1ABD5FC6001FC4C0 /* menu@2x.png in Resources */,
 				D645D63D1ABC0D4300890532 /* Images.xcassets in Resources */,
 				D6485BFA1ABD5FC6001FC4C0 /* filter@2x.png in Resources */,
+				FC954E371ABD9671001321E5 /* mp_lightbox_base.html in Resources */,
 				D6485BFE1ABD5FC6001FC4C0 /* profile@2x.png in Resources */,
 				D6485C051ABD6D9F001FC4C0 /* back@2x.png in Resources */,
 			);
@@ -370,6 +402,7 @@
 				D6485BF31ABD5605001FC4C0 /* LeaderProfileViewController.m in Sources */,
 				FC954E2D1ABD883C001321E5 /* AFURLSessionManager.m in Sources */,
 				D6485C081ABD7137001FC4C0 /* BorrowerProfileViewController.m in Sources */,
+				FC954E381ABD9671001321E5 /* MPAddress.m in Sources */,
 				FC954E2A1ABD883C001321E5 /* AFURLConnectionOperation.m in Sources */,
 				FC954E261ABD883C001321E5 /* AFHTTPRequestOperationManager.m in Sources */,
 				D6485C0E1ABD715D001FC4C0 /* BorrowerPayLoanViewController.m in Sources */,
@@ -380,7 +413,10 @@
 				FCCFE6D51ABD4AD500810E38 /* LoginViewController.m in Sources */,
 				FC954E2B1ABD883C001321E5 /* AFURLRequestSerialization.m in Sources */,
 				D6485BED1ABD55BC001FC4C0 /* LoanRequestFeedViewController.m in Sources */,
+				FC954E3B1ABD9671001321E5 /* MPManager.m in Sources */,
+				FC954E391ABD9671001321E5 /* MPCreditCard.m in Sources */,
 				FC954E2C1ABD883C001321E5 /* AFURLResponseSerialization.m in Sources */,
+				FC954E3A1ABD9671001321E5 /* MPLightboxViewController.m in Sources */,
 				D6485BF01ABD55CC001FC4C0 /* LoanDetailViewController.m in Sources */,
 				D6485C0B1ABD714C001FC4C0 /* BorrowerNewLoanViewController.m in Sources */,
 				FC954E271ABD883C001321E5 /* AFHTTPSessionManager.m in Sources */,
