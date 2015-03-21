@@ -122,7 +122,11 @@
 
 #pragma mark - UITextFieldDelegate
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
-    [textField resignFirstResponder];
+    if (textField == self.btnUsername) {
+        [self.btnPassword becomeFirstResponder];
+    } else {
+        [textField resignFirstResponder];
+    }
     
     return YES;
 }

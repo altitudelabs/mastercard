@@ -8,6 +8,7 @@
 
 #import "BorrowerProfileViewController.h"
 #import "AppConfig.h"
+#import "DataManager.h"
 
 @interface BorrowerProfileViewController ()
 
@@ -43,7 +44,7 @@
 }
 
 - (IBAction)payNowAction:(id)sender {
-    
+    [[DataManager sharedInstance] moneysendApi];
 }
 
 - (IBAction)applyNewLoanAction:(id)sender {

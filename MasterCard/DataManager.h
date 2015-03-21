@@ -29,4 +29,5 @@
 - (void)lostAccountApi:(void (^)(BOOL success))callback;
 - (void)merchantCheckoutApiWithViewController:(UIViewController*)vc;
 
+
 @end

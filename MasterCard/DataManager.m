@@ -25,7 +25,6 @@
     dispatch_once(&onceToken, ^{
         sharedInstance = [[DataManager alloc] init];
     });
-    
     return sharedInstance;
 }
 

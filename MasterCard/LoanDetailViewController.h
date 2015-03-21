@@ -12,4 +12,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *amtToLendText;
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 
+- (IBAction)btnLendNowAction:(id)sender;
+
+
 @end

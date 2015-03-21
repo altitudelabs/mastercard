@@ -7,9 +7,13 @@
 //
 
 #import "LoanDetailViewController.h"
+#import "DataManager.h"
 #import "AppConfig.h"
 
 @interface LoanDetailViewController () <UITextFieldDelegate>
+{
+    CGPoint scrollViewContentOffset;
+}
 
 @end
 
@@ -57,6 +61,17 @@
     return YES;
 }
 
+- (BOOL)textFieldShouldBeginEditing:(UITextField *)textField {
+    scrollViewContentOffset = self.scrollView.contentOffset;
+    [self.scrollView setContentOffset:CGPointMake(0, 240) animated:YES];
+    return YES;
+}
+
+- (BOOL)textFieldShouldEndEditing:(UITextField *)textField {
+    [self.scrollView setContentOffset:scrollViewContentOffset animated:YES];
+    return YES;
+}
+
 /*
 #pragma mark - Navigation
 
@@ -67,4 +82,9 @@
 }
 */
 
+- (IBAction)btnLendNowAction:(id)sender {
+    NSInteger amt = [self.amtToLendText.text integerValue];
+    [[DataManager sharedInstance] lend:amt];
+    
+}
 @end
