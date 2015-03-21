@@ -10,6 +10,7 @@
 #import "MPLightboxViewController.h"
 #import "MPCreditCard.h"
 #import "MPAddress.h"
+#import <ObjectiveSugar/ObjectiveSugar.h>
 
 @protocol MPManagerDelegate <NSObject>
 @required
