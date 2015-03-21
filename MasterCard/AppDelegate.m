@@ -13,10 +13,14 @@
 @end
 
 @implementation AppDelegate
-
+static NSString * const sampleUrl = @"https://sample.com";  // Don't change this
+static NSString * const server = @"https://gadgetshop.anypresenceapp.com";     // Change this to your server endpoint
+static NSString * const version = @"/api/v3/";              // Change this to match your api version
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [[MPManager sharedInstance] setDelegate:self];
+    
     return YES;
 }
 
@@ -122,6 +126,70 @@
             abort();
         }
     }
+}
+
+#pragma mark - Masterpass
+- (NSString *)serverAddress{
+    return server;
+}
+
+- (void)pairingDidComplete:(BOOL)success error:(NSError *)error{
+    NSLog(@"Pairing Did Complete: %d",success);
+    
+    if (success) {
+        [[NSNotificationCenter defaultCenter]postNotificationName:@"ConnectedMasterPass" object:nil];
+    }
+    else {
+        [[NSNotificationCenter defaultCenter]postNotificationName:@"MasterPassConnectionCancelled" object:nil];
+    }
+}
+
+-(void)checkoutDidComplete:(BOOL)success error:(NSError *)error{
+    NSLog(@"Checkout Did Complete: %d",success);
+    
+    if (success) {
+        [[NSNotificationCenter defaultCenter]postNotificationName:@"MasterPassCheckoutComplete" object:nil];
+    }
+    else {
+        [[NSNotificationCenter defaultCenter]postNotificationName:@"MasterPassCheckoutCancelled" object:nil];
+    }
+}
+
+-(void)preCheckoutDidComplete:(BOOL)success data:(NSDictionary *)data error:(NSError *)error{
+    NSLog(@"PreCheckout Did Complete: %d",success);
+    
+    if (success) {
+        [[NSNotificationCenter defaultCenter]postNotificationName:@"MasterPassPreCheckoutComplete" object:nil userInfo:data];
+    }
+    else {
+        [[NSNotificationCenter defaultCenter]postNotificationName:@"MasterPassPreCheckoutCancelled" object:nil userInfo:data];
+    }
+}
+
+- (void)pairCheckoutDidComplete:(BOOL)success error:(NSError *)error{
+    NSLog(@"Pair Checkout Did Complete: %d",success);
+    
+    if (success) {
+        [[NSNotificationCenter defaultCenter]postNotificationName:@"MasterPassCheckoutComplete" object:nil];
+    }
+    else {
+        [[NSNotificationCenter defaultCenter]postNotificationName:@"MasterPassCheckoutCancelled" object:nil];
+    }
+}
+
+- (BOOL)isAppPaired{
+    return true;
+}
+
+- (void)resetUserPairing{
+}
+
+- (NSArray *)supportedDataTypes{
+    return @[DataTypeCard,DataTypeAddress,DataTypeProfile];
+}
+
+- (NSArray *)supportedCardTypes{
+    return @[CardTypeAmex,CardTypeDiscover,CardTypeMasterCard,CardTypeMaestro];
 }
 
 @end

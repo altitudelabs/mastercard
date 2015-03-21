@@ -7,6 +7,7 @@
 //
 
 #import "DataManager.h"
+#import "MPManager.h"
 #import "AFHTTPRequestOperationManager.h"
 
 @implementation DataManager
@@ -53,6 +54,11 @@
 
 - (void)updateMonthlyPayment {
     self.monthlyPayment = (self.borrowedAmt * self.borrowerInterest/12)/(1-(1+pow(self.borrowerInterest/12,self.borrowerTenor*12)));
+}
+
+- (void)merchantCheckoutApiWithViewController:(UIViewController*)vc {
+    MPManager *manager = [MPManager sharedInstance];
+    [manager pairCheckoutForOrder:@"123498371234212" showInViewController:vc];
 }
 
 - (void)moneysendApi {
@@ -226,5 +232,5 @@
     
     [manager.operationQueue addOperation:operation];
 }
-
+                                  
 @end

@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @interface DataManager : NSObject <NSXMLParserDelegate>
 
@@ -25,5 +26,6 @@
 - (void)moneysendApi;
 - (void)fraudApi;
 - (void)matchApi;
+- (void)merchantCheckoutApiWithViewController:(UIViewController*)vc;
 
 @end
