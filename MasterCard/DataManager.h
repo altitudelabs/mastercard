@@ -21,5 +21,6 @@
 
 - (NSInteger)lend:(NSInteger)amount;
 - (NSInteger)request:(NSInteger)amount;
+- (void)test;
 
 @end

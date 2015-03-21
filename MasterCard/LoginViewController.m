@@ -11,6 +11,8 @@
 #import "LoanRequestFeedViewController.h"
 #import "AppConfig.h"
 
+#import "DataManager.h"
+
 @interface LoginViewController ()
 @property (nonatomic, assign) BOOL selectedLender;
 @property (nonatomic, assign) BOOL selectedBorrower;
@@ -26,6 +28,8 @@
 }
 
 - (void)renderNavigationBar {
+    [[DataManager sharedInstance] test];
+    
     // Hide navigation bar
     [[self navigationController] setNavigationBarHidden:YES animated:NO];
     [self navigationController].navigationBar.barTintColor = ColorBlue;
