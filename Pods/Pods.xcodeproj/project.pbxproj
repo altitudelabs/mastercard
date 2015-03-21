@@ -1,0 +1,475 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		05C6EBE7307608F73DF4C5F1 /* NSArray+ObjectiveSugar.m in Sources */ = {isa = PBXBuildFile; fileRef = C9418C42CBB1A0771C8EA027 /* NSArray+ObjectiveSugar.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		081CD81EFCD3586FD4738684 /* NSNumber+ObjectiveSugar.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D9AAF603A1FCCBF83A9D16E /* NSNumber+ObjectiveSugar.h */; };
+		1178640F73580EA688284244 /* NSMutableArray+ObjectiveSugar.h in Headers */ = {isa = PBXBuildFile; fileRef = FC2501FE9F8B355455FF6381 /* NSMutableArray+ObjectiveSugar.h */; };
+		3981C356685E26F81DFF25FC /* NSDictionary+ObjectiveSugar.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DF85D665802F0FAFE4483B0 /* NSDictionary+ObjectiveSugar.h */; };
+		498F6F03F2B0C71D196745F9 /* NSString+ObjectiveSugar.m in Sources */ = {isa = PBXBuildFile; fileRef = ECF848F1EFB117CA2F4CF31D /* NSString+ObjectiveSugar.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		4C6494619547F454189110E3 /* Pods-MasterCard-ObjectiveSugar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 178EB5764D124A90CCDED863 /* Pods-MasterCard-ObjectiveSugar-dummy.m */; };
+		55771841AC3547325B3F722E /* NSSet+ObjectiveSugar.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FD905C1B9018D9D780A7DCA /* NSSet+ObjectiveSugar.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		5AE2E8DC6381D9212C1C4344 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A729B691836300EBE6DB5A5 /* Foundation.framework */; };
+		65F073F917EAF676F48E3B0A /* NSSet+ObjectiveSugar.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C9B093E61604692AA72741D /* NSSet+ObjectiveSugar.h */; };
+		6CF561555DFF6206889C33DE /* NSArray+ObjectiveSugar.h in Headers */ = {isa = PBXBuildFile; fileRef = B43BEE621B92638ADC6FE071 /* NSArray+ObjectiveSugar.h */; };
+		6EBB07FE779054F939391694 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A729B691836300EBE6DB5A5 /* Foundation.framework */; };
+		7383BE293F5F89431A6A85AC /* NSNumber+ObjectiveSugar.m in Sources */ = {isa = PBXBuildFile; fileRef = B6AD58F984881710765F74A0 /* NSNumber+ObjectiveSugar.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		799F5DCA41C7991931E77668 /* NSMutableArray+ObjectiveSugar.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A63D92D929BBA00C63185C /* NSMutableArray+ObjectiveSugar.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		9DE87AE3A01F157DC32DDEFA /* ObjectiveSugar.h in Headers */ = {isa = PBXBuildFile; fileRef = 715AEB18ED52102638C07E2B /* ObjectiveSugar.h */; };
+		BE6BC5E27190DAB5695F1218 /* Pods-MasterCard-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F156988E6509DA669BB35F2C /* Pods-MasterCard-dummy.m */; };
+		ECA897AAB2CF5AC1E83B651A /* NSString+ObjectiveSugar.h in Headers */ = {isa = PBXBuildFile; fileRef = 06CECA4E8061E953DFE3D5E9 /* NSString+ObjectiveSugar.h */; };
+		F60ECD9E34FB6284739D1404 /* NSDictionary+ObjectiveSugar.m in Sources */ = {isa = PBXBuildFile; fileRef = DE8D902CB48689B08EA25D1E /* NSDictionary+ObjectiveSugar.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7C98ED00298481A8590B891D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7219706399CC0F3C45E3985E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E7FA321089F59B49E6BA2EAF;
+			remoteInfo = "Pods-MasterCard-ObjectiveSugar";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0502FE99B7008F6F70B83606 /* Pods-MasterCard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MasterCard.release.xcconfig"; sourceTree = "<group>"; };
+		06CECA4E8061E953DFE3D5E9 /* NSString+ObjectiveSugar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+ObjectiveSugar.h"; path = "Classes/NSString+ObjectiveSugar.h"; sourceTree = "<group>"; };
+		08E84BC72B7BF60B7036DA49 /* Pods-MasterCard-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MasterCard-acknowledgements.markdown"; sourceTree = "<group>"; };
+		178EB5764D124A90CCDED863 /* Pods-MasterCard-ObjectiveSugar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MasterCard-ObjectiveSugar-dummy.m"; sourceTree = "<group>"; };
+		2F49405B133B06CA1AD9CCC6 /* libPods-MasterCard-ObjectiveSugar.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MasterCard-ObjectiveSugar.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C9B093E61604692AA72741D /* NSSet+ObjectiveSugar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSSet+ObjectiveSugar.h"; path = "Classes/NSSet+ObjectiveSugar.h"; sourceTree = "<group>"; };
+		4686C22BF7A12C151FEC728F /* Pods-MasterCard-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MasterCard-environment.h"; sourceTree = "<group>"; };
+		4A9E62C0D856C47F875D03C1 /* Pods-MasterCard-ObjectiveSugar-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MasterCard-ObjectiveSugar-Private.xcconfig"; sourceTree = "<group>"; };
+		4C8195A791094300D62FF243 /* Pods-MasterCard-ObjectiveSugar.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MasterCard-ObjectiveSugar.xcconfig"; sourceTree = "<group>"; };
+		4DF85D665802F0FAFE4483B0 /* NSDictionary+ObjectiveSugar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+ObjectiveSugar.h"; path = "Classes/NSDictionary+ObjectiveSugar.h"; sourceTree = "<group>"; };
+		4FD905C1B9018D9D780A7DCA /* NSSet+ObjectiveSugar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSSet+ObjectiveSugar.m"; path = "Classes/NSSet+ObjectiveSugar.m"; sourceTree = "<group>"; };
+		594CEED3312529E1F34D23F2 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		59A63D92D929BBA00C63185C /* NSMutableArray+ObjectiveSugar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSMutableArray+ObjectiveSugar.m"; path = "Classes/NSMutableArray+ObjectiveSugar.m"; sourceTree = "<group>"; };
+		5D9AAF603A1FCCBF83A9D16E /* NSNumber+ObjectiveSugar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSNumber+ObjectiveSugar.h"; path = "Classes/NSNumber+ObjectiveSugar.h"; sourceTree = "<group>"; };
+		5F4BADCF6DDFF6E46416DCC5 /* Pods-MasterCard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MasterCard.debug.xcconfig"; sourceTree = "<group>"; };
+		65642277B9D92A15865A53F1 /* Pods-MasterCard-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MasterCard-resources.sh"; sourceTree = "<group>"; };
+		715AEB18ED52102638C07E2B /* ObjectiveSugar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ObjectiveSugar.h; path = Classes/ObjectiveSugar.h; sourceTree = "<group>"; };
+		8A729B691836300EBE6DB5A5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		8C5E668C2EC3584B591BF2DA /* Pods-MasterCard-ObjectiveSugar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MasterCard-ObjectiveSugar-prefix.pch"; sourceTree = "<group>"; };
+		9C1D9557E0EB6E29FCE79A2B /* libPods-MasterCard.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MasterCard.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFCC5D9F5399147AD8D8414F /* Pods-MasterCard-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MasterCard-acknowledgements.plist"; sourceTree = "<group>"; };
+		B43BEE621B92638ADC6FE071 /* NSArray+ObjectiveSugar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+ObjectiveSugar.h"; path = "Classes/NSArray+ObjectiveSugar.h"; sourceTree = "<group>"; };
+		B6AD58F984881710765F74A0 /* NSNumber+ObjectiveSugar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSNumber+ObjectiveSugar.m"; path = "Classes/NSNumber+ObjectiveSugar.m"; sourceTree = "<group>"; };
+		C9418C42CBB1A0771C8EA027 /* NSArray+ObjectiveSugar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+ObjectiveSugar.m"; path = "Classes/NSArray+ObjectiveSugar.m"; sourceTree = "<group>"; };
+		DE8D902CB48689B08EA25D1E /* NSDictionary+ObjectiveSugar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+ObjectiveSugar.m"; path = "Classes/NSDictionary+ObjectiveSugar.m"; sourceTree = "<group>"; };
+		ECF848F1EFB117CA2F4CF31D /* NSString+ObjectiveSugar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+ObjectiveSugar.m"; path = "Classes/NSString+ObjectiveSugar.m"; sourceTree = "<group>"; };
+		F156988E6509DA669BB35F2C /* Pods-MasterCard-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MasterCard-dummy.m"; sourceTree = "<group>"; };
+		FC2501FE9F8B355455FF6381 /* NSMutableArray+ObjectiveSugar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSMutableArray+ObjectiveSugar.h"; path = "Classes/NSMutableArray+ObjectiveSugar.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0275FE30EDD6717193C41AD0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5AE2E8DC6381D9212C1C4344 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF20B1C9800B69EE1E20649B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EBB07FE779054F939391694 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0772E05FA341173219DBA851 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				73D71645D0DF120ADD3DC44F /* ObjectiveSugar */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		34452FD0B02A59DA416B8700 /* Pods-MasterCard */ = {
+			isa = PBXGroup;
+			children = (
+				08E84BC72B7BF60B7036DA49 /* Pods-MasterCard-acknowledgements.markdown */,
+				AFCC5D9F5399147AD8D8414F /* Pods-MasterCard-acknowledgements.plist */,
+				F156988E6509DA669BB35F2C /* Pods-MasterCard-dummy.m */,
+				4686C22BF7A12C151FEC728F /* Pods-MasterCard-environment.h */,
+				65642277B9D92A15865A53F1 /* Pods-MasterCard-resources.sh */,
+				5F4BADCF6DDFF6E46416DCC5 /* Pods-MasterCard.debug.xcconfig */,
+				0502FE99B7008F6F70B83606 /* Pods-MasterCard.release.xcconfig */,
+			);
+			name = "Pods-MasterCard";
+			path = "Target Support Files/Pods-MasterCard";
+			sourceTree = "<group>";
+		};
+		38EAFEB920F7772F5F74B384 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				8A729B691836300EBE6DB5A5 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		4D650E90501BC588CFF254C7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9C1D9557E0EB6E29FCE79A2B /* libPods-MasterCard.a */,
+				2F49405B133B06CA1AD9CCC6 /* libPods-MasterCard-ObjectiveSugar.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4F89E82DE5E92BDFB41B2DEC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				38EAFEB920F7772F5F74B384 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		575402B4467788C350DAE9B6 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				34452FD0B02A59DA416B8700 /* Pods-MasterCard */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		73D71645D0DF120ADD3DC44F /* ObjectiveSugar */ = {
+			isa = PBXGroup;
+			children = (
+				B43BEE621B92638ADC6FE071 /* NSArray+ObjectiveSugar.h */,
+				C9418C42CBB1A0771C8EA027 /* NSArray+ObjectiveSugar.m */,
+				4DF85D665802F0FAFE4483B0 /* NSDictionary+ObjectiveSugar.h */,
+				DE8D902CB48689B08EA25D1E /* NSDictionary+ObjectiveSugar.m */,
+				FC2501FE9F8B355455FF6381 /* NSMutableArray+ObjectiveSugar.h */,
+				59A63D92D929BBA00C63185C /* NSMutableArray+ObjectiveSugar.m */,
+				5D9AAF603A1FCCBF83A9D16E /* NSNumber+ObjectiveSugar.h */,
+				B6AD58F984881710765F74A0 /* NSNumber+ObjectiveSugar.m */,
+				3C9B093E61604692AA72741D /* NSSet+ObjectiveSugar.h */,
+				4FD905C1B9018D9D780A7DCA /* NSSet+ObjectiveSugar.m */,
+				06CECA4E8061E953DFE3D5E9 /* NSString+ObjectiveSugar.h */,
+				ECF848F1EFB117CA2F4CF31D /* NSString+ObjectiveSugar.m */,
+				715AEB18ED52102638C07E2B /* ObjectiveSugar.h */,
+				B81B974099F50F7AB1AAEC0D /* Support Files */,
+			);
+			path = ObjectiveSugar;
+			sourceTree = "<group>";
+		};
+		B81B974099F50F7AB1AAEC0D /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4C8195A791094300D62FF243 /* Pods-MasterCard-ObjectiveSugar.xcconfig */,
+				4A9E62C0D856C47F875D03C1 /* Pods-MasterCard-ObjectiveSugar-Private.xcconfig */,
+				178EB5764D124A90CCDED863 /* Pods-MasterCard-ObjectiveSugar-dummy.m */,
+				8C5E668C2EC3584B591BF2DA /* Pods-MasterCard-ObjectiveSugar-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-MasterCard-ObjectiveSugar";
+			sourceTree = "<group>";
+		};
+		BCBC3B56F590BA279B9A81CB = {
+			isa = PBXGroup;
+			children = (
+				594CEED3312529E1F34D23F2 /* Podfile */,
+				4F89E82DE5E92BDFB41B2DEC /* Frameworks */,
+				0772E05FA341173219DBA851 /* Pods */,
+				4D650E90501BC588CFF254C7 /* Products */,
+				575402B4467788C350DAE9B6 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		668AC8219E51E0F74606D722 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CF561555DFF6206889C33DE /* NSArray+ObjectiveSugar.h in Headers */,
+				3981C356685E26F81DFF25FC /* NSDictionary+ObjectiveSugar.h in Headers */,
+				1178640F73580EA688284244 /* NSMutableArray+ObjectiveSugar.h in Headers */,
+				081CD81EFCD3586FD4738684 /* NSNumber+ObjectiveSugar.h in Headers */,
+				65F073F917EAF676F48E3B0A /* NSSet+ObjectiveSugar.h in Headers */,
+				ECA897AAB2CF5AC1E83B651A /* NSString+ObjectiveSugar.h in Headers */,
+				9DE87AE3A01F157DC32DDEFA /* ObjectiveSugar.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		5474EF2E23DAFDB9487C3978 /* Pods-MasterCard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E7C4A2931709AA9845B498C0 /* Build configuration list for PBXNativeTarget "Pods-MasterCard" */;
+			buildPhases = (
+				CDF9E76736B94CDA6AEE4764 /* Sources */,
+				EF20B1C9800B69EE1E20649B /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				52B8BF7452818F83712D32E9 /* PBXTargetDependency */,
+			);
+			name = "Pods-MasterCard";
+			productName = "Pods-MasterCard";
+			productReference = 9C1D9557E0EB6E29FCE79A2B /* libPods-MasterCard.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		E7FA321089F59B49E6BA2EAF /* Pods-MasterCard-ObjectiveSugar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 24F8A9782F0DD99D46C12C03 /* Build configuration list for PBXNativeTarget "Pods-MasterCard-ObjectiveSugar" */;
+			buildPhases = (
+				56C191C02876DF3F7AEDA5EA /* Sources */,
+				0275FE30EDD6717193C41AD0 /* Frameworks */,
+				668AC8219E51E0F74606D722 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-MasterCard-ObjectiveSugar";
+			productName = "Pods-MasterCard-ObjectiveSugar";
+			productReference = 2F49405B133B06CA1AD9CCC6 /* libPods-MasterCard-ObjectiveSugar.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7219706399CC0F3C45E3985E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+			};
+			buildConfigurationList = 8A4E79A4EA593C7637634BC0 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = BCBC3B56F590BA279B9A81CB;
+			productRefGroup = 4D650E90501BC588CFF254C7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5474EF2E23DAFDB9487C3978 /* Pods-MasterCard */,
+				E7FA321089F59B49E6BA2EAF /* Pods-MasterCard-ObjectiveSugar */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		56C191C02876DF3F7AEDA5EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05C6EBE7307608F73DF4C5F1 /* NSArray+ObjectiveSugar.m in Sources */,
+				F60ECD9E34FB6284739D1404 /* NSDictionary+ObjectiveSugar.m in Sources */,
+				799F5DCA41C7991931E77668 /* NSMutableArray+ObjectiveSugar.m in Sources */,
+				7383BE293F5F89431A6A85AC /* NSNumber+ObjectiveSugar.m in Sources */,
+				55771841AC3547325B3F722E /* NSSet+ObjectiveSugar.m in Sources */,
+				498F6F03F2B0C71D196745F9 /* NSString+ObjectiveSugar.m in Sources */,
+				4C6494619547F454189110E3 /* Pods-MasterCard-ObjectiveSugar-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDF9E76736B94CDA6AEE4764 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE6BC5E27190DAB5695F1218 /* Pods-MasterCard-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		52B8BF7452818F83712D32E9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-MasterCard-ObjectiveSugar";
+			target = E7FA321089F59B49E6BA2EAF /* Pods-MasterCard-ObjectiveSugar */;
+			targetProxy = 7C98ED00298481A8590B891D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0DCDADD1F537F4949ECCE54D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A9E62C0D856C47F875D03C1 /* Pods-MasterCard-ObjectiveSugar-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-MasterCard-ObjectiveSugar/Pods-MasterCard-ObjectiveSugar-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		2C9BCE6A473B48F84550001C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0502FE99B7008F6F70B83606 /* Pods-MasterCard.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		4BC8F0579134F7A030DD12BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		52C8A22F224463EA2FE2B354 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A9E62C0D856C47F875D03C1 /* Pods-MasterCard-ObjectiveSugar-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-MasterCard-ObjectiveSugar/Pods-MasterCard-ObjectiveSugar-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		5E72258078187B095B82911A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E88CA7CCB76D09B43DACFC82 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F4BADCF6DDFF6E46416DCC5 /* Pods-MasterCard.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		24F8A9782F0DD99D46C12C03 /* Build configuration list for PBXNativeTarget "Pods-MasterCard-ObjectiveSugar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0DCDADD1F537F4949ECCE54D /* Debug */,
+				52C8A22F224463EA2FE2B354 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8A4E79A4EA593C7637634BC0 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4BC8F0579134F7A030DD12BB /* Debug */,
+				5E72258078187B095B82911A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E7C4A2931709AA9845B498C0 /* Build configuration list for PBXNativeTarget "Pods-MasterCard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E88CA7CCB76D09B43DACFC82 /* Debug */,
+				2C9BCE6A473B48F84550001C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7219706399CC0F3C45E3985E /* Project object */;
+}
