@@ -44,7 +44,22 @@
 }
 
 - (IBAction)payNowAction:(id)sender {
-    [[DataManager sharedInstance] moneysendApi];
+    // Lost account?
+    [[DataManager sharedInstance] lostAccountApi:^(BOOL success) {
+        if (success) { // Account is okay
+            // Send money
+            [[DataManager sharedInstance] moneysendApi:^(BOOL success) {
+                if (success) {
+                    [[[UIAlertView alloc] initWithTitle:@"Success" message:@"Money sent!" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil] show];
+                } else {
+                    [[[UIAlertView alloc] initWithTitle:@"Money Send" message:@"Fail." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil] show];
+                }
+            }];
+            
+        } else {
+            [[[UIAlertView alloc] initWithTitle:@"Lost account" message:@"This is a lost account." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil] show];
+        }
+    }];
 }
 
 - (IBAction)applyNewLoanAction:(id)sender {

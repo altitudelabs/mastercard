@@ -42,19 +42,19 @@
 }
 
 - (void)renderNavigationBar {
-    [[DataManager sharedInstance] moneysendApi:^(BOOL success) {
-        NSLog(@"Moneysend API Callback %d", success);
-    }];
-    [[DataManager sharedInstance] fraudApi:^(BOOL success) {
-        NSLog(@"Fraud API Callback %d", success);
-    }];
-    [[DataManager sharedInstance] matchApi:^(BOOL success) {
-        NSLog(@"Match API Callback %d", success);
-    }];
-    [[DataManager sharedInstance] lostAccountApi:^(BOOL success) {
-        NSLog(@"Lost account API Callback %d", success);
-    }];
-    [[DataManager sharedInstance] merchantCheckoutApiWithViewController:self];
+//    [[DataManager sharedInstance] moneysendApi:^(BOOL success) {
+//        NSLog(@"Moneysend API Callback %d", success);
+//    }];
+//    [[DataManager sharedInstance] fraudApi:^(BOOL success) {
+//        NSLog(@"Fraud API Callback %d", success);
+//    }];
+//    [[DataManager sharedInstance] matchApi:^(BOOL success) {
+//        NSLog(@"Match API Callback %d", success);
+//    }];
+//    [[DataManager sharedInstance] lostAccountApi:^(BOOL success) {
+//        NSLog(@"Lost account API Callback %d", success);
+//    }];
+//    [[DataManager sharedInstance] merchantCheckoutApiWithViewController:self];
     
     // Hide navigation bar
     [[self navigationController] setNavigationBarHidden:YES animated:NO];
@@ -92,14 +92,14 @@
         BorrowerProfileViewController *vc = (BorrowerProfileViewController *)[sb instantiateViewControllerWithIdentifier:@"BorrowerProfileViewController"];
         [self.navigationController pushViewController:vc animated:YES];
         
-        self.btnUsername.text = @"";
+//        self.btnUsername.text = @"";
         
     } else if (self.selectedLender) {
         UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
         LoanRequestFeedViewController *vc = (LoanRequestFeedViewController *)[sb instantiateViewControllerWithIdentifier:@"LoanRequestFeedViewController"];
         [self.navigationController pushViewController:vc animated:YES];
         
-        self.btnUsername.text = @"";
+//        self.btnUsername.text = @"";
         
     } else {
         [[[UIAlertView alloc] initWithTitle:@"Incomplete info" message:@"You need to select lender or borrower." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil] show];

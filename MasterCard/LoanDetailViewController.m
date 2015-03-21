@@ -29,6 +29,12 @@
     [self.view addGestureRecognizer:tap];
     
     self.amtToLendText.delegate = self;
+    
+    [[DataManager sharedInstance] matchApi:^(BOOL success) {
+        if (!success) {
+            [[[UIAlertView alloc] initWithTitle:@"Match API" message:@"The merchant you are trying to engage with is potentially of high risk." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil] show];
+        }
+    }];
 }
 
 - (void)renderNavigationBar {
@@ -72,19 +78,19 @@
     return YES;
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
-
 - (IBAction)btnLendNowAction:(id)sender {
-    NSInteger amt = [self.amtToLendText.text integerValue];
-    [[DataManager sharedInstance] lend:amt];
+    
+    [[DataManager sharedInstance]  fraudApi:^(BOOL success) {
+        if (success) {
+//            NSInteger amt = [self.amtToLendText.text integerValue];
+            [[DataManager sharedInstance] merchantCheckoutApiWithViewController:self];
+            [((UIButton *)sender) setTitle:@"Lent" forState:UIControlStateNormal];
+            [((UIButton *)sender) setBackgroundColor:[UIColor colorWithRed:186/255.0 green:27/255.0 blue:2/255.0 alpha:1]];
+            
+        } else {
+            [[[UIAlertView alloc] initWithTitle:@"Fraud?" message:@"This is probably a fraud transaction" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil] show];
+        }
+    }];
     
 }
 @end
