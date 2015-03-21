@@ -10,15 +10,25 @@
 		D645D62F1ABC0D4300890532 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D645D62E1ABC0D4300890532 /* main.m */; };
 		D645D6321ABC0D4300890532 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D645D6311ABC0D4300890532 /* AppDelegate.m */; };
 		D645D6351ABC0D4300890532 /* MasterCard.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D645D6331ABC0D4300890532 /* MasterCard.xcdatamodeld */; };
-		D645D6381ABC0D4300890532 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D645D6371ABC0D4300890532 /* ViewController.m */; };
 		D645D63B1ABC0D4300890532 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D645D6391ABC0D4300890532 /* Main.storyboard */; };
 		D645D63D1ABC0D4300890532 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D645D63C1ABC0D4300890532 /* Images.xcassets */; };
 		D645D6401ABC0D4300890532 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D645D63E1ABC0D4300890532 /* LaunchScreen.xib */; };
 		D645D64C1ABC0D4300890532 /* MasterCardTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D645D64B1ABC0D4300890532 /* MasterCardTests.m */; };
+		D6485BED1ABD55BC001FC4C0 /* LoanRequestFeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6485BEC1ABD55BC001FC4C0 /* LoanRequestFeedViewController.m */; };
+		D6485BF01ABD55CC001FC4C0 /* LoanDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6485BEF1ABD55CC001FC4C0 /* LoanDetailViewController.m */; };
+		D6485BF31ABD5605001FC4C0 /* LeaderProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6485BF21ABD5605001FC4C0 /* LeaderProfileViewController.m */; };
+		D6485BFA1ABD5FC6001FC4C0 /* filter@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D6485BF51ABD5FC6001FC4C0 /* filter@2x.png */; };
+		D6485BFB1ABD5FC6001FC4C0 /* Loan_Detail.png in Resources */ = {isa = PBXBuildFile; fileRef = D6485BF61ABD5FC6001FC4C0 /* Loan_Detail.png */; };
+		D6485BFC1ABD5FC6001FC4C0 /* Loan_Request.png in Resources */ = {isa = PBXBuildFile; fileRef = D6485BF71ABD5FC6001FC4C0 /* Loan_Request.png */; };
+		D6485BFD1ABD5FC6001FC4C0 /* menu@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D6485BF81ABD5FC6001FC4C0 /* menu@2x.png */; };
+		D6485BFE1ABD5FC6001FC4C0 /* profile@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D6485BF91ABD5FC6001FC4C0 /* profile@2x.png */; };
+		D6485C031ABD662C001FC4C0 /* AppConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = D6485C021ABD662C001FC4C0 /* AppConfig.m */; };
+		D6485C051ABD6D9F001FC4C0 /* back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D6485C041ABD6D9F001FC4C0 /* back@2x.png */; };
+		D6485C081ABD7137001FC4C0 /* BorrowerProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6485C071ABD7137001FC4C0 /* BorrowerProfileViewController.m */; };
+		D6485C0B1ABD714C001FC4C0 /* BorrowerNewLoanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6485C0A1ABD714C001FC4C0 /* BorrowerNewLoanViewController.m */; };
+		D6485C0E1ABD715D001FC4C0 /* BorrowerPayLoanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6485C0D1ABD715D001FC4C0 /* BorrowerPayLoanViewController.m */; };
 		FC822D941ABD3AFC00A7293D /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FC822D931ABD3AFC00A7293D /* DataManager.m */; };
 		FCCFE6D51ABD4AD500810E38 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCFE6D41ABD4AD500810E38 /* LoginViewController.m */; };
-		FCCFE6DE1ABD4B6E00810E38 /* LenderMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCFE6DD1ABD4B6E00810E38 /* LenderMainViewController.m */; };
-		FCCFE6E11ABD4B8700810E38 /* BorrowerMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCFE6E01ABD4B8700810E38 /* BorrowerMainViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,22 +48,36 @@
 		D645D6301ABC0D4300890532 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D645D6311ABC0D4300890532 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		D645D6341ABC0D4300890532 /* MasterCard.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MasterCard.xcdatamodel; sourceTree = "<group>"; };
-		D645D6361ABC0D4300890532 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		D645D6371ABC0D4300890532 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		D645D63A1ABC0D4300890532 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D645D63C1ABC0D4300890532 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D645D63F1ABC0D4300890532 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		D645D6451ABC0D4300890532 /* MasterCardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MasterCardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D645D64A1ABC0D4300890532 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D645D64B1ABC0D4300890532 /* MasterCardTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterCardTests.m; sourceTree = "<group>"; };
+		D6485BEB1ABD55BC001FC4C0 /* LoanRequestFeedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoanRequestFeedViewController.h; sourceTree = "<group>"; };
+		D6485BEC1ABD55BC001FC4C0 /* LoanRequestFeedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoanRequestFeedViewController.m; sourceTree = "<group>"; };
+		D6485BEE1ABD55CC001FC4C0 /* LoanDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoanDetailViewController.h; sourceTree = "<group>"; };
+		D6485BEF1ABD55CC001FC4C0 /* LoanDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoanDetailViewController.m; sourceTree = "<group>"; };
+		D6485BF11ABD5605001FC4C0 /* LeaderProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeaderProfileViewController.h; sourceTree = "<group>"; };
+		D6485BF21ABD5605001FC4C0 /* LeaderProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeaderProfileViewController.m; sourceTree = "<group>"; };
+		D6485BF51ABD5FC6001FC4C0 /* filter@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "filter@2x.png"; sourceTree = "<group>"; };
+		D6485BF61ABD5FC6001FC4C0 /* Loan_Detail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Loan_Detail.png; sourceTree = "<group>"; };
+		D6485BF71ABD5FC6001FC4C0 /* Loan_Request.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Loan_Request.png; sourceTree = "<group>"; };
+		D6485BF81ABD5FC6001FC4C0 /* menu@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu@2x.png"; sourceTree = "<group>"; };
+		D6485BF91ABD5FC6001FC4C0 /* profile@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "profile@2x.png"; sourceTree = "<group>"; };
+		D6485C011ABD662C001FC4C0 /* AppConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppConfig.h; sourceTree = "<group>"; };
+		D6485C021ABD662C001FC4C0 /* AppConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppConfig.m; sourceTree = "<group>"; };
+		D6485C041ABD6D9F001FC4C0 /* back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back@2x.png"; sourceTree = "<group>"; };
+		D6485C061ABD7137001FC4C0 /* BorrowerProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BorrowerProfileViewController.h; sourceTree = "<group>"; };
+		D6485C071ABD7137001FC4C0 /* BorrowerProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BorrowerProfileViewController.m; sourceTree = "<group>"; };
+		D6485C091ABD714C001FC4C0 /* BorrowerNewLoanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BorrowerNewLoanViewController.h; sourceTree = "<group>"; };
+		D6485C0A1ABD714C001FC4C0 /* BorrowerNewLoanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BorrowerNewLoanViewController.m; sourceTree = "<group>"; };
+		D6485C0C1ABD715D001FC4C0 /* BorrowerPayLoanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BorrowerPayLoanViewController.h; sourceTree = "<group>"; };
+		D6485C0D1ABD715D001FC4C0 /* BorrowerPayLoanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BorrowerPayLoanViewController.m; sourceTree = "<group>"; };
 		FC822D921ABD3AFC00A7293D /* DataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataManager.h; sourceTree = "<group>"; };
 		FC822D931ABD3AFC00A7293D /* DataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataManager.m; sourceTree = "<group>"; };
 		FCCFE6D31ABD4AD500810E38 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		FCCFE6D41ABD4AD500810E38 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
-		FCCFE6DC1ABD4B6E00810E38 /* LenderMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LenderMainViewController.h; sourceTree = "<group>"; };
-		FCCFE6DD1ABD4B6E00810E38 /* LenderMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LenderMainViewController.m; sourceTree = "<group>"; };
-		FCCFE6DF1ABD4B8700810E38 /* BorrowerMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BorrowerMainViewController.h; sourceTree = "<group>"; };
-		FCCFE6E01ABD4B8700810E38 /* BorrowerMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BorrowerMainViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,17 +119,18 @@
 		D645D62B1ABC0D4300890532 /* MasterCard */ = {
 			isa = PBXGroup;
 			children = (
+				D645D6391ABC0D4300890532 /* Main.storyboard */,
+				FCCFE6D31ABD4AD500810E38 /* LoginViewController.h */,
+				FCCFE6D41ABD4AD500810E38 /* LoginViewController.m */,
+				D6485BF41ABD5FBB001FC4C0 /* images */,
 				FCCFE6D61ABD4B1F00810E38 /* Lender */,
 				FCCFE6D81ABD4B2E00810E38 /* Borrower */,
 				D645D6301ABC0D4300890532 /* AppDelegate.h */,
 				D645D6311ABC0D4300890532 /* AppDelegate.m */,
+				D6485C011ABD662C001FC4C0 /* AppConfig.h */,
+				D6485C021ABD662C001FC4C0 /* AppConfig.m */,
 				FC822D921ABD3AFC00A7293D /* DataManager.h */,
 				FC822D931ABD3AFC00A7293D /* DataManager.m */,
-				D645D6361ABC0D4300890532 /* ViewController.h */,
-				D645D6371ABC0D4300890532 /* ViewController.m */,
-				FCCFE6D31ABD4AD500810E38 /* LoginViewController.h */,
-				FCCFE6D41ABD4AD500810E38 /* LoginViewController.m */,
-				D645D6391ABC0D4300890532 /* Main.storyboard */,
 				D645D63C1ABC0D4300890532 /* Images.xcassets */,
 				D645D63E1ABC0D4300890532 /* LaunchScreen.xib */,
 				D645D6331ABC0D4300890532 /* MasterCard.xcdatamodeld */,
@@ -140,11 +165,28 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		D6485BF41ABD5FBB001FC4C0 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				D6485C041ABD6D9F001FC4C0 /* back@2x.png */,
+				D6485BF51ABD5FC6001FC4C0 /* filter@2x.png */,
+				D6485BF61ABD5FC6001FC4C0 /* Loan_Detail.png */,
+				D6485BF71ABD5FC6001FC4C0 /* Loan_Request.png */,
+				D6485BF81ABD5FC6001FC4C0 /* menu@2x.png */,
+				D6485BF91ABD5FC6001FC4C0 /* profile@2x.png */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
 		FCCFE6D61ABD4B1F00810E38 /* Lender */ = {
 			isa = PBXGroup;
 			children = (
-				FCCFE6DC1ABD4B6E00810E38 /* LenderMainViewController.h */,
-				FCCFE6DD1ABD4B6E00810E38 /* LenderMainViewController.m */,
+				D6485BEB1ABD55BC001FC4C0 /* LoanRequestFeedViewController.h */,
+				D6485BEC1ABD55BC001FC4C0 /* LoanRequestFeedViewController.m */,
+				D6485BEE1ABD55CC001FC4C0 /* LoanDetailViewController.h */,
+				D6485BEF1ABD55CC001FC4C0 /* LoanDetailViewController.m */,
+				D6485BF11ABD5605001FC4C0 /* LeaderProfileViewController.h */,
+				D6485BF21ABD5605001FC4C0 /* LeaderProfileViewController.m */,
 			);
 			name = Lender;
 			sourceTree = "<group>";
@@ -152,8 +194,12 @@
 		FCCFE6D81ABD4B2E00810E38 /* Borrower */ = {
 			isa = PBXGroup;
 			children = (
-				FCCFE6DF1ABD4B8700810E38 /* BorrowerMainViewController.h */,
-				FCCFE6E01ABD4B8700810E38 /* BorrowerMainViewController.m */,
+				D6485C061ABD7137001FC4C0 /* BorrowerProfileViewController.h */,
+				D6485C071ABD7137001FC4C0 /* BorrowerProfileViewController.m */,
+				D6485C091ABD714C001FC4C0 /* BorrowerNewLoanViewController.h */,
+				D6485C0A1ABD714C001FC4C0 /* BorrowerNewLoanViewController.m */,
+				D6485C0C1ABD715D001FC4C0 /* BorrowerPayLoanViewController.h */,
+				D6485C0D1ABD715D001FC4C0 /* BorrowerPayLoanViewController.m */,
 			);
 			name = Borrower;
 			sourceTree = "<group>";
@@ -239,8 +285,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				D645D63B1ABC0D4300890532 /* Main.storyboard in Resources */,
+				D6485BFC1ABD5FC6001FC4C0 /* Loan_Request.png in Resources */,
 				D645D6401ABC0D4300890532 /* LaunchScreen.xib in Resources */,
+				D6485BFB1ABD5FC6001FC4C0 /* Loan_Detail.png in Resources */,
+				D6485BFD1ABD5FC6001FC4C0 /* menu@2x.png in Resources */,
 				D645D63D1ABC0D4300890532 /* Images.xcassets in Resources */,
+				D6485BFA1ABD5FC6001FC4C0 /* filter@2x.png in Resources */,
+				D6485BFE1ABD5FC6001FC4C0 /* profile@2x.png in Resources */,
+				D6485C051ABD6D9F001FC4C0 /* back@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,13 +310,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FCCFE6DE1ABD4B6E00810E38 /* LenderMainViewController.m in Sources */,
 				D645D6351ABC0D4300890532 /* MasterCard.xcdatamodeld in Sources */,
+				D6485BF31ABD5605001FC4C0 /* LeaderProfileViewController.m in Sources */,
+				D6485C081ABD7137001FC4C0 /* BorrowerProfileViewController.m in Sources */,
+				D6485C0E1ABD715D001FC4C0 /* BorrowerPayLoanViewController.m in Sources */,
+				D6485C031ABD662C001FC4C0 /* AppConfig.m in Sources */,
 				FC822D941ABD3AFC00A7293D /* DataManager.m in Sources */,
 				FCCFE6D51ABD4AD500810E38 /* LoginViewController.m in Sources */,
+				D6485BED1ABD55BC001FC4C0 /* LoanRequestFeedViewController.m in Sources */,
+				D6485BF01ABD55CC001FC4C0 /* LoanDetailViewController.m in Sources */,
+				D6485C0B1ABD714C001FC4C0 /* BorrowerNewLoanViewController.m in Sources */,
 				D645D6321ABC0D4300890532 /* AppDelegate.m in Sources */,
-				FCCFE6E11ABD4B8700810E38 /* BorrowerMainViewController.m in Sources */,
-				D645D6381ABC0D4300890532 /* ViewController.m in Sources */,
 				D645D62F1ABC0D4300890532 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

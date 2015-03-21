@@ -1,0 +1,18 @@
+//
+//  AppConfig.m
+//  MasterCard
+//
+//  Created by Altitude Labs on 21/3/15.
+//  Copyright (c) 2015 MasterCard. All rights reserved.
+//
+
+#import "AppConfig.h"
+
+@implementation AppConfig
+
+// Font definitions
+NSString* const UIFontRegularRoman   = @"Avenir-Roman";
+NSString* const UIFontRegularBook    = @"Avenir-Book";
+NSString* const UIFontRegularMedium  = @"Avenir-Medium";
+
+@end

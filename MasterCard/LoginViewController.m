@@ -7,25 +7,43 @@
 //
 
 #import "LoginViewController.h"
-#import "LenderMainViewController.h"
-#import "BorrowerMainViewController.h"
+#import "BorrowerProfileViewController.h"
+#import "LoanRequestFeedViewController.h"
+#import "AppConfig.h"
 
 @interface LoginViewController ()
-
+@property (nonatomic, assign) BOOL selectedLender;
+@property (nonatomic, assign) BOOL selectedBorrower;
 @end
 
 @implementation LoginViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
-    // Do any additional setup after loading the view.
-    [self.navigationController setNavigationBarHidden:YES];
+    [self renderNavigationBar];
+    self.selectedLender = NO;
+    self.selectedBorrower = NO;
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)renderNavigationBar {
+    // Hide navigation bar
+    [[self navigationController] setNavigationBarHidden:YES animated:NO];
+    [self navigationController].navigationBar.barTintColor = ColorBlue;
+    [[UINavigationBar appearance] setBackgroundImage:nil forBarMetrics:UIBarMetricsDefault];
+    
+    // Custom back button for all other pages
+    UIImage *backButtonImage = [[UIImage imageNamed:@"back@2x.png"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 0, 0, 0)];
+    [[UIBarButtonItem appearance] setBackButtonBackgroundImage:backButtonImage  forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
+    [[UIBarButtonItem appearance] setBackButtonTitlePositionAdjustment:UIOffsetMake(0, backButtonImage.size.height*2) forBarMetrics:UIBarMetricsDefault];
+    
+    // Title
+    UILabel *lblTitle = [[UILabel alloc] init];
+    lblTitle.text = @"Login";
+    lblTitle.backgroundColor = [UIColor clearColor];
+    lblTitle.textColor = [UIColor whiteColor];
+    lblTitle.font = [UIFont fontWithName:UIFontRegularBook size:19.0];
+    [lblTitle sizeToFit];
+    self.navigationItem.titleView = lblTitle;
 }
 
 /*
@@ -39,8 +57,32 @@
 */
 
 - (IBAction)signupButtonPressed:(id)sender {
-    UIViewController *lenderMainVC = [[LenderMainViewController alloc] init];
-    [self.navigationController pushViewController:lenderMainVC animated:YES];
+    if (self.selectedBorrower) {
+        UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+        BorrowerProfileViewController *vc = (BorrowerProfileViewController *)[sb instantiateViewControllerWithIdentifier:@"BorrowerProfileViewController"];
+        [self.navigationController pushViewController:vc animated:YES];
+        
+    } else if (self.selectedLender) {
+        UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+        LoanRequestFeedViewController *vc = (LoanRequestFeedViewController *)[sb instantiateViewControllerWithIdentifier:@"LoanRequestFeedViewController"];
+        [self.navigationController pushViewController:vc animated:YES];
+        
+    } else {
+        [[[UIAlertView alloc] initWithTitle:@"Incomplete info" message:@"You need to select lender or borrower." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil] show];
+    }
 }
 
+- (IBAction)btnLenderTouchUpInside:(id)sender {
+    self.selectedLender = YES;
+    self.btnLender.selected = YES;
+    self.selectedBorrower = NO;
+    self.btnBorrower.selected = NO;
+}
+
+- (IBAction)btnBorrowerTouchUpInside:(id)sender {
+    self.selectedLender = NO;
+    self.btnLender.selected = NO;
+    self.selectedBorrower = YES;
+    self.btnBorrower.selected = YES;
+}
 @end

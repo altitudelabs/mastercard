@@ -1,25 +1,22 @@
 //
-//  LenderListViewController.m
+//  LoanDetailViewController.m
 //  MasterCard
 //
-//  Created by Justin Yek on 21/3/15.
+//  Created by Altitude Labs on 21/3/15.
 //  Copyright (c) 2015 MasterCard. All rights reserved.
 //
 
-#import "LenderMainViewController.h"
+#import "LoanDetailViewController.h"
 
-@interface LenderMainViewController ()
+@interface LoanDetailViewController ()
 
 @end
 
-@implementation LenderMainViewController
-
-@synthesize isLender;
+@implementation LoanDetailViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    [self.navigationController setNavigationBarHidden:NO];
 }
 
 - (void)didReceiveMemoryWarning {
