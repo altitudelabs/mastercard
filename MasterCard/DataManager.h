@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface DataManager : NSObject
+@interface DataManager : NSObject <NSXMLParserDelegate>
 
 @property (nonatomic, assign) NSInteger lentAmt;
 @property (nonatomic, assign) NSInteger borrowedAmt;
@@ -21,5 +21,9 @@
 
 - (NSInteger)lend:(NSInteger)amount;
 - (NSInteger)request:(NSInteger)amount;
+
+- (void)moneysendApi;
+- (void)fraudApi;
+- (void)matchApi;
 
 @end
