@@ -16,6 +16,9 @@
 		D645D6401ABC0D4300890532 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D645D63E1ABC0D4300890532 /* LaunchScreen.xib */; };
 		D645D64C1ABC0D4300890532 /* MasterCardTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D645D64B1ABC0D4300890532 /* MasterCardTests.m */; };
 		FC822D941ABD3AFC00A7293D /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FC822D931ABD3AFC00A7293D /* DataManager.m */; };
+		FCCFE6D51ABD4AD500810E38 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCFE6D41ABD4AD500810E38 /* LoginViewController.m */; };
+		FCCFE6DE1ABD4B6E00810E38 /* LenderMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCFE6DD1ABD4B6E00810E38 /* LenderMainViewController.m */; };
+		FCCFE6E11ABD4B8700810E38 /* BorrowerMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCFE6E01ABD4B8700810E38 /* BorrowerMainViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +48,12 @@
 		D645D64B1ABC0D4300890532 /* MasterCardTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterCardTests.m; sourceTree = "<group>"; };
 		FC822D921ABD3AFC00A7293D /* DataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataManager.h; sourceTree = "<group>"; };
 		FC822D931ABD3AFC00A7293D /* DataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataManager.m; sourceTree = "<group>"; };
+		FCCFE6D31ABD4AD500810E38 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		FCCFE6D41ABD4AD500810E38 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		FCCFE6DC1ABD4B6E00810E38 /* LenderMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LenderMainViewController.h; sourceTree = "<group>"; };
+		FCCFE6DD1ABD4B6E00810E38 /* LenderMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LenderMainViewController.m; sourceTree = "<group>"; };
+		FCCFE6DF1ABD4B8700810E38 /* BorrowerMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BorrowerMainViewController.h; sourceTree = "<group>"; };
+		FCCFE6E01ABD4B8700810E38 /* BorrowerMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BorrowerMainViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,12 +95,16 @@
 		D645D62B1ABC0D4300890532 /* MasterCard */ = {
 			isa = PBXGroup;
 			children = (
+				FCCFE6D61ABD4B1F00810E38 /* Lender */,
+				FCCFE6D81ABD4B2E00810E38 /* Borrower */,
 				D645D6301ABC0D4300890532 /* AppDelegate.h */,
 				D645D6311ABC0D4300890532 /* AppDelegate.m */,
 				FC822D921ABD3AFC00A7293D /* DataManager.h */,
 				FC822D931ABD3AFC00A7293D /* DataManager.m */,
 				D645D6361ABC0D4300890532 /* ViewController.h */,
 				D645D6371ABC0D4300890532 /* ViewController.m */,
+				FCCFE6D31ABD4AD500810E38 /* LoginViewController.h */,
+				FCCFE6D41ABD4AD500810E38 /* LoginViewController.m */,
 				D645D6391ABC0D4300890532 /* Main.storyboard */,
 				D645D63C1ABC0D4300890532 /* Images.xcassets */,
 				D645D63E1ABC0D4300890532 /* LaunchScreen.xib */,
@@ -125,6 +138,24 @@
 				D645D64A1ABC0D4300890532 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FCCFE6D61ABD4B1F00810E38 /* Lender */ = {
+			isa = PBXGroup;
+			children = (
+				FCCFE6DC1ABD4B6E00810E38 /* LenderMainViewController.h */,
+				FCCFE6DD1ABD4B6E00810E38 /* LenderMainViewController.m */,
+			);
+			name = Lender;
+			sourceTree = "<group>";
+		};
+		FCCFE6D81ABD4B2E00810E38 /* Borrower */ = {
+			isa = PBXGroup;
+			children = (
+				FCCFE6DF1ABD4B8700810E38 /* BorrowerMainViewController.h */,
+				FCCFE6E01ABD4B8700810E38 /* BorrowerMainViewController.m */,
+			);
+			name = Borrower;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -227,9 +258,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCCFE6DE1ABD4B6E00810E38 /* LenderMainViewController.m in Sources */,
 				D645D6351ABC0D4300890532 /* MasterCard.xcdatamodeld in Sources */,
 				FC822D941ABD3AFC00A7293D /* DataManager.m in Sources */,
+				FCCFE6D51ABD4AD500810E38 /* LoginViewController.m in Sources */,
 				D645D6321ABC0D4300890532 /* AppDelegate.m in Sources */,
+				FCCFE6E11ABD4B8700810E38 /* BorrowerMainViewController.m in Sources */,
 				D645D6381ABC0D4300890532 /* ViewController.m in Sources */,
 				D645D62F1ABC0D4300890532 /* main.m in Sources */,
 			);
