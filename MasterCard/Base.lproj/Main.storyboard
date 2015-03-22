@@ -338,15 +338,84 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
+                                            <action selector="checkEligibilityAction:" destination="NET-dJ-kvY" eventType="touchUpInside" id="rJS-MR-eDJ"/>
                                             <segue destination="bdr-hY-xPt" kind="push" id="fWv-6b-Pbf"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="izi-aT-SAH" userLabel="dot">
+                                        <rect key="frame" x="17" y="157" width="20" height="20"/>
+                                        <state key="normal" title="B" image="inactive-slider-icon.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="selected" image="active-slider-icon.png"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4NJ-KX-O9Y" userLabel="dot">
+                                        <rect key="frame" x="84" y="157" width="20" height="20"/>
+                                        <state key="normal" title="B" image="inactive-slider-icon.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="selected" image="active-slider-icon.png"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5bT-Ir-34C" userLabel="dot">
+                                        <rect key="frame" x="151" y="157" width="20" height="20"/>
+                                        <state key="normal" title="B" image="inactive-slider-icon.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="selected" image="active-slider-icon.png"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a8e-um-1p9" userLabel="dot">
+                                        <rect key="frame" x="218" y="157" width="20" height="20"/>
+                                        <state key="normal" title="B" image="inactive-slider-icon.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="selected" image="active-slider-icon.png"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lMI-9e-32g" userLabel="dot">
+                                        <rect key="frame" x="285" y="157" width="20" height="20"/>
+                                        <state key="normal" title="B" image="inactive-slider-icon.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="selected" image="active-slider-icon.png"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yvm-8a-zby" userLabel="upload btn 1">
+                                        <rect key="frame" x="17" y="242" width="288" height="50"/>
+                                        <state key="normal">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="upload1Clicked:" destination="NET-dJ-kvY" eventType="touchUpInside" id="8CL-Vh-fz0"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L9y-PC-D04" userLabel="upload btn 2">
+                                        <rect key="frame" x="16" y="303" width="288" height="50"/>
+                                        <state key="normal">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="upload2Clicked:" destination="NET-dJ-kvY" eventType="touchUpInside" id="aTz-YT-Vfx"/>
+                                        </connections>
+                                    </button>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="e.g. $125,000" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xDx-y9-Gnp">
+                                        <rect key="frame" x="28" y="63" width="260" height="30"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="textColor" red="0.50196078431372548" green="0.50196078431372548" blue="0.50196078431372548" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="15"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                    </textField>
                                 </subviews>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="rky-h2-JP1"/>
+                    <connections>
+                        <outlet property="dot1" destination="izi-aT-SAH" id="HK7-ES-CaE"/>
+                        <outlet property="dot2" destination="4NJ-KX-O9Y" id="nVR-RC-Nvi"/>
+                        <outlet property="dot3" destination="5bT-Ir-34C" id="d8u-vA-ISQ"/>
+                        <outlet property="dot4" destination="a8e-um-1p9" id="ky4-c2-x1r"/>
+                        <outlet property="dot5" destination="lMI-9e-32g" id="5bE-K7-6ZZ"/>
+                        <outlet property="textFieldBorrowMoney" destination="xDx-y9-Gnp" id="dZa-Md-A70"/>
+                    </connections>
                 </viewController>
                 <navigationItem id="kwR-jf-q18">
                     <barButtonItem key="backBarButtonItem" title=" " id="jlq-cc-7B4"/>
@@ -419,6 +488,8 @@
         <image name="Loan_Request.png" width="751" height="1303"/>
         <image name="My_Profile.png" width="751" height="1393"/>
         <image name="Screen.png" width="1502" height="2277"/>
+        <image name="active-slider-icon.png" width="95" height="95"/>
+        <image name="inactive-slider-icon.png" width="86" height="86"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>

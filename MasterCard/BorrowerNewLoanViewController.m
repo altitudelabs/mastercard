@@ -18,6 +18,21 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self renderNavigationBar];
+    
+    self.dot3.selected = YES;
+    
+    [self.dot1 addTarget:self action:@selector(selectDot:) forControlEvents:UIControlEventTouchUpInside];
+    [self.dot2 addTarget:self action:@selector(selectDot:) forControlEvents:UIControlEventTouchUpInside];
+    [self.dot3 addTarget:self action:@selector(selectDot:) forControlEvents:UIControlEventTouchUpInside];
+    [self.dot4 addTarget:self action:@selector(selectDot:) forControlEvents:UIControlEventTouchUpInside];
+    [self.dot5 addTarget:self action:@selector(selectDot:) forControlEvents:UIControlEventTouchUpInside];
+    
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(cancelKeyboard:)];
+    [self.view addGestureRecognizer:tap];
+}
+
+- (void)cancelKeyboard:(id)sender {
+    [self.textFieldBorrowMoney resignFirstResponder];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -44,14 +59,25 @@
     self.navigationItem.titleView = lblTitle;
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)selectDot:(id)sender {
+    self.dot1.selected = NO;
+    self.dot2.selected = NO;
+    self.dot3.selected = NO;
+    self.dot4.selected = NO;
+    self.dot5.selected = NO;
+    
+    ((UIButton *)sender).selected = YES;
 }
-*/
+
+- (IBAction)upload1Clicked:(id)sender {
+}
+
+- (IBAction)upload2Clicked:(id)sender {
+}
+
+- (IBAction)checkEligibilityAction:(id)sender {
+    
+}
+
 
 @end
