@@ -7,8 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BorrowerProfileViewController.h"
+#import "BorrowerPayLoanViewController.h"
 
 @interface BorrowerNewLoanViewController : UIViewController
+
+@property (strong, nonatomic) BorrowerProfileViewController *borrowerProfileViewController;
+
 
 @property (weak, nonatomic) IBOutlet UITextField *textFieldBorrowMoney;
 @property (weak, nonatomic) IBOutlet UIButton *dot1;

@@ -80,16 +80,46 @@
 
 - (IBAction)btnLendNowAction:(id)sender {
     
+    [[DataManager sharedInstance] merchantCheckoutApiWithViewController:self];
+    self.btnLendNow.hidden = YES;
+    self.btnMoneySend.hidden = YES;
+    
     [[DataManager sharedInstance]  fraudApi:^(BOOL success) {
-        if (success) {
-//            NSInteger amt = [self.amtToLendText.text integerValue];
-            [[DataManager sharedInstance] merchantCheckoutApiWithViewController:self];
-            [((UIButton *)sender) setTitle:@"Lent" forState:UIControlStateNormal];
-            [((UIButton *)sender) setBackgroundColor:[UIColor colorWithRed:186/255.0 green:27/255.0 blue:2/255.0 alpha:1]];
-            
-        } else {
-            [[[UIAlertView alloc] initWithTitle:@"Fraud?" message:@"This is probably a fraud transaction" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil] show];
-        }
+//        if (success) {
+////            NSInteger amt = [self.amtToLendText.text integerValue];
+////            [[DataManager sharedInstance] merchantCheckoutApiWithViewController:self];
+////            self.btnLendNow.hidden = YES;
+////            self.btnMoneySend.hidden = YES;
+//            
+//        } else {
+//            [[[UIAlertView alloc] initWithTitle:@"Fraud?" message:@"This is probably a fraud transaction" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil] show];
+//        }
+    }];
+    
+}
+
+- (IBAction)btnLendWithSend:(id)sender {
+    
+    self.btnLendNow.hidden = YES;
+    self.btnMoneySend.hidden = YES;
+    [[[UIAlertView alloc] initWithTitle:@"Success!" message:@"Money sent!" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil] show];
+    
+    [[DataManager sharedInstance]  fraudApi:^(BOOL success) {
+//        if (success) {
+//            //            NSInteger amt = [self.amtToLendText.text integerValue];
+//            [[DataManager sharedInstance] moneysendApi:^(BOOL success) {
+//                if (success) {
+////                    self.btnLendNow.alpha = 0;
+////                    self.btnMoneySend.alpha = 0;
+////                    [[[UIAlertView alloc] initWithTitle:@"Success!" message:@"Money sent!" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil] show];
+//                } else {
+//                    [[[UIAlertView alloc] initWithTitle:@"Money Send" message:@"Error." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil] show];
+//                }
+//            }];
+//            
+//        } else {
+//            [[[UIAlertView alloc] initWithTitle:@"Fraud?" message:@"This is probably a fraud transaction" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil] show];
+//        }
     }];
     
 }

@@ -9,7 +9,7 @@
 #import "BorrowerPayLoanViewController.h"
 #import "AppConfig.h"
 
-@interface BorrowerPayLoanViewController ()
+@interface BorrowerPayLoanViewController () <UIAlertViewDelegate>
 
 @end
 
@@ -44,6 +44,12 @@
 }
 
 - (IBAction)btnConfirmTouchUpInside:(id)sender {
-    
+    [[[UIAlertView alloc] initWithTitle:@"Congratulations!" message:@"You loan is now live on our platform." delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil] show];
 }
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
+    [self.navigationController popViewControllerAnimated:NO];
+    [self.delegate popback];
+}
+
 @end

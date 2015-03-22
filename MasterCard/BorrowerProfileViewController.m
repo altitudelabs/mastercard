@@ -7,6 +7,7 @@
 //
 
 #import "BorrowerProfileViewController.h"
+#import "BorrowerNewLoanViewController.h"
 #import "AppConfig.h"
 #import "DataManager.h"
 
@@ -21,6 +22,8 @@
     [self renderNavigationBar];
     
     self.scrollView.contentSize = CGSizeMake(320, 743);
+    
+    
 }
 
 - (void)renderNavigationBar {
@@ -65,4 +68,15 @@
 - (IBAction)applyNewLoanAction:(id)sender {
     
 }
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString:@"check eigi"])
+    {
+        BorrowerNewLoanViewController *dest = [segue destinationViewController];
+        
+        dest.borrowerProfileViewController = self;
+    }
+}
+
 @end

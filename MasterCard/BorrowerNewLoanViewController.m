@@ -7,9 +7,10 @@
 //
 
 #import "BorrowerNewLoanViewController.h"
+#import "BorrowerProfileViewController.h"
 #import "AppConfig.h"
 
-@interface BorrowerNewLoanViewController ()
+@interface BorrowerNewLoanViewController () <BorrowerPayLoanViewControllerDelegate>
 
 @end
 
@@ -76,8 +77,23 @@
 }
 
 - (IBAction)checkEligibilityAction:(id)sender {
-    
+    //check eigi
 }
 
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString:@"check eigi"])
+    {
+        BorrowerPayLoanViewController *dest = [segue destinationViewController];
+        
+        dest.borrowerProfileViewController = self.borrowerProfileViewController;
+        dest.delegate = self;
+    }
+}
+
+//delegate
+- (void) popback {
+    [self.navigationController popViewControllerAnimated:YES];
+}
 
 @end

@@ -7,10 +7,20 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BorrowerProfileViewController.h"
+
+@protocol BorrowerPayLoanViewControllerDelegate <NSObject>
+
+- (void) popback;
+
+@end
 
 @interface BorrowerPayLoanViewController : UIViewController
 
+@property (strong, nonatomic) BorrowerProfileViewController *borrowerProfileViewController;
 - (IBAction)btnCancelTouchUpInside:(id)sender;
 - (IBAction)btnConfirmTouchUpInside:(id)sender;
+
+@property (strong, nonatomic) id<BorrowerPayLoanViewControllerDelegate> delegate;
 
 @end

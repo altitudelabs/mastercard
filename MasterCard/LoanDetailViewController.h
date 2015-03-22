@@ -12,8 +12,9 @@
 @property (weak, nonatomic) IBOutlet UITextField *amtToLendText;
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 @property (weak, nonatomic) IBOutlet UIButton *btnLendNow;
+@property (weak, nonatomic) IBOutlet UIButton *btnMoneySend;
 
 - (IBAction)btnLendNowAction:(id)sender;
-
+- (IBAction)btnLendWithSend:(id)sender;
 
 @end
