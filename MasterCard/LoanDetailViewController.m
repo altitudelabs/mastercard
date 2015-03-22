@@ -32,7 +32,7 @@
     
     [[DataManager sharedInstance] matchApi:^(BOOL success) {
         if (!success) {
-            [[[UIAlertView alloc] initWithTitle:@"Match API" message:@"The merchant you are trying to engage with is potentially of high risk." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil] show];
+//            [[[UIAlertView alloc] initWithTitle:@"Match API" message:@"The merchant you are trying to engage with is potentially of high risk." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil] show];
         }
     }];
 }
@@ -81,8 +81,7 @@
 - (IBAction)btnLendNowAction:(id)sender {
     
     [[DataManager sharedInstance] merchantCheckoutApiWithViewController:self];
-    self.btnLendNow.hidden = YES;
-    self.btnMoneySend.hidden = YES;
+    
     
     [[DataManager sharedInstance]  fraudApi:^(BOOL success) {
 //        if (success) {
@@ -100,8 +99,7 @@
 
 - (IBAction)btnLendWithSend:(id)sender {
     
-    self.btnLendNow.hidden = YES;
-    self.btnMoneySend.hidden = YES;
+   
     [[[UIAlertView alloc] initWithTitle:@"Success!" message:@"Money sent!" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil] show];
     
     [[DataManager sharedInstance]  fraudApi:^(BOOL success) {

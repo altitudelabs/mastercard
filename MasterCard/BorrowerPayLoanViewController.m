@@ -18,11 +18,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self renderNavigationBar];
+    
+    self.scrollView.contentSize = CGSizeMake(320, 575);
 }
 
 - (void)renderNavigationBar {
     // Hide navigation bar
-    [[self navigationController] setNavigationBarHidden:YES animated:NO];
+//    [[self navigationController] setNavigationBarHidden:YES animated:NO];
     
 //    // Custom back button for all other pages
 //    UIImage *backButtonImage = [[UIImage imageNamed:@"back@2x.png"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 0, 0, 0)];
@@ -31,7 +33,7 @@
     
     // Title
     UILabel *lblTitle = [[UILabel alloc] init];
-    lblTitle.text = @"Confirm loan";
+    lblTitle.text = @"Confirm Loan";
     lblTitle.backgroundColor = [UIColor clearColor];
     lblTitle.textColor = [UIColor whiteColor];
     lblTitle.font = [UIFont fontWithName:UIFontRegularBook size:19.0];

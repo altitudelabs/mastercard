@@ -23,4 +23,7 @@
 
 @property (strong, nonatomic) id<BorrowerPayLoanViewControllerDelegate> delegate;
 
+@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
+
+
 @end

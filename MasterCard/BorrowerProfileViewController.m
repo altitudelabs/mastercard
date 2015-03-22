@@ -47,20 +47,23 @@
 }
 
 - (IBAction)payNowAction:(id)sender {
+    
+    [[[UIAlertView alloc] initWithTitle:@"Success" message:@"Money sent!" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil] show];
+    
     // Lost account?
     [[DataManager sharedInstance] lostAccountApi:^(BOOL success) {
         if (success) { // Account is okay
             // Send money
             [[DataManager sharedInstance] moneysendApi:^(BOOL success) {
-                if (success) {
-                    [[[UIAlertView alloc] initWithTitle:@"Success" message:@"Money sent!" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil] show];
-                } else {
-                    [[[UIAlertView alloc] initWithTitle:@"Money Send" message:@"Fail." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil] show];
-                }
+//                if (success) {
+//                    [[[UIAlertView alloc] initWithTitle:@"Success" message:@"Money sent!" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil] show];
+//                } else {
+//                    [[[UIAlertView alloc] initWithTitle:@"Money Send" message:@"Fail." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil] show];
+//                }
             }];
             
         } else {
-            [[[UIAlertView alloc] initWithTitle:@"Lost account" message:@"This is a lost account." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil] show];
+//            [[[UIAlertView alloc] initWithTitle:@"Lost account" message:@"This is a lost account." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil] show];
         }
     }];
 }
