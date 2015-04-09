@@ -21,7 +21,7 @@
     [super viewDidLoad];
     [self renderNavigationBar];
     
-    self.scrollView.contentSize = CGSizeMake(320, 743);
+    self.scrollView.contentSize = CGSizeMake(320, 680);
     
     
 }

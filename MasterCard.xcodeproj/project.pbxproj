@@ -23,6 +23,9 @@
 		D63B2F151ABE68C80088B99B /* My_Profile@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D63B2F141ABE68C80088B99B /* My_Profile@2x.png */; };
 		D63B2F171ABE694F0088B99B /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = D63B2F161ABE694F0088B99B /* home.png */; };
 		D63B2F1B1ABE6D800088B99B /* app-icon3.png in Resources */ = {isa = PBXBuildFile; fileRef = D63B2F1A1ABE6D800088B99B /* app-icon3.png */; };
+		D63DB0201AD6640900381F96 /* Borrower's_Profile2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D63DB01F1AD6640900381F96 /* Borrower's_Profile2.jpg */; };
+		D63DB0221AD6666100381F96 /* Congratulations2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D63DB0211AD6666100381F96 /* Congratulations2.jpg */; };
+		D63DB0241AD666F400381F96 /* Loan_Detail2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D63DB0231AD666F400381F96 /* Loan_Detail2.jpg */; };
 		D645D62F1ABC0D4300890532 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D645D62E1ABC0D4300890532 /* main.m */; };
 		D645D6321ABC0D4300890532 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D645D6311ABC0D4300890532 /* AppDelegate.m */; };
 		D645D6351ABC0D4300890532 /* MasterCard.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D645D6331ABC0D4300890532 /* MasterCard.xcdatamodeld */; };
@@ -86,6 +89,9 @@
 		D63B2F141ABE68C80088B99B /* My_Profile@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "My_Profile@2x.png"; sourceTree = "<group>"; };
 		D63B2F161ABE694F0088B99B /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home.png; sourceTree = "<group>"; };
 		D63B2F1A1ABE6D800088B99B /* app-icon3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "app-icon3.png"; sourceTree = "<group>"; };
+		D63DB01F1AD6640900381F96 /* Borrower's_Profile2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Borrower's_Profile2.jpg"; sourceTree = "<group>"; };
+		D63DB0211AD6666100381F96 /* Congratulations2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Congratulations2.jpg; sourceTree = "<group>"; };
+		D63DB0231AD666F400381F96 /* Loan_Detail2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Loan_Detail2.jpg; sourceTree = "<group>"; };
 		D645D6291ABC0D4300890532 /* MasterCard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MasterCard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D645D62D1ABC0D4300890532 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D645D62E1ABC0D4300890532 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -190,6 +196,16 @@
 			name = "login page";
 			sourceTree = "<group>";
 		};
+		D63DB0181AD6623800381F96 /* Images for asia contest */ = {
+			isa = PBXGroup;
+			children = (
+				D63DB0231AD666F400381F96 /* Loan_Detail2.jpg */,
+				D63DB0211AD6666100381F96 /* Congratulations2.jpg */,
+				D63DB01F1AD6640900381F96 /* Borrower's_Profile2.jpg */,
+			);
+			name = "Images for asia contest";
+			sourceTree = "<group>";
+		};
 		D645D6201ABC0D4300890532 = {
 			isa = PBXGroup;
 			children = (
@@ -262,6 +278,7 @@
 		D6485BF41ABD5FBB001FC4C0 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				D63DB0181AD6623800381F96 /* Images for asia contest */,
 				D63B2F1A1ABE6D800088B99B /* app-icon3.png */,
 				D63B2F161ABE694F0088B99B /* home.png */,
 				D62460711ABDBC4900CECE2D /* login page */,
@@ -432,6 +449,7 @@
 				D62460811ABDBC6800CECE2D /* slider.png in Resources */,
 				D63B2F131ABE5E490088B99B /* Loan_Detail@2x.png in Resources */,
 				D645D63B1ABC0D4300890532 /* Main.storyboard in Resources */,
+				D63DB0241AD666F400381F96 /* Loan_Detail2.jpg in Resources */,
 				D62460781ABDBC5600CECE2D /* inactive.png in Resources */,
 				D63185601ABD948200331BF5 /* Loan_Request@2x.png in Resources */,
 				D62460771ABDBC5600CECE2D /* bg.png in Resources */,
@@ -443,6 +461,7 @@
 				D6485BFA1ABD5FC6001FC4C0 /* filter@2x.png in Resources */,
 				D63B2F111ABE5C5D0088B99B /* signup-button.png in Resources */,
 				FC954E371ABD9671001321E5 /* mp_lightbox_base.html in Resources */,
+				D63DB0201AD6640900381F96 /* Borrower's_Profile2.jpg in Resources */,
 				D6485BFE1ABD5FC6001FC4C0 /* profile@2x.png in Resources */,
 				D624607F1ABDBC6800CECE2D /* inactive-slider-icon.png in Resources */,
 				D624607E1ABDBC6800CECE2D /* active-slider-icon.png in Resources */,
@@ -451,6 +470,7 @@
 				D63B2F171ABE694F0088B99B /* home.png in Resources */,
 				D62460761ABDBC5600CECE2D /* active.png in Resources */,
 				D624606D1ABDAE5500CECE2D /* Congratulations.png in Resources */,
+				D63DB0221AD6666100381F96 /* Congratulations2.jpg in Resources */,
 				D631855F1ABD948200331BF5 /* filterBtn.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
