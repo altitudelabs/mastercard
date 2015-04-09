@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8C6FFBF9461B0535F61B97D9 /* libPods-MasterCard.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 330E4D0D9E49CFBE07FDAD20 /* libPods-MasterCard.a */; };
 		D624606D1ABDAE5500CECE2D /* Congratulations.png in Resources */ = {isa = PBXBuildFile; fileRef = D624606C1ABDAE5500CECE2D /* Congratulations.png */; };
 		D624606F1ABDB84700CECE2D /* Borrower's_Profile@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D624606E1ABDB84700CECE2D /* Borrower's_Profile@2x.png */; };
 		D62460761ABDBC5600CECE2D /* active.png in Resources */ = {isa = PBXBuildFile; fileRef = D62460721ABDBC5600CECE2D /* active.png */; };
@@ -23,6 +24,15 @@
 		D63B2F151ABE68C80088B99B /* My_Profile@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D63B2F141ABE68C80088B99B /* My_Profile@2x.png */; };
 		D63B2F171ABE694F0088B99B /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = D63B2F161ABE694F0088B99B /* home.png */; };
 		D63B2F1B1ABE6D800088B99B /* app-icon3.png in Resources */ = {isa = PBXBuildFile; fileRef = D63B2F1A1ABE6D800088B99B /* app-icon3.png */; };
+		D63DAFFF1AD645D000381F96 /* FundityTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D63DAFFE1AD645D000381F96 /* FundityTableViewController.m */; };
+		D63DB0021AD6470E00381F96 /* LoanRequestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D63DB0011AD6470E00381F96 /* LoanRequestViewController.m */; };
+		D63DB0091AD6483900381F96 /* LoanRequestTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D63DB0071AD6483900381F96 /* LoanRequestTableViewCell.m */; };
+		D63DB00A1AD6483900381F96 /* LoanRequestTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D63DB0081AD6483900381F96 /* LoanRequestTableViewCell.xib */; };
+		D63DB00F1AD6499000381F96 /* source-sans-pro.extralight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D63DB00C1AD6497100381F96 /* source-sans-pro.extralight.ttf */; };
+		D63DB0101AD6499000381F96 /* SourceSansPro-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = D63DB00D1AD6497100381F96 /* SourceSansPro-Light.otf */; };
+		D63DB0111AD6499000381F96 /* SourceSansPro-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = D63DB00E1AD6497100381F96 /* SourceSansPro-Regular.otf */; };
+		D63DB0161AD64B1600381F96 /* SourceSansPro-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = D63DB0141AD64B0200381F96 /* SourceSansPro-Bold.otf */; };
+		D63DB0171AD64B1600381F96 /* SourceSansPro-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = D63DB0151AD64B0200381F96 /* SourceSansPro-Semibold.otf */; };
 		D645D62F1ABC0D4300890532 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D645D62E1ABC0D4300890532 /* main.m */; };
 		D645D6321ABC0D4300890532 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D645D6311ABC0D4300890532 /* AppDelegate.m */; };
 		D645D6351ABC0D4300890532 /* MasterCard.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D645D6331ABC0D4300890532 /* MasterCard.xcdatamodeld */; };
@@ -70,6 +80,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		330E4D0D9E49CFBE07FDAD20 /* libPods-MasterCard.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MasterCard.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4EE3E7054AAD4EBA0D18E69 /* Pods-MasterCard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MasterCard.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MasterCard/Pods-MasterCard.debug.xcconfig"; sourceTree = "<group>"; };
+		A69ED836F185622D379CAD31 /* Pods-MasterCard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MasterCard.release.xcconfig"; path = "Pods/Target Support Files/Pods-MasterCard/Pods-MasterCard.release.xcconfig"; sourceTree = "<group>"; };
 		D624606C1ABDAE5500CECE2D /* Congratulations.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Congratulations.png; sourceTree = "<group>"; };
 		D624606E1ABDB84700CECE2D /* Borrower's_Profile@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Borrower's_Profile@2x.png"; sourceTree = "<group>"; };
 		D62460721ABDBC5600CECE2D /* active.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = active.png; sourceTree = "<group>"; };
@@ -86,6 +99,18 @@
 		D63B2F141ABE68C80088B99B /* My_Profile@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "My_Profile@2x.png"; sourceTree = "<group>"; };
 		D63B2F161ABE694F0088B99B /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home.png; sourceTree = "<group>"; };
 		D63B2F1A1ABE6D800088B99B /* app-icon3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "app-icon3.png"; sourceTree = "<group>"; };
+		D63DAFFD1AD645D000381F96 /* FundityTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FundityTableViewController.h; sourceTree = "<group>"; };
+		D63DAFFE1AD645D000381F96 /* FundityTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FundityTableViewController.m; sourceTree = "<group>"; };
+		D63DB0001AD6470E00381F96 /* LoanRequestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoanRequestViewController.h; sourceTree = "<group>"; };
+		D63DB0011AD6470E00381F96 /* LoanRequestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoanRequestViewController.m; sourceTree = "<group>"; };
+		D63DB0061AD6483900381F96 /* LoanRequestTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoanRequestTableViewCell.h; path = ../LoanRequestTableViewCell.h; sourceTree = "<group>"; };
+		D63DB0071AD6483900381F96 /* LoanRequestTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoanRequestTableViewCell.m; path = ../LoanRequestTableViewCell.m; sourceTree = "<group>"; };
+		D63DB0081AD6483900381F96 /* LoanRequestTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LoanRequestTableViewCell.xib; path = ../LoanRequestTableViewCell.xib; sourceTree = "<group>"; };
+		D63DB00C1AD6497100381F96 /* source-sans-pro.extralight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "source-sans-pro.extralight.ttf"; sourceTree = "<group>"; };
+		D63DB00D1AD6497100381F96 /* SourceSansPro-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-Light.otf"; sourceTree = "<group>"; };
+		D63DB00E1AD6497100381F96 /* SourceSansPro-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-Regular.otf"; sourceTree = "<group>"; };
+		D63DB0141AD64B0200381F96 /* SourceSansPro-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-Bold.otf"; sourceTree = "<group>"; };
+		D63DB0151AD64B0200381F96 /* SourceSansPro-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-Semibold.otf"; sourceTree = "<group>"; };
 		D645D6291ABC0D4300890532 /* MasterCard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MasterCard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D645D62D1ABC0D4300890532 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D645D62E1ABC0D4300890532 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -155,6 +180,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C6FFBF9461B0535F61B97D9 /* libPods-MasterCard.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -168,6 +194,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6408D990863FBA93636D2D15 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A4EE3E7054AAD4EBA0D18E69 /* Pods-MasterCard.debug.xcconfig */,
+				A69ED836F185622D379CAD31 /* Pods-MasterCard.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		D62460701ABDBC4200CECE2D /* new loan */ = {
 			isa = PBXGroup;
 			children = (
@@ -190,6 +225,51 @@
 			name = "login page";
 			sourceTree = "<group>";
 		};
+		D63DAFFC1AD63E6800381F96 /* Real app */ = {
+			isa = PBXGroup;
+			children = (
+				D63DB00B1AD6496700381F96 /* Assets */,
+				D63DAFFD1AD645D000381F96 /* FundityTableViewController.h */,
+				D63DAFFE1AD645D000381F96 /* FundityTableViewController.m */,
+				D63DB0121AD64A2300381F96 /* Loan request */,
+				D6485C011ABD662C001FC4C0 /* AppConfig.h */,
+				D6485C021ABD662C001FC4C0 /* AppConfig.m */,
+			);
+			name = "Real app";
+			sourceTree = "<group>";
+		};
+		D63DB00B1AD6496700381F96 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				D63DB0131AD64AEE00381F96 /* Font */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+		D63DB0121AD64A2300381F96 /* Loan request */ = {
+			isa = PBXGroup;
+			children = (
+				D63DB0001AD6470E00381F96 /* LoanRequestViewController.h */,
+				D63DB0011AD6470E00381F96 /* LoanRequestViewController.m */,
+				D63DB0061AD6483900381F96 /* LoanRequestTableViewCell.h */,
+				D63DB0071AD6483900381F96 /* LoanRequestTableViewCell.m */,
+				D63DB0081AD6483900381F96 /* LoanRequestTableViewCell.xib */,
+			);
+			name = "Loan request";
+			sourceTree = "<group>";
+		};
+		D63DB0131AD64AEE00381F96 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				D63DB0141AD64B0200381F96 /* SourceSansPro-Bold.otf */,
+				D63DB0151AD64B0200381F96 /* SourceSansPro-Semibold.otf */,
+				D63DB00C1AD6497100381F96 /* source-sans-pro.extralight.ttf */,
+				D63DB00D1AD6497100381F96 /* SourceSansPro-Light.otf */,
+				D63DB00E1AD6497100381F96 /* SourceSansPro-Regular.otf */,
+			);
+			name = Font;
+			sourceTree = "<group>";
+		};
 		D645D6201ABC0D4300890532 = {
 			isa = PBXGroup;
 			children = (
@@ -197,6 +277,8 @@
 				D645D6481ABC0D4300890532 /* MasterCardTests */,
 				D645D62A1ABC0D4300890532 /* Products */,
 				FC954E111ABD883C001321E5 /* AFNetworking */,
+				6408D990863FBA93636D2D15 /* Pods */,
+				FECF197D7DE1AAEECE7FE6BF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -212,6 +294,7 @@
 		D645D62B1ABC0D4300890532 /* MasterCard */ = {
 			isa = PBXGroup;
 			children = (
+				D63DAFFC1AD63E6800381F96 /* Real app */,
 				FC954E3D1ABD967F001321E5 /* Masterpass */,
 				D645D6391ABC0D4300890532 /* Main.storyboard */,
 				FCCFE6D31ABD4AD500810E38 /* LoginViewController.h */,
@@ -221,8 +304,6 @@
 				FCCFE6D81ABD4B2E00810E38 /* Borrower */,
 				D645D6301ABC0D4300890532 /* AppDelegate.h */,
 				D645D6311ABC0D4300890532 /* AppDelegate.m */,
-				D6485C011ABD662C001FC4C0 /* AppConfig.h */,
-				D6485C021ABD662C001FC4C0 /* AppConfig.m */,
 				FC822D921ABD3AFC00A7293D /* DataManager.h */,
 				FC822D931ABD3AFC00A7293D /* DataManager.m */,
 				D645D63C1ABC0D4300890532 /* Images.xcassets */,
@@ -348,6 +429,14 @@
 			name = Borrower;
 			sourceTree = "<group>";
 		};
+		FECF197D7DE1AAEECE7FE6BF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				330E4D0D9E49CFBE07FDAD20 /* libPods-MasterCard.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -355,9 +444,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D645D64F1ABC0D4300890532 /* Build configuration list for PBXNativeTarget "MasterCard" */;
 			buildPhases = (
+				8E314474A69ED560CE3CCF91 /* Check Pods Manifest.lock */,
 				D645D6251ABC0D4300890532 /* Sources */,
 				D645D6261ABC0D4300890532 /* Frameworks */,
 				D645D6271ABC0D4300890532 /* Resources */,
+				6A3AD82A79B80D4E3FC9B18B /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -428,7 +519,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D63DB0161AD64B1600381F96 /* SourceSansPro-Bold.otf in Resources */,
+				D63DB0171AD64B1600381F96 /* SourceSansPro-Semibold.otf in Resources */,
+				D63DB00F1AD6499000381F96 /* source-sans-pro.extralight.ttf in Resources */,
+				D63DB0101AD6499000381F96 /* SourceSansPro-Light.otf in Resources */,
+				D63DB0111AD6499000381F96 /* SourceSansPro-Regular.otf in Resources */,
 				D63B2F151ABE68C80088B99B /* My_Profile@2x.png in Resources */,
+				D63DB00A1AD6483900381F96 /* LoanRequestTableViewCell.xib in Resources */,
 				D62460811ABDBC6800CECE2D /* slider.png in Resources */,
 				D63B2F131ABE5E490088B99B /* Loan_Detail@2x.png in Resources */,
 				D645D63B1ABC0D4300890532 /* Main.storyboard in Resources */,
@@ -464,6 +561,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6A3AD82A79B80D4E3FC9B18B /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MasterCard/Pods-MasterCard-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8E314474A69ED560CE3CCF91 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D645D6251ABC0D4300890532 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -488,10 +618,13 @@
 				FC954E3B1ABD9671001321E5 /* MPManager.m in Sources */,
 				FC954E391ABD9671001321E5 /* MPCreditCard.m in Sources */,
 				FC954E2C1ABD883C001321E5 /* AFURLResponseSerialization.m in Sources */,
+				D63DB0091AD6483900381F96 /* LoanRequestTableViewCell.m in Sources */,
 				FC954E3A1ABD9671001321E5 /* MPLightboxViewController.m in Sources */,
 				D6485BF01ABD55CC001FC4C0 /* LoanDetailViewController.m in Sources */,
 				D6485C0B1ABD714C001FC4C0 /* BorrowerNewLoanViewController.m in Sources */,
+				D63DB0021AD6470E00381F96 /* LoanRequestViewController.m in Sources */,
 				FC954E271ABD883C001321E5 /* AFHTTPSessionManager.m in Sources */,
+				D63DAFFF1AD645D000381F96 /* FundityTableViewController.m in Sources */,
 				D645D6321ABC0D4300890532 /* AppDelegate.m in Sources */,
 				D645D62F1ABC0D4300890532 /* main.m in Sources */,
 			);
@@ -615,6 +748,7 @@
 		};
 		D645D6501ABC0D4300890532 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4EE3E7054AAD4EBA0D18E69 /* Pods-MasterCard.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MasterCard/Info.plist;
@@ -625,6 +759,7 @@
 		};
 		D645D6511ABC0D4300890532 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A69ED836F185622D379CAD31 /* Pods-MasterCard.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MasterCard/Info.plist;
