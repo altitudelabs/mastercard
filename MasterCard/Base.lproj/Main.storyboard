@@ -152,7 +152,7 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ma9-MN-NJQ">
                                 <rect key="frame" x="0.0" y="18" width="320" height="568"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Loan_Request.png" translatesAutoresizingMaskIntoConstraints="NO" id="dVV-Zy-HeR">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Loan_Request2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="dVV-Zy-HeR">
                                         <rect key="frame" x="0.0" y="-25" width="320" height="568"/>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OIo-bJ-yjE">
@@ -206,20 +206,8 @@
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Loan_Detail2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="J9J-Ln-gV3">
                                         <rect key="frame" x="0.0" y="-8" width="320" height="656"/>
                                     </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DAg-fw-tZI" userLabel="lend now">
-                                        <rect key="frame" x="20" y="582" width="140" height="40"/>
-                                        <color key="backgroundColor" red="0.72941176470588232" green="0.10588235294117647" blue="0.0078431372549019607" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="15"/>
-                                        <state key="normal">
-                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="btnLendNowAction:" destination="eFG-xn-RT7" eventType="touchUpInside" id="eno-IR-QcV"/>
-                                        </connections>
-                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JaD-30-phc" userLabel="lend with send">
-                                        <rect key="frame" x="170" y="582" width="140" height="40"/>
+                                        <rect key="frame" x="0.0" y="582" width="310" height="40"/>
                                         <color key="backgroundColor" red="0.72941176470000002" green="0.1058823529" blue="0.0078431372550000003" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -246,7 +234,6 @@
                     </navigationItem>
                     <connections>
                         <outlet property="amtToLendText" destination="fHu-j8-088" id="cgo-gr-L6Q"/>
-                        <outlet property="btnLendNow" destination="DAg-fw-tZI" id="l8X-y6-Gtg"/>
                         <outlet property="btnMoneySend" destination="JaD-30-phc" id="30c-oV-CnB"/>
                         <outlet property="scrollView" destination="Hpp-Ly-ORR" id="czs-Ag-WAz"/>
                     </connections>
@@ -548,7 +535,7 @@
         <image name="Borrower's_Profile2.jpg" width="1502" height="3152"/>
         <image name="Congratulations2.jpg" width="1502" height="2530"/>
         <image name="Loan_Detail2.jpg" width="1502" height="3018"/>
-        <image name="Loan_Request.png" width="751" height="1303"/>
+        <image name="Loan_Request2.jpg" width="1502" height="2605"/>
         <image name="My_Profile.png" width="751" height="1393"/>
         <image name="Screen.png" width="1502" height="2277"/>
         <image name="active-slider-icon.png" width="95" height="95"/>
