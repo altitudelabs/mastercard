@@ -8,16 +8,22 @@
 
 #import "LoanRequestTableViewCell.h"
 
+@interface LoanRequestTableViewCell ()
+
+@end
+
 @implementation LoanRequestTableViewCell
 
 - (void)awakeFromNib {
-    // Initialization code
+    self.cellNumberLabel.text = [NSString stringWithFormat:@"%ld", (long)self.cellNumber];
+    
+}
+
+- (void)render {
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
     [super setSelected:selected animated:animated];
-
-    // Configure the view for the selected state
 }
 
 @end
