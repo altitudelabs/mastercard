@@ -7,6 +7,7 @@
 //
 
 #import "LoanRequestTableViewCell.h"
+#import "DataModel.h"
 
 @interface LoanRequestTableViewCell ()
 
@@ -14,16 +15,35 @@
 
 @implementation LoanRequestTableViewCell
 
-- (void)awakeFromNib {
-    self.cellNumberLabel.text = [NSString stringWithFormat:@"%ld", (long)self.cellNumber];
-    
-}
+#pragma mark - Public
 
-- (void)render {
+- (void)awakeFromNib {
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
     [super setSelected:selected animated:animated];
+}
+
++ (NSString *)assignIdentifier {
+    return @"LoanRequestTableViewCell";
+}
+
+- (void)updateLayout {
+    self.cellNumberLabel.text = [NSString stringWithFormat:@"%i", (int)_cellNumber];
+    
+    NSString *loanerName = [self.data objectForKey:KeyCompanyName];
+    NSString *loanerDescription = [self.data objectForKey:KeyCompanyDesciption];
+    NSInteger loanAmt = [[self.data objectForKey:KeyLoanAmt] integerValue];
+    NSInteger loanReturnRate = [[self.data objectForKey:KeyLoanReturnRate] integerValue];
+    NSString *loanRisk = [self.data objectForKey:KeyLoanerRisk];
+    NSString *loanTerm = [self.data objectForKey:KeyLoanTerm];
+    
+    self.companyNameLabel.text = loanerName;
+    self.CompanyDescriptionLabel.text = loanerDescription;
+    self.amountLabel.text = [NSString stringWithFormat:@"$%ld", (long)loanAmt];
+    self.rateLabel.text = [NSString stringWithFormat:@"%ld%%", (long)loanReturnRate];
+    self.riskLabel.text = loanRisk;
+    self.termLabel.text = loanTerm;
 }
 
 @end

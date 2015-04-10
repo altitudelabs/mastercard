@@ -20,9 +20,11 @@
     // Set footer to blank white
     self.tableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
     
+    self.tableView.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
+    
     // Background color
     self.tableView.backgroundColor = [UIColor whiteColor];
-//    self.tableView.separatorColor = UIColorTableSeparatorColor;
+//    self.tableView.separatorColor = [UIColor grayColor];
     
     // Dismiss keyboard when touch empty space
     UITapGestureRecognizer *gestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(onTableViewTapped)];
@@ -35,7 +37,7 @@
     // Customize selection style of all static cells
     NSArray *cells = [self.tableView visibleCells];
     for (UITableViewCell *cell in cells) {
-        cell.selectionStyle = UITableViewCellSelectionStyleGray;
+        cell.selectionStyle = UITableViewCellSelectionStyleNone;
         cell.contentView.bounds = CGRectInset(cell.contentView.frame, 0, 0);
     }
 }

@@ -33,6 +33,9 @@
 		D63DB0111AD6499000381F96 /* SourceSansPro-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = D63DB00E1AD6497100381F96 /* SourceSansPro-Regular.otf */; };
 		D63DB0161AD64B1600381F96 /* SourceSansPro-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = D63DB0141AD64B0200381F96 /* SourceSansPro-Bold.otf */; };
 		D63DB0171AD64B1600381F96 /* SourceSansPro-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = D63DB0151AD64B0200381F96 /* SourceSansPro-Semibold.otf */; };
+		D63DE1811AD7792300A16C40 /* DataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D63DE1801AD7792300A16C40 /* DataModel.m */; };
+		D63DE18A1AD79DFA00A16C40 /* LoanerDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D63DE1891AD79DFA00A16C40 /* LoanerDetailViewController.m */; };
+		D63DE18D1AD7BDFA00A16C40 /* Pestona Family Winery.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = D63DE18C1AD7BDFA00A16C40 /* Pestona Family Winery.jpeg */; };
 		D645D62F1ABC0D4300890532 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D645D62E1ABC0D4300890532 /* main.m */; };
 		D645D6321ABC0D4300890532 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D645D6311ABC0D4300890532 /* AppDelegate.m */; };
 		D645D6351ABC0D4300890532 /* MasterCard.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D645D6331ABC0D4300890532 /* MasterCard.xcdatamodeld */; };
@@ -111,6 +114,11 @@
 		D63DB00E1AD6497100381F96 /* SourceSansPro-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-Regular.otf"; sourceTree = "<group>"; };
 		D63DB0141AD64B0200381F96 /* SourceSansPro-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-Bold.otf"; sourceTree = "<group>"; };
 		D63DB0151AD64B0200381F96 /* SourceSansPro-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-Semibold.otf"; sourceTree = "<group>"; };
+		D63DE17F1AD7792300A16C40 /* DataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataModel.h; sourceTree = "<group>"; };
+		D63DE1801AD7792300A16C40 /* DataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataModel.m; sourceTree = "<group>"; };
+		D63DE1881AD79DFA00A16C40 /* LoanerDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoanerDetailViewController.h; sourceTree = "<group>"; };
+		D63DE1891AD79DFA00A16C40 /* LoanerDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoanerDetailViewController.m; sourceTree = "<group>"; };
+		D63DE18C1AD7BDFA00A16C40 /* Pestona Family Winery.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Pestona Family Winery.jpeg"; sourceTree = "<group>"; };
 		D645D6291ABC0D4300890532 /* MasterCard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MasterCard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D645D62D1ABC0D4300890532 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D645D62E1ABC0D4300890532 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -228,12 +236,10 @@
 		D63DAFFC1AD63E6800381F96 /* Real app */ = {
 			isa = PBXGroup;
 			children = (
+				D63DE1821AD782FE00A16C40 /* Config */,
+				D63DE17E1AD778DC00A16C40 /* Model */,
 				D63DB00B1AD6496700381F96 /* Assets */,
-				D63DAFFD1AD645D000381F96 /* FundityTableViewController.h */,
-				D63DAFFE1AD645D000381F96 /* FundityTableViewController.m */,
-				D63DB0121AD64A2300381F96 /* Loan request */,
-				D6485C011ABD662C001FC4C0 /* AppConfig.h */,
-				D6485C021ABD662C001FC4C0 /* AppConfig.m */,
+				D63DE1831AD79DAA00A16C40 /* Controllers */,
 			);
 			name = "Real app";
 			sourceTree = "<group>";
@@ -241,7 +247,8 @@
 		D63DB00B1AD6496700381F96 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				D63DB0131AD64AEE00381F96 /* Font */,
+				D63DE18B1AD7BDE200A16C40 /* Images */,
+				D63DB0131AD64AEE00381F96 /* Fonts */,
 			);
 			name = Assets;
 			sourceTree = "<group>";
@@ -258,7 +265,7 @@
 			name = "Loan request";
 			sourceTree = "<group>";
 		};
-		D63DB0131AD64AEE00381F96 /* Font */ = {
+		D63DB0131AD64AEE00381F96 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
 				D63DB0141AD64B0200381F96 /* SourceSansPro-Bold.otf */,
@@ -267,7 +274,53 @@
 				D63DB00D1AD6497100381F96 /* SourceSansPro-Light.otf */,
 				D63DB00E1AD6497100381F96 /* SourceSansPro-Regular.otf */,
 			);
-			name = Font;
+			name = Fonts;
+			sourceTree = "<group>";
+		};
+		D63DE17E1AD778DC00A16C40 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D63DE17F1AD7792300A16C40 /* DataModel.h */,
+				D63DE1801AD7792300A16C40 /* DataModel.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		D63DE1821AD782FE00A16C40 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				D63DAFFD1AD645D000381F96 /* FundityTableViewController.h */,
+				D63DAFFE1AD645D000381F96 /* FundityTableViewController.m */,
+				D6485C011ABD662C001FC4C0 /* AppConfig.h */,
+				D6485C021ABD662C001FC4C0 /* AppConfig.m */,
+			);
+			name = Config;
+			sourceTree = "<group>";
+		};
+		D63DE1831AD79DAA00A16C40 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D63DE1841AD79DB800A16C40 /* Loan details */,
+				D63DB0121AD64A2300381F96 /* Loan request */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		D63DE1841AD79DB800A16C40 /* Loan details */ = {
+			isa = PBXGroup;
+			children = (
+				D63DE1881AD79DFA00A16C40 /* LoanerDetailViewController.h */,
+				D63DE1891AD79DFA00A16C40 /* LoanerDetailViewController.m */,
+			);
+			name = "Loan details";
+			sourceTree = "<group>";
+		};
+		D63DE18B1AD7BDE200A16C40 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				D63DE18C1AD7BDFA00A16C40 /* Pestona Family Winery.jpeg */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 		D645D6201ABC0D4300890532 = {
@@ -526,6 +579,7 @@
 				D63DB0111AD6499000381F96 /* SourceSansPro-Regular.otf in Resources */,
 				D63B2F151ABE68C80088B99B /* My_Profile@2x.png in Resources */,
 				D63DB00A1AD6483900381F96 /* LoanRequestTableViewCell.xib in Resources */,
+				D63DE18D1AD7BDFA00A16C40 /* Pestona Family Winery.jpeg in Resources */,
 				D62460811ABDBC6800CECE2D /* slider.png in Resources */,
 				D63B2F131ABE5E490088B99B /* Loan_Detail@2x.png in Resources */,
 				D645D63B1ABC0D4300890532 /* Main.storyboard in Resources */,
@@ -624,6 +678,8 @@
 				D6485C0B1ABD714C001FC4C0 /* BorrowerNewLoanViewController.m in Sources */,
 				D63DB0021AD6470E00381F96 /* LoanRequestViewController.m in Sources */,
 				FC954E271ABD883C001321E5 /* AFHTTPSessionManager.m in Sources */,
+				D63DE1811AD7792300A16C40 /* DataModel.m in Sources */,
+				D63DE18A1AD79DFA00A16C40 /* LoanerDetailViewController.m in Sources */,
 				D63DAFFF1AD645D000381F96 /* FundityTableViewController.m in Sources */,
 				D645D6321ABC0D4300890532 /* AppDelegate.m in Sources */,
 				D645D62F1ABC0D4300890532 /* main.m in Sources */,

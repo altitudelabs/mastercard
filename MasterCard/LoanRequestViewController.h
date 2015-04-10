@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FundityTableViewController.h"
 
-@interface LoanRequestViewController : UITableViewController
+@interface LoanRequestViewController : FundityTableViewController
 
 @property (strong, nonatomic) NSArray *data;
 

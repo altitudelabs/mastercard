@@ -19,7 +19,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self renderNavigationBar];
-    
     self.scrollView.contentSize = CGSizeMake(self.view.frame.size.width, 590);
 }
 
@@ -56,9 +55,9 @@
 }
 
 - (void)doneButtonTouchUpInside:(id)sender {
-    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-    LeaderProfileViewController *vc = (LeaderProfileViewController *)[sb instantiateViewControllerWithIdentifier:@"LeaderProfileViewController"];
-    [self.navigationController pushViewController:vc animated:YES];
+//    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+//    LeaderProfileViewController *vc = (LeaderProfileViewController *)[sb instantiateViewControllerWithIdentifier:@"LeaderProfileViewController"];
+//    [self.navigationController pushViewController:vc animated:YES];
 }
 
 /*

@@ -23,4 +23,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *riskLabel;
 @property (weak, nonatomic) IBOutlet UILabel *termLabel;
 
++ (NSString *)assignIdentifier;
+- (void)updateLayout;
+
 @end
