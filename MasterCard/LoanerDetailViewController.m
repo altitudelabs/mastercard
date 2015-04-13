@@ -68,71 +68,78 @@
     CGFloat segment2Length = 0.375 * CGRectGetWidth(self.detailContainerView.frame);
     CGFloat segment3Length = 0.375 * CGRectGetWidth(self.detailContainerView.frame);
     
-    self.lenderNumValue.frame = CGRectMake(0,
-                                           0,
-                                           segment1Length,
-                                           CGRectGetHeight(self.lenderNumValue.frame));
-    self.lenderNum.frame = CGRectMake(CGRectGetMinX(self.lenderNumValue.frame),
-                                      CGRectGetMaxY(self.lenderNumValue.frame),
-                                      segment1Length,
-                                      CGRectGetHeight(self.lenderNum.frame));
-    self.lendedValue.frame = CGRectMake(segment1Length,
-                                        0,
-                                        segment2Length,
-                                        CGRectGetHeight(self.lendedValue.frame));
-    self.lendRequireValue.frame = CGRectMake(CGRectGetMinX(self.lendedValue.frame),
-                                      CGRectGetMaxY(self.lendedValue.frame),
-                                      segment2Length,
-                                      CGRectGetHeight(self.lendRequireValue.frame));
-    self.location.frame = CGRectMake(segment1Length + segment2Length,
-                                        0,
-                                        segment3Length,
-                                        CGRectGetHeight(self.location.frame));
-    self.countryLabel.frame = CGRectMake(CGRectGetMinX(self.location.frame),
-                                             CGRectGetMaxY(self.location.frame),
-                                             segment3Length,
-                                             CGRectGetHeight(self.countryLabel.frame));
+//    self.lenderNumValue.frame = CGRectMake(0,
+//                                           0,
+//                                           segment1Length,
+//                                           CGRectGetHeight(self.lenderNumValue.frame));
+//    self.lenderNum.frame = CGRectMake(CGRectGetMinX(self.lenderNumValue.frame),
+//                                      CGRectGetMaxY(self.lenderNumValue.frame),
+//                                      segment1Length,
+//                                      CGRectGetHeight(self.lenderNum.frame));
+//    
+//    self.lendedValue.frame = CGRectMake(segment1Length,
+//                                        0,
+//                                        segment2Length,
+//                                        CGRectGetHeight(self.lendedValue.frame));
+//    self.lendRequireValue.frame = CGRectMake(CGRectGetMinX(self.lendedValue.frame),
+//                                      CGRectGetMaxY(self.lendedValue.frame),
+//                                      segment2Length,
+//                                      CGRectGetHeight(self.lendRequireValue.frame));
+//    
+//    self.location.frame = CGRectMake(segment1Length + segment2Length,
+//                                        0,
+//                                        segment3Length,
+//                                        CGRectGetHeight(self.location.frame));
+//    self.countryLabel.frame = CGRectMake(CGRectGetMinX(self.location.frame),
+//                                             CGRectGetMaxY(self.location.frame),
+//                                             segment3Length,
+//                                             CGRectGetHeight(self.countryLabel.frame));
     
     
-    [self.lenderNumValue mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.mas_equalTo(@0);
-        make.top.mas_equalTo(@0);
-//        make.width.equalTo([NSNumber numberWithInteger:(NSInteger)segment1Length]);
-        make.height.equalTo(self.lenderNumValue.mas_height);
-    }];
-    [self.lenderNum mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.mas_equalTo(@0);
-        make.top.mas_equalTo(self.lenderNumValue.mas_bottom).with.offset(0);
-//        make.width.equalTo([NSNumber numberWithInteger:(NSInteger)segment1Length]);
-        make.height.equalTo(self.lenderNum.mas_height);
-    }];
-    [self.lendedValue mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.mas_equalTo(self.lenderNum.mas_right).with.offset(0);
-        make.top.mas_equalTo(@0);
-//        make.width.equalTo([NSNumber numberWithInteger:(NSInteger)segment2Length]);
-        make.height.equalTo(self.lendedValue.mas_height);
-    }];
-    [self.lendRequireValue mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.mas_equalTo(self.lendedValue.mas_left).with.offset(0);
-        make.top.mas_equalTo(self.lendedValue.mas_bottom).with.offset(0);
-//        make.width.equalTo([NSNumber numberWithInteger:(NSInteger)segment2Length]);
-        make.height.equalTo(self.lendRequireValue.mas_height);
-    }];
-    [self.location mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.mas_equalTo(self.lendedValue.mas_right).with.offset(0);
-        make.top.mas_equalTo(@0);
-//        make.width.equalTo([NSNumber numberWithInteger:(NSInteger)segment3Length]);
-        make.height.equalTo(self.location.mas_height);
-    }];
-    [self.countryLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.mas_equalTo(self.location.mas_left).with.offset(0);
-        make.top.mas_equalTo(self.location.mas_bottom).with.offset(0);
-//        make.width.equalTo([NSNumber numberWithInteger:(NSInteger)segment3Length]);
-        make.height.equalTo(self.countryLabel.mas_height);
-    }];
+//    [self.lenderNumValue mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.left.mas_equalTo(@0);
+//        make.top.mas_equalTo(@0);
+////        make.width.equalTo([NSNumber numberWithInteger:(NSInteger)segment1Length]);
+//        make.height.equalTo(self.lenderNumValue.mas_height);
+//    }];
+//    [self.lenderNum mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.left.mas_equalTo(@0);
+//        make.top.mas_equalTo(self.lenderNumValue.mas_bottom).with.offset(0);
+////        make.width.equalTo([NSNumber numberWithInteger:(NSInteger)segment1Length]);
+//        make.height.equalTo(self.lenderNum.mas_height);
+//    }];
+//    [self.lendedValue mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.left.mas_equalTo(self.lenderNum.mas_right).with.offset(0);
+//        make.top.mas_equalTo(@0);
+////        make.width.equalTo([NSNumber numberWithInteger:(NSInteger)segment2Length]);
+//        make.height.equalTo(self.lendedValue.mas_height);
+//    }];
+//    [self.lendRequireValue mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.left.mas_equalTo(self.lendedValue.mas_left).with.offset(0);
+//        make.top.mas_equalTo(self.lendedValue.mas_bottom).with.offset(0);
+////        make.width.equalTo([NSNumber numberWithInteger:(NSInteger)segment2Length]);
+//        make.height.equalTo(self.lendRequireValue.mas_height);
+//    }];
+//    [self.location mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.left.mas_equalTo(self.lendedValue.mas_right).with.offset(0);
+//        make.top.mas_equalTo(@0);
+////        make.width.equalTo([NSNumber numberWithInteger:(NSInteger)segment3Length]);
+//        make.height.equalTo(self.location.mas_height);
+//    }];
+//    [self.countryLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.left.mas_equalTo(self.location.mas_left).with.offset(0);
+//        make.top.mas_equalTo(self.location.mas_bottom).with.offset(0);
+////        make.width.equalTo([NSNumber numberWithInteger:(NSInteger)segment3Length]);
+//        make.height.equalTo(self.countryLabel.mas_height);
+//    }];
     
-    self.fundityScore.text = [NSString stringWithFormat:@"%ld", fundityScore];
+    self.fundityScore.text = [NSString stringWithFormat:@"%ld.0", fundityScore];
+    self.fundityScore.layer.borderWidth = 1;
+    self.fundityScore.layer.borderColor = [[UIColor colorWithRed:255/255.0 green:154/255.0 blue:42/255.0 alpha:1] CGColor];
+    
     self.fundityMatchScore.text = [NSString stringWithFormat:@"%ld", fundityMatchScore];
+    self.fundityMatchScore.layer.borderWidth = 1;
+    self.fundityMatchScore.layer.borderColor = [[UIColor colorWithRed:65/255.0 green:162/255.0 blue:17/255.0 alpha:1] CGColor];
 }
 
 - (void)renderProgressBarWithPercentage:(CGFloat)percent {

@@ -1,0 +1,31 @@
+//
+//  RegisterPageStepAccountViewController.h
+//  MasterCard
+//
+//  Created by Altitude Labs on 13/4/15.
+//  Copyright (c) 2015 MasterCard. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+@interface RegisterPageStepAccountViewController : UIViewController
+
+@property (weak, nonatomic) IBOutlet UIButton *btnOr;
+
+@property (weak, nonatomic) IBOutlet UIButton *btnBorrower;
+@property (weak, nonatomic) IBOutlet UIImageView *imageBorrower;
+@property (weak, nonatomic) IBOutlet UILabel *labelBorrower;
+
+@property (weak, nonatomic) IBOutlet UIButton *btnLender;
+@property (weak, nonatomic) IBOutlet UIImageView *imageLender;
+@property (weak, nonatomic) IBOutlet UILabel *labelLender;
+
+@property (weak, nonatomic) IBOutlet UITextField *textboxEmail;
+@property (weak, nonatomic) IBOutlet UITextField *textboxPassword;
+@property (weak, nonatomic) IBOutlet UIButton *btnNext;
+
+- (IBAction)btnBorrowerTouchUpInside:(id)sender;
+- (IBAction)btnLenderTouchUpInside:(id)sender;
+- (IBAction)btnNextTouchUpInside:(id)sender;
+
+@end

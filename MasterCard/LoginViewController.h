@@ -10,14 +10,10 @@
 
 @interface LoginViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UIButton *buttonCreateAcct;
+@property (weak, nonatomic) IBOutlet UIButton *buttonSignIn;
+
 - (IBAction)signupButtonPressed:(id)sender;
-@property (weak, nonatomic) IBOutlet UIButton *btnLender;
-@property (weak, nonatomic) IBOutlet UIButton *btnBorrower;
-
-@property (weak, nonatomic) IBOutlet UITextField *btnUsername;
-@property (weak, nonatomic) IBOutlet UITextField *btnPassword;
-
-- (IBAction)btnLenderTouchUpInside:(id)sender;
-- (IBAction)btnBorrowerTouchUpInside:(id)sender;
+- (IBAction)continueWithoutAccountTouchUpInside:(id)sender;
 
 @end
