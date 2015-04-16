@@ -24,9 +24,13 @@
 
 @implementation LoginViewController
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [self renderNavigationBar];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self renderNavigationBar];
     [self render];
 }
 

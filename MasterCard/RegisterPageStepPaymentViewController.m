@@ -145,8 +145,8 @@ typedef NS_ENUM(NSInteger, UIPickerOption) {
     
     self.doneBtn = [UIButton buttonWithType:UIButtonTypeRoundedRect];
     [self.doneBtn setTitle:@"Done" forState:UIControlStateNormal];
-    self.doneBtn.backgroundColor = [UIColor whiteColor];
-    [self.doneBtn setTitleColor:[UIColor colorWithWhite:0.4 alpha:1] forState:UIControlStateNormal];
+    self.doneBtn.backgroundColor = [UIColor colorWithWhite:0.6 alpha:1];
+    [self.doneBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     self.doneBtn.titleLabel.font = [UIFont fontWithName:UIFontRegular size:20];
     self.doneBtn.frame = CGRectMake(0, CGRectGetHeight(self.view.frame) - CGRectGetHeight(pickerView.frame), CGRectGetWidth(pickerView.frame), 40);
     [self.doneBtn addTarget:self action:@selector(pickerDone) forControlEvents:UIControlEventTouchUpInside];

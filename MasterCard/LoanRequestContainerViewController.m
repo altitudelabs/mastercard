@@ -277,16 +277,25 @@
 - (void)clearButtonClicked {
     [self.tableViewController filterByNone];
     [self openOrCloseFilterPanel];
+    
+    self.filterByAmountButton.backgroundColor = [UIColor clearColor];
+    self.filterByRateButton.backgroundColor = [UIColor clearColor];
 }
 
 - (void)sortByAmountButtonClicked {
     [self.tableViewController filterByAmount];
     [self openOrCloseFilterPanel];
+    
+    self.filterByAmountButton.backgroundColor = [UIColor whiteColor];
+    self.filterByRateButton.backgroundColor = [UIColor clearColor];
 }
 
 - (void)sortByRateButtonClicked {
     [self.tableViewController filterByRate];
     [self openOrCloseFilterPanel];
+    
+    self.filterByAmountButton.backgroundColor = [UIColor clearColor];
+    self.filterByRateButton.backgroundColor = [UIColor whiteColor];
 }
 
 @end
