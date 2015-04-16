@@ -12,6 +12,9 @@
 
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 @property (weak, nonatomic) IBOutlet UIButton *btnEditProfilePicture;
+@property (weak, nonatomic) IBOutlet UIImageView *profilePhotoImageView;
+@property (weak, nonatomic) IBOutlet UIImageView *editProfilePictureEmptyLogo;
+@property (weak, nonatomic) IBOutlet UILabel *editProfilePictureLabel;
 @property (weak, nonatomic) IBOutlet UITextField *textFieldFullName;
 @property (weak, nonatomic) IBOutlet UITextField *textFieldCompanyName;
 @property (weak, nonatomic) IBOutlet UIButton *btnUploadLicense;
@@ -24,8 +27,7 @@
 
 @property (weak, nonatomic) IBOutlet UIButton *uploadedImageView;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *uploadedImageViewHeight;
-
-- (IBAction)uploadLicenseTouchUpInside:(id)sender;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *uploadedBtnHeight;
 
 
 @end

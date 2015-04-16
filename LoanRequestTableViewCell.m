@@ -41,6 +41,7 @@
     self.companyNameLabel.text = loanerName;
     self.CompanyDescriptionLabel.text = loanerDescription;
     self.amountLabel.text = [NSString stringWithFormat:@"$%ld", (long)loanAmt];
+    self.amountLabel.adjustsFontSizeToFitWidth = YES;
     self.rateLabel.text = [NSString stringWithFormat:@"%ld%%", (long)loanReturnRate];
     self.riskLabel.text = loanRisk;
     self.termLabel.text = loanTerm;

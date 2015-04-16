@@ -25,4 +25,9 @@ extern NSString* const UIFontRegularRoman;
 extern NSString* const UIFontRegularBook;
 extern NSString* const UIFontRegularMedium;
 
+// Font
+#define UIFontExtraLight @"SourceSansPro-ExtraLight"
+#define UIFontRegular @"SourceSansPro-Regular"
+#define UIFontLight @"SourceSansPro-Light"
+
 @end

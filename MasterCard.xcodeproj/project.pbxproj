@@ -86,6 +86,13 @@
 		D63B2F151ABE68C80088B99B /* My_Profile@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D63B2F141ABE68C80088B99B /* My_Profile@2x.png */; };
 		D63B2F171ABE694F0088B99B /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = D63B2F161ABE694F0088B99B /* home.png */; };
 		D63B2F1B1ABE6D800088B99B /* app-icon3.png in Resources */ = {isa = PBXBuildFile; fileRef = D63B2F1A1ABE6D800088B99B /* app-icon3.png */; };
+		D63D838F1ADCAFF0004A9A17 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D63D838E1ADCAFF0004A9A17 /* CoreImage.framework */; };
+		D63D83921ADCB09C004A9A17 /* UIImage+Resizing.m in Sources */ = {isa = PBXBuildFile; fileRef = D63D83911ADCB09C004A9A17 /* UIImage+Resizing.m */; };
+		D63D83951ADCB5BF004A9A17 /* DataHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = D63D83941ADCB5BF004A9A17 /* DataHandler.m */; };
+		D63D83981ADCFC4F004A9A17 /* FundityFastPay@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = D63D83961ADCFC4F004A9A17 /* FundityFastPay@1x.png */; };
+		D63D83991ADCFC4F004A9A17 /* FundityFastPay@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D63D83971ADCFC4F004A9A17 /* FundityFastPay@2x.png */; };
+		D63D839B1ADD1758004A9A17 /* SourceSansPro-Semibold.otf in Sources */ = {isa = PBXBuildFile; fileRef = D63DB0151AD64B0200381F96 /* SourceSansPro-Semibold.otf */; };
+		D63D839C1ADD17FF004A9A17 /* SourceSansPro-SemiboldIt.otf in Resources */ = {isa = PBXBuildFile; fileRef = D63D839A1ADD1729004A9A17 /* SourceSansPro-SemiboldIt.otf */; };
 		D63DAFFF1AD645D000381F96 /* FundityTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D63DAFFE1AD645D000381F96 /* FundityTableViewController.m */; };
 		D63DB0021AD6470E00381F96 /* LoanRequestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D63DB0011AD6470E00381F96 /* LoanRequestViewController.m */; };
 		D63DB0091AD6483900381F96 /* LoanRequestTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D63DB0071AD6483900381F96 /* LoanRequestTableViewCell.m */; };
@@ -98,6 +105,26 @@
 		D63DE1811AD7792300A16C40 /* DataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D63DE1801AD7792300A16C40 /* DataModel.m */; };
 		D63DE18A1AD79DFA00A16C40 /* LoanerDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D63DE1891AD79DFA00A16C40 /* LoanerDetailViewController.m */; };
 		D63DE18D1AD7BDFA00A16C40 /* Pestona Family Winery.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = D63DE18C1AD7BDFA00A16C40 /* Pestona Family Winery.jpeg */; };
+		D63EAF201ADF4E08001B3A71 /* LoanRequestContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D63EAF1F1ADF4E08001B3A71 /* LoanRequestContainerViewController.m */; };
+		D64066681ADE177C00CCE997 /* CompanyProfile_GrayCircle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D64066661ADE177C00CCE997 /* CompanyProfile_GrayCircle@2x.png */; };
+		D64066691ADE177C00CCE997 /* CompanyProfile_GrayCircle@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D64066671ADE177C00CCE997 /* CompanyProfile_GrayCircle@3x.png */; };
+		D640666D1ADE1E8F00CCE997 /* BorrowerDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D640666C1ADE1E8F00CCE997 /* BorrowerDetailsViewController.m */; };
+		D64066701ADE1EA500CCE997 /* BorrowerApplyNewLoanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D640666F1ADE1EA500CCE997 /* BorrowerApplyNewLoanViewController.m */; };
+		D64066741ADE333000CCE997 /* NewLoan_Upload@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = D64066711ADE333000CCE997 /* NewLoan_Upload@1x.png */; };
+		D64066751ADE333000CCE997 /* NewLoan_Upload@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D64066721ADE333000CCE997 /* NewLoan_Upload@2x.png */; };
+		D64066761ADE333000CCE997 /* NewLoan_Upload@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D64066731ADE333000CCE997 /* NewLoan_Upload@3x.png */; };
+		D640667C1ADE65CB00CCE997 /* The Biomedic Sequencing Group.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D64066771ADE65CB00CCE997 /* The Biomedic Sequencing Group.jpg */; };
+		D640667D1ADE65CB00CCE997 /* At the Big Lifting Force Inc.png in Resources */ = {isa = PBXBuildFile; fileRef = D64066781ADE65CB00CCE997 /* At the Big Lifting Force Inc.png */; };
+		D640667E1ADE65CB00CCE997 /* Micro Unity Shipping Company.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D64066791ADE65CB00CCE997 /* Micro Unity Shipping Company.jpg */; };
+		D640667F1ADE65CB00CCE997 /* The Lumina Cab Company.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D640667A1ADE65CB00CCE997 /* The Lumina Cab Company.jpg */; };
+		D64066801ADE65CB00CCE997 /* Bailey & Martin.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D640667B1ADE65CB00CCE997 /* Bailey & Martin.jpg */; };
+		D64066821ADE6D6B00CCE997 /*  The Daylight Laundry Company .jpeg in Resources */ = {isa = PBXBuildFile; fileRef = D64066811ADE6D6B00CCE997 /*  The Daylight Laundry Company .jpeg */; };
+		D64066891ADE71AD00CCE997 /* LoanRequest_Arrow@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = D64066831ADE71AD00CCE997 /* LoanRequest_Arrow@1x.png */; };
+		D640668A1ADE71AD00CCE997 /* LoanRequest_Arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D64066841ADE71AD00CCE997 /* LoanRequest_Arrow@2x.png */; };
+		D640668B1ADE71AD00CCE997 /* LoanRequest_Arrow@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D64066851ADE71AD00CCE997 /* LoanRequest_Arrow@3x.png */; };
+		D640668C1ADE71AD00CCE997 /* LoanRequest_Filter@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = D64066861ADE71AD00CCE997 /* LoanRequest_Filter@1x.png */; };
+		D640668D1ADE71AD00CCE997 /* LoanRequest_Filter@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D64066871ADE71AD00CCE997 /* LoanRequest_Filter@2x.png */; };
+		D640668E1ADE71AD00CCE997 /* LoanRequest_Filter@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D64066881ADE71AD00CCE997 /* LoanRequest_Filter@3x.png */; };
 		D645D62F1ABC0D4300890532 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D645D62E1ABC0D4300890532 /* main.m */; };
 		D645D6321ABC0D4300890532 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D645D6311ABC0D4300890532 /* AppDelegate.m */; };
 		D645D6351ABC0D4300890532 /* MasterCard.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D645D6331ABC0D4300890532 /* MasterCard.xcdatamodeld */; };
@@ -230,6 +257,14 @@
 		D63B2F141ABE68C80088B99B /* My_Profile@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "My_Profile@2x.png"; sourceTree = "<group>"; };
 		D63B2F161ABE694F0088B99B /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home.png; sourceTree = "<group>"; };
 		D63B2F1A1ABE6D800088B99B /* app-icon3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "app-icon3.png"; sourceTree = "<group>"; };
+		D63D838E1ADCAFF0004A9A17 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		D63D83901ADCB09C004A9A17 /* UIImage+Resizing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Resizing.h"; sourceTree = "<group>"; };
+		D63D83911ADCB09C004A9A17 /* UIImage+Resizing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Resizing.m"; sourceTree = "<group>"; };
+		D63D83931ADCB5BF004A9A17 /* DataHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataHandler.h; sourceTree = "<group>"; };
+		D63D83941ADCB5BF004A9A17 /* DataHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataHandler.m; sourceTree = "<group>"; };
+		D63D83961ADCFC4F004A9A17 /* FundityFastPay@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "FundityFastPay@1x.png"; sourceTree = "<group>"; };
+		D63D83971ADCFC4F004A9A17 /* FundityFastPay@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "FundityFastPay@2x.png"; sourceTree = "<group>"; };
+		D63D839A1ADD1729004A9A17 /* SourceSansPro-SemiboldIt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-SemiboldIt.otf"; sourceTree = "<group>"; };
 		D63DAFFD1AD645D000381F96 /* FundityTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FundityTableViewController.h; sourceTree = "<group>"; };
 		D63DAFFE1AD645D000381F96 /* FundityTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FundityTableViewController.m; sourceTree = "<group>"; };
 		D63DB0001AD6470E00381F96 /* LoanRequestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoanRequestViewController.h; sourceTree = "<group>"; };
@@ -247,6 +282,29 @@
 		D63DE1881AD79DFA00A16C40 /* LoanerDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoanerDetailViewController.h; sourceTree = "<group>"; };
 		D63DE1891AD79DFA00A16C40 /* LoanerDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoanerDetailViewController.m; sourceTree = "<group>"; };
 		D63DE18C1AD7BDFA00A16C40 /* Pestona Family Winery.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Pestona Family Winery.jpeg"; sourceTree = "<group>"; };
+		D63EAF1E1ADF4E08001B3A71 /* LoanRequestContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoanRequestContainerViewController.h; sourceTree = "<group>"; };
+		D63EAF1F1ADF4E08001B3A71 /* LoanRequestContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoanRequestContainerViewController.m; sourceTree = "<group>"; };
+		D64066661ADE177C00CCE997 /* CompanyProfile_GrayCircle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CompanyProfile_GrayCircle@2x.png"; sourceTree = "<group>"; };
+		D64066671ADE177C00CCE997 /* CompanyProfile_GrayCircle@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CompanyProfile_GrayCircle@3x.png"; sourceTree = "<group>"; };
+		D640666B1ADE1E8F00CCE997 /* BorrowerDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BorrowerDetailsViewController.h; sourceTree = "<group>"; };
+		D640666C1ADE1E8F00CCE997 /* BorrowerDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BorrowerDetailsViewController.m; sourceTree = "<group>"; };
+		D640666E1ADE1EA500CCE997 /* BorrowerApplyNewLoanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BorrowerApplyNewLoanViewController.h; sourceTree = "<group>"; };
+		D640666F1ADE1EA500CCE997 /* BorrowerApplyNewLoanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BorrowerApplyNewLoanViewController.m; sourceTree = "<group>"; };
+		D64066711ADE333000CCE997 /* NewLoan_Upload@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "NewLoan_Upload@1x.png"; sourceTree = "<group>"; };
+		D64066721ADE333000CCE997 /* NewLoan_Upload@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "NewLoan_Upload@2x.png"; sourceTree = "<group>"; };
+		D64066731ADE333000CCE997 /* NewLoan_Upload@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "NewLoan_Upload@3x.png"; sourceTree = "<group>"; };
+		D64066771ADE65CB00CCE997 /* The Biomedic Sequencing Group.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "The Biomedic Sequencing Group.jpg"; sourceTree = "<group>"; };
+		D64066781ADE65CB00CCE997 /* At the Big Lifting Force Inc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "At the Big Lifting Force Inc.png"; sourceTree = "<group>"; };
+		D64066791ADE65CB00CCE997 /* Micro Unity Shipping Company.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Micro Unity Shipping Company.jpg"; sourceTree = "<group>"; };
+		D640667A1ADE65CB00CCE997 /* The Lumina Cab Company.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "The Lumina Cab Company.jpg"; sourceTree = "<group>"; };
+		D640667B1ADE65CB00CCE997 /* Bailey & Martin.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Bailey & Martin.jpg"; sourceTree = "<group>"; };
+		D64066811ADE6D6B00CCE997 /*  The Daylight Laundry Company .jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = " The Daylight Laundry Company .jpeg"; sourceTree = "<group>"; };
+		D64066831ADE71AD00CCE997 /* LoanRequest_Arrow@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LoanRequest_Arrow@1x.png"; sourceTree = "<group>"; };
+		D64066841ADE71AD00CCE997 /* LoanRequest_Arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LoanRequest_Arrow@2x.png"; sourceTree = "<group>"; };
+		D64066851ADE71AD00CCE997 /* LoanRequest_Arrow@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LoanRequest_Arrow@3x.png"; sourceTree = "<group>"; };
+		D64066861ADE71AD00CCE997 /* LoanRequest_Filter@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LoanRequest_Filter@1x.png"; sourceTree = "<group>"; };
+		D64066871ADE71AD00CCE997 /* LoanRequest_Filter@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LoanRequest_Filter@2x.png"; sourceTree = "<group>"; };
+		D64066881ADE71AD00CCE997 /* LoanRequest_Filter@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LoanRequest_Filter@3x.png"; sourceTree = "<group>"; };
 		D645D6291ABC0D4300890532 /* MasterCard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MasterCard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D645D62D1ABC0D4300890532 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D645D62E1ABC0D4300890532 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -316,6 +374,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D63D838F1ADCAFF0004A9A17 /* CoreImage.framework in Frameworks */,
 				D6382BF11ADBEAB900A61229 /* CoreFoundation.framework in Frameworks */,
 				8C6FFBF9461B0535F61B97D9 /* libPods-MasterCard.a in Frameworks */,
 			);
@@ -365,6 +424,12 @@
 		D6382B041ADB74E800A61229 /* Profile picture */ = {
 			isa = PBXGroup;
 			children = (
+				D64066811ADE6D6B00CCE997 /*  The Daylight Laundry Company .jpeg */,
+				D64066771ADE65CB00CCE997 /* The Biomedic Sequencing Group.jpg */,
+				D64066781ADE65CB00CCE997 /* At the Big Lifting Force Inc.png */,
+				D64066791ADE65CB00CCE997 /* Micro Unity Shipping Company.jpg */,
+				D640667A1ADE65CB00CCE997 /* The Lumina Cab Company.jpg */,
+				D640667B1ADE65CB00CCE997 /* Bailey & Martin.jpg */,
 				D63DE18C1AD7BDFA00A16C40 /* Pestona Family Winery.jpeg */,
 			);
 			name = "Profile picture";
@@ -383,19 +448,21 @@
 			name = Registration;
 			sourceTree = "<group>";
 		};
-		D6382BE91ADBAAC000A61229 /* View */ = {
+		D6382BE91ADBAAC000A61229 /* Category */ = {
 			isa = PBXGroup;
 			children = (
 				D6382BED1ADBAB1F00A61229 /* UITextField+WithPadding.h */,
 				D6382BEE1ADBAB1F00A61229 /* UITextField+WithPadding.m */,
+				D63D83901ADCB09C004A9A17 /* UIImage+Resizing.h */,
+				D63D83911ADCB09C004A9A17 /* UIImage+Resizing.m */,
 			);
-			name = View;
+			name = Category;
 			sourceTree = "<group>";
 		};
 		D63DAFFC1AD63E6800381F96 /* Real app */ = {
 			isa = PBXGroup;
 			children = (
-				D6382BE91ADBAAC000A61229 /* View */,
+				D6382BE91ADBAAC000A61229 /* Category */,
 				D63DE1821AD782FE00A16C40 /* Config */,
 				D63DE17E1AD778DC00A16C40 /* Model */,
 				D63DB00B1AD6496700381F96 /* Assets */,
@@ -421,6 +488,8 @@
 				D63DB0061AD6483900381F96 /* LoanRequestTableViewCell.h */,
 				D63DB0071AD6483900381F96 /* LoanRequestTableViewCell.m */,
 				D63DB0081AD6483900381F96 /* LoanRequestTableViewCell.xib */,
+				D63EAF1E1ADF4E08001B3A71 /* LoanRequestContainerViewController.h */,
+				D63EAF1F1ADF4E08001B3A71 /* LoanRequestContainerViewController.m */,
 			);
 			name = "Loan request";
 			sourceTree = "<group>";
@@ -428,6 +497,7 @@
 		D63DB0131AD64AEE00381F96 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				D63D839A1ADD1729004A9A17 /* SourceSansPro-SemiboldIt.otf */,
 				D63DB0141AD64B0200381F96 /* SourceSansPro-Bold.otf */,
 				D63DB0151AD64B0200381F96 /* SourceSansPro-Semibold.otf */,
 				D63DB00C1AD6497100381F96 /* source-sans-pro.extralight.ttf */,
@@ -453,6 +523,8 @@
 				D63DAFFE1AD645D000381F96 /* FundityTableViewController.m */,
 				D6485C011ABD662C001FC4C0 /* AppConfig.h */,
 				D6485C021ABD662C001FC4C0 /* AppConfig.m */,
+				D63D83931ADCB5BF004A9A17 /* DataHandler.h */,
+				D63D83941ADCB5BF004A9A17 /* DataHandler.m */,
 			);
 			name = Config;
 			sourceTree = "<group>";
@@ -460,6 +532,7 @@
 		D63DE1831AD79DAA00A16C40 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				D640666A1ADE1E3C00CCE997 /* Borrower apply loan */,
 				D6382BDF1ADBA49800A61229 /* Registration */,
 				D63DE1841AD79DB800A16C40 /* Loan details */,
 				D63DB0121AD64A2300381F96 /* Loan request */,
@@ -479,11 +552,24 @@
 		D63DE18B1AD7BDE200A16C40 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				D64066831ADE71AD00CCE997 /* LoanRequest_Arrow@1x.png */,
+				D64066841ADE71AD00CCE997 /* LoanRequest_Arrow@2x.png */,
+				D64066851ADE71AD00CCE997 /* LoanRequest_Arrow@3x.png */,
+				D64066861ADE71AD00CCE997 /* LoanRequest_Filter@1x.png */,
+				D64066871ADE71AD00CCE997 /* LoanRequest_Filter@2x.png */,
+				D64066881ADE71AD00CCE997 /* LoanRequest_Filter@3x.png */,
+				D64066711ADE333000CCE997 /* NewLoan_Upload@1x.png */,
+				D64066721ADE333000CCE997 /* NewLoan_Upload@2x.png */,
+				D64066731ADE333000CCE997 /* NewLoan_Upload@3x.png */,
+				D64066661ADE177C00CCE997 /* CompanyProfile_GrayCircle@2x.png */,
+				D64066671ADE177C00CCE997 /* CompanyProfile_GrayCircle@3x.png */,
 				D6382B6D1ADB9ACE00A61229 /* Fundity_BG@2x.png */,
 				D6382B6E1ADB9ACE00A61229 /* Fundity_BG@3x.png */,
 				D6382B6F1ADB9ACE00A61229 /* Fundity_Drop@1x.png */,
 				D6382B701ADB9ACE00A61229 /* Fundity_Drop@2x.png */,
 				D6382B711ADB9ACE00A61229 /* Fundity_Drop@3x.png */,
+				D63D83961ADCFC4F004A9A17 /* FundityFastPay@1x.png */,
+				D63D83971ADCFC4F004A9A17 /* FundityFastPay@2x.png */,
 				D6382B721ADB9ACE00A61229 /* FundityFastPay@3x.png */,
 				D6382B731ADB9ACE00A61229 /* LoanDetail_FilterArrow@1x.png */,
 				D6382B741ADB9ACE00A61229 /* LoanDetail_FilterArrow@2x.png */,
@@ -539,6 +625,17 @@
 				D6382B041ADB74E800A61229 /* Profile picture */,
 			);
 			name = Images;
+			sourceTree = "<group>";
+		};
+		D640666A1ADE1E3C00CCE997 /* Borrower apply loan */ = {
+			isa = PBXGroup;
+			children = (
+				D640666B1ADE1E8F00CCE997 /* BorrowerDetailsViewController.h */,
+				D640666C1ADE1E8F00CCE997 /* BorrowerDetailsViewController.m */,
+				D640666E1ADE1EA500CCE997 /* BorrowerApplyNewLoanViewController.h */,
+				D640666F1ADE1EA500CCE997 /* BorrowerApplyNewLoanViewController.m */,
+			);
+			name = "Borrower apply loan";
 			sourceTree = "<group>";
 		};
 		D645D6201ABC0D4300890532 = {
@@ -703,6 +800,7 @@
 		FECF197D7DE1AAEECE7FE6BF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D63D838E1ADCAFF0004A9A17 /* CoreImage.framework */,
 				D6382BF01ADBEAB900A61229 /* CoreFoundation.framework */,
 				330E4D0D9E49CFBE07FDAD20 /* libPods-MasterCard.a */,
 			);
@@ -791,14 +889,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D63D839C1ADD17FF004A9A17 /* SourceSansPro-SemiboldIt.otf in Resources */,
 				D6382BAB1ADB9ACE00A61229 /* FundityFastPay@3x.png in Resources */,
 				D63DB0161AD64B1600381F96 /* SourceSansPro-Bold.otf in Resources */,
+				D64066751ADE333000CCE997 /* NewLoan_Upload@2x.png in Resources */,
 				D6382BC41ADB9ACE00A61229 /* Registration_GrayProgressBar@1x.png in Resources */,
 				D63DB0171AD64B1600381F96 /* SourceSansPro-Semibold.otf in Resources */,
 				D6382BA81ADB9ACE00A61229 /* Fundity_Drop@1x.png in Resources */,
 				D6382BD91ADB9ACE00A61229 /* Registration_WhiteCircle@1x.png in Resources */,
 				D6382BD51ADB9ACE00A61229 /* Registration_UploadLicense@3x.png in Resources */,
 				D6382BB11ADB9ACE00A61229 /* MyProfile_Graph@3x.png in Resources */,
+				D640668B1ADE71AD00CCE997 /* LoanRequest_Arrow@3x.png in Resources */,
 				D6382BDE1ADB9ACE00A61229 /* SignIn_Back@3x.png in Resources */,
 				D6382BDD1ADB9ACE00A61229 /* SignIn_Back@2x.png in Resources */,
 				D63DB00F1AD6499000381F96 /* source-sans-pro.extralight.ttf in Resources */,
@@ -806,14 +907,19 @@
 				D6382BD71ADB9ACE00A61229 /* Registration_UploadPicture@2x.png in Resources */,
 				D63DB0101AD6499000381F96 /* SourceSansPro-Light.otf in Resources */,
 				D63DB0111AD6499000381F96 /* SourceSansPro-Regular.otf in Resources */,
+				D63D83981ADCFC4F004A9A17 /* FundityFastPay@1x.png in Resources */,
 				D6382BD01ADB9ACE00A61229 /* Registration_MiddleBlueProgressBar@1x.png in Resources */,
 				D63B2F151ABE68C80088B99B /* My_Profile@2x.png in Resources */,
+				D640668C1ADE71AD00CCE997 /* LoanRequest_Filter@1x.png in Resources */,
 				D6382BBE1ADB9ACE00A61229 /* Registration_FullBlueProgressBar@1x.png in Resources */,
 				D6382BA71ADB9ACE00A61229 /* Fundity_BG@3x.png in Resources */,
 				D63DB00A1AD6483900381F96 /* LoanRequestTableViewCell.xib in Resources */,
 				D6382BA91ADB9ACE00A61229 /* Fundity_Drop@2x.png in Resources */,
 				D6382BC51ADB9ACE00A61229 /* Registration_GrayProgressBar@2x.png in Resources */,
 				D6382BC71ADB9ACE00A61229 /* Registration_InActiveBorrower@1x.png in Resources */,
+				D640668D1ADE71AD00CCE997 /* LoanRequest_Filter@2x.png in Resources */,
+				D64066801ADE65CB00CCE997 /* Bailey & Martin.jpg in Resources */,
+				D640667D1ADE65CB00CCE997 /* At the Big Lifting Force Inc.png in Resources */,
 				D6382BC21ADB9ACE00A61229 /* Registration_GrayCircle@2x.png in Resources */,
 				D6382BD31ADB9ACE00A61229 /* Registration_UploadLicense@1x.png in Resources */,
 				D6382BBD1ADB9ACE00A61229 /* Registration_CreditCard@3x.png in Resources */,
@@ -827,23 +933,30 @@
 				D6382BC61ADB9ACE00A61229 /* Registration_GrayProgressBar@3x.png in Resources */,
 				D6382BBB1ADB9ACE00A61229 /* Registration_CreditCard@1x.png in Resources */,
 				D62460781ABDBC5600CECE2D /* inactive.png in Resources */,
+				D64066681ADE177C00CCE997 /* CompanyProfile_GrayCircle@2x.png in Resources */,
 				D6382BB81ADB9ACE00A61229 /* Registration_Borrower@1x.png in Resources */,
 				D63185601ABD948200331BF5 /* Loan_Request@2x.png in Resources */,
 				D6382BB51ADB9ACE00A61229 /* Registration_BlueCircle@1x.png in Resources */,
+				D64066761ADE333000CCE997 /* NewLoan_Upload@3x.png in Resources */,
 				D6382BDA1ADB9ACE00A61229 /* Registration_WhiteCircle@2x.png in Resources */,
 				D62460771ABDBC5600CECE2D /* bg.png in Resources */,
 				D645D6401ABC0D4300890532 /* LaunchScreen.xib in Resources */,
 				D6485BFD1ABD5FC6001FC4C0 /* menu@2x.png in Resources */,
+				D640668A1ADE71AD00CCE997 /* LoanRequest_Arrow@2x.png in Resources */,
 				D6382BD11ADB9ACE00A61229 /* Registration_MiddleBlueProgressBar@2x.png in Resources */,
 				D645D63D1ABC0D4300890532 /* Images.xcassets in Resources */,
 				D6382BD61ADB9ACE00A61229 /* Registration_UploadPicture@1x.png in Resources */,
 				D6382BC01ADB9ACE00A61229 /* Registration_FullBlueProgressBar@3x.png in Resources */,
+				D640667E1ADE65CB00CCE997 /* Micro Unity Shipping Company.jpg in Resources */,
 				D6382BC11ADB9ACE00A61229 /* Registration_GrayCircle@1x.png in Resources */,
 				D62460801ABDBC6800CECE2D /* Screen.png in Resources */,
 				D6382BCD1ADB9ACE00A61229 /* Registration_Lender@1x.png in Resources */,
+				D64066741ADE333000CCE997 /* NewLoan_Upload@1x.png in Resources */,
 				D624606F1ABDB84700CECE2D /* Borrower's_Profile@2x.png in Resources */,
 				D6485BFA1ABD5FC6001FC4C0 /* filter@2x.png in Resources */,
 				D63B2F111ABE5C5D0088B99B /* signup-button.png in Resources */,
+				D64066821ADE6D6B00CCE997 /*  The Daylight Laundry Company .jpeg in Resources */,
+				D640668E1ADE71AD00CCE997 /* LoanRequest_Filter@3x.png in Resources */,
 				FC954E371ABD9671001321E5 /* mp_lightbox_base.html in Resources */,
 				D6485BFE1ABD5FC6001FC4C0 /* profile@2x.png in Resources */,
 				D624607F1ABDBC6800CECE2D /* inactive-slider-icon.png in Resources */,
@@ -853,12 +966,15 @@
 				D6382BB41ADB9ACE00A61229 /* Registration_ActiveLender@3x.png in Resources */,
 				D6382BAF1ADB9ACE00A61229 /* MyProfile_Graph@1x.png in Resources */,
 				D6382BAD1ADB9ACE00A61229 /* LoanDetail_FilterArrow@2x.png in Resources */,
+				D640667C1ADE65CB00CCE997 /* The Biomedic Sequencing Group.jpg in Resources */,
 				D6382BBC1ADB9ACE00A61229 /* Registration_CreditCard@2x.png in Resources */,
 				D6382BCA1ADB9ACE00A61229 /* Registration_LeftBlueProgressBar@1x.png in Resources */,
 				D6382BA61ADB9ACE00A61229 /* Fundity_BG@2x.png in Resources */,
 				D6382BAE1ADB9ACE00A61229 /* LoanDetail_FilterArrow@3x.png in Resources */,
 				D6382BC31ADB9ACE00A61229 /* Registration_GrayCircle@3x.png in Resources */,
 				D63B2F1B1ABE6D800088B99B /* app-icon3.png in Resources */,
+				D640667F1ADE65CB00CCE997 /* The Lumina Cab Company.jpg in Resources */,
+				D63D83991ADCFC4F004A9A17 /* FundityFastPay@2x.png in Resources */,
 				D6382BD41ADB9ACE00A61229 /* Registration_UploadLicense@2x.png in Resources */,
 				D6382BC91ADB9ACE00A61229 /* Registration_InActiveBorrower@3x.png in Resources */,
 				D6382BCF1ADB9ACE00A61229 /* Registration_Lender@3x.png in Resources */,
@@ -874,9 +990,11 @@
 				D6382BDB1ADB9ACE00A61229 /* Registration_WhiteCircle@3x.png in Resources */,
 				D6382BB21ADB9ACE00A61229 /* Registration_ActiveLender@1x.png in Resources */,
 				D6382BCE1ADB9ACE00A61229 /* Registration_Lender@2x.png in Resources */,
+				D64066891ADE71AD00CCE997 /* LoanRequest_Arrow@1x.png in Resources */,
 				D6382BB01ADB9ACE00A61229 /* MyProfile_Graph@2x.png in Resources */,
 				D6382BD81ADB9ACE00A61229 /* Registration_UploadPicture@3x.png in Resources */,
 				D624606D1ABDAE5500CECE2D /* Congratulations.png in Resources */,
+				D64066691ADE177C00CCE997 /* CompanyProfile_GrayCircle@3x.png in Resources */,
 				D6382BC81ADB9ACE00A61229 /* Registration_InActiveBorrower@2x.png in Resources */,
 				D631855F1ABD948200331BF5 /* filterBtn.png in Resources */,
 			);
@@ -929,12 +1047,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D63D839B1ADD1758004A9A17 /* SourceSansPro-Semibold.otf in Sources */,
 				FC954E251ABD883C001321E5 /* AFHTTPRequestOperation.m in Sources */,
 				D6382BEF1ADBAB1F00A61229 /* UITextField+WithPadding.m in Sources */,
 				D6382BE21ADBA4BC00A61229 /* RegisterPageStepAccountViewController.m in Sources */,
 				D645D6351ABC0D4300890532 /* MasterCard.xcdatamodeld in Sources */,
 				D6485BF31ABD5605001FC4C0 /* LeaderProfileViewController.m in Sources */,
 				D6382BE51ADBA4D100A61229 /* RegisterPageStepPersonalViewController.m in Sources */,
+				D640666D1ADE1E8F00CCE997 /* BorrowerDetailsViewController.m in Sources */,
+				D64066701ADE1EA500CCE997 /* BorrowerApplyNewLoanViewController.m in Sources */,
 				FC954E2D1ABD883C001321E5 /* AFURLSessionManager.m in Sources */,
 				D6485C081ABD7137001FC4C0 /* BorrowerProfileViewController.m in Sources */,
 				FC954E381ABD9671001321E5 /* MPAddress.m in Sources */,
@@ -944,6 +1065,7 @@
 				FC954E281ABD883C001321E5 /* AFNetworkReachabilityManager.m in Sources */,
 				D6382BE81ADBA4E200A61229 /* RegisterPageStepPaymentViewController.m in Sources */,
 				D6485C031ABD662C001FC4C0 /* AppConfig.m in Sources */,
+				D63D83921ADCB09C004A9A17 /* UIImage+Resizing.m in Sources */,
 				FC822D941ABD3AFC00A7293D /* DataManager.m in Sources */,
 				FC954E291ABD883C001321E5 /* AFSecurityPolicy.m in Sources */,
 				FCCFE6D51ABD4AD500810E38 /* LoginViewController.m in Sources */,
@@ -956,10 +1078,12 @@
 				FC954E3A1ABD9671001321E5 /* MPLightboxViewController.m in Sources */,
 				D6485BF01ABD55CC001FC4C0 /* LoanDetailViewController.m in Sources */,
 				D6485C0B1ABD714C001FC4C0 /* BorrowerNewLoanViewController.m in Sources */,
+				D63D83951ADCB5BF004A9A17 /* DataHandler.m in Sources */,
 				D63DB0021AD6470E00381F96 /* LoanRequestViewController.m in Sources */,
 				FC954E271ABD883C001321E5 /* AFHTTPSessionManager.m in Sources */,
 				D63DE1811AD7792300A16C40 /* DataModel.m in Sources */,
 				D63DE18A1AD79DFA00A16C40 /* LoanerDetailViewController.m in Sources */,
+				D63EAF201ADF4E08001B3A71 /* LoanRequestContainerViewController.m in Sources */,
 				D63DAFFF1AD645D000381F96 /* FundityTableViewController.m in Sources */,
 				D645D6321ABC0D4300890532 /* AppDelegate.m in Sources */,
 				D645D62F1ABC0D4300890532 /* main.m in Sources */,

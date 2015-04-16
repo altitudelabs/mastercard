@@ -13,7 +13,17 @@
 @property (weak, nonatomic) IBOutlet UIButton *buttonCreateAcct;
 @property (weak, nonatomic) IBOutlet UIButton *buttonSignIn;
 
+@property (weak, nonatomic) IBOutlet UIView *signInDialog;
+@property (weak, nonatomic) IBOutlet UITextField *textFieldSignInEmail;
+@property (weak, nonatomic) IBOutlet UITextField *textFieldSignInPassword;
+@property (weak, nonatomic) IBOutlet UIButton *btnSignIn;
+@property (weak, nonatomic) IBOutlet UIButton *btnCancelSignIn;
+
+
 - (IBAction)signupButtonPressed:(id)sender;
+- (IBAction)showSignInDialogButtonPressed:(id)sender;
 - (IBAction)continueWithoutAccountTouchUpInside:(id)sender;
+- (IBAction)signInTouchUpInside:(id)sender;
+- (IBAction)signInCancelTouchUpInside:(id)sender;
 
 @end

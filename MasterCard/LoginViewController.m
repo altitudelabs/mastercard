@@ -17,6 +17,9 @@
 #import "DataManager.h"
 
 @interface LoginViewController () <UITextFieldDelegate>
+//@property (assign, nonatomic) CGRect loginDialogOriginalFrame;
+//@property (assign, nonatomic) CGRect createAcctButtonOriginalFrame;
+//@property (assign, nonatomic) CGRect signInButtonOriginalFrame;
 @end
 
 @implementation LoginViewController
@@ -54,14 +57,59 @@
     self.buttonSignIn.layer.borderWidth = 1;
     self.buttonSignIn.layer.cornerRadius = 12;
     self.buttonCreateAcct.layer.cornerRadius = 12;
+    self.btnSignIn.layer.cornerRadius = 12;
     
+    // Render Sign in view
+    
+    // Textboxes
+    if ([self.textFieldSignInEmail respondsToSelector:@selector(setAttributedPlaceholder:)]) {
+        UIColor *color = [UIColor whiteColor];
+        self.textFieldSignInEmail.attributedPlaceholder = [[NSAttributedString alloc] initWithString:self.textFieldSignInEmail.placeholder attributes:@{NSForegroundColorAttributeName: color}];
+    }
+    if ([self.textFieldSignInPassword respondsToSelector:@selector(setAttributedPlaceholder:)]) {
+        UIColor *color = [UIColor whiteColor];
+        self.textFieldSignInPassword.attributedPlaceholder = [[NSAttributedString alloc] initWithString:self.textFieldSignInPassword.placeholder attributes:@{NSForegroundColorAttributeName: color}];
+    }
+    
+    self.signInDialog.alpha = 0;
+}
+
+- (void)showSignInDialog:(BOOL)show {
+    if (show) {
+        [UIView animateWithDuration:0.4 animations:^{
+            self.signInDialog.alpha = 1;
+            self.buttonSignIn.alpha = 0;
+            self.buttonCreateAcct.alpha = 0;
+        } completion:^(BOOL finished) {
+        }];
+    } else {
+        [UIView animateWithDuration:0.4 animations:^{
+            self.signInDialog.alpha = 0;
+            self.buttonSignIn.alpha = 1;
+            self.buttonCreateAcct.alpha = 1;
+        } completion:^(BOOL finished) {
+        }];
+    }
 }
 
 - (IBAction)signupButtonPressed:(id)sender {
     
 }
 
+- (IBAction)showSignInDialogButtonPressed:(id)sender {
+    [self showSignInDialog:YES];
+}
+
 - (IBAction)continueWithoutAccountTouchUpInside:(id)sender {
+    
+}
+
+- (IBAction)signInTouchUpInside:(id)sender {
+    
+}
+
+- (IBAction)signInCancelTouchUpInside:(id)sender {
+    [self showSignInDialog:NO];
 }
 
 

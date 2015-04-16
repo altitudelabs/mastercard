@@ -9,11 +9,12 @@
 #import "LoanRequestViewController.h"
 #import "LoanRequestTableViewCell.h"
 #import "LoanerDetailViewController.h"
+#import "BorrowerDetailsViewController.h"
 #import "DataModel.h"
 #import "AppConfig.h"
+#import <Masonry.h>
 
 @interface LoanRequestViewController ()
-
 @end
 
 @implementation LoanRequestViewController
@@ -21,7 +22,7 @@
 - (id)initWithCoder:(NSCoder *)aDecoder {
     self = [super initWithCoder:aDecoder];
     if (self) {
-        self.data = [[DataModel sharedInstance] loanerDatas];
+        self.data = [[[DataModel sharedInstance] loanerDatas] copy];
     }
     return self;
 }
@@ -29,7 +30,7 @@
 - (id)init {
     self = [super init];
     if (self) {
-        self.data = [[DataModel sharedInstance] loanerDatas];
+        self.data = [[[DataModel sharedInstance] loanerDatas] copy];
     }
     return self;
 }
@@ -75,24 +76,6 @@
     [self.tableView registerNib:[UINib nibWithNibName:@"LoanRequestTableViewCell" bundle:nil] forCellReuseIdentifier:[LoanRequestTableViewCell assignIdentifier]];
 }
 
-- (UIView *)footerView {
-    UIButton *footer = [UIButton buttonWithType:UIButtonTypeCustom];
-    [footer setTitle:@"Sort/Filter" forState:UIControlStateNormal];
-    [footer setImage:[UIImage imageNamed:@"back.png"] forState:UIControlStateNormal];
-    footer.backgroundColor = ColorGray;
-    [footer setTitleColor:TextColorDark forState:UIControlStateNormal];
-    footer.titleLabel.font = [UIFont fontWithName:UIFontRegularRoman size:13];
-    
-    CALayer *rightBorder = [CALayer layer];
-    rightBorder.borderColor = [UIColor colorWithWhite:0.8 alpha:1].CGColor;
-    rightBorder.borderWidth = 1;
-    rightBorder.frame = CGRectMake(0, -1, CGRectGetWidth(self.tableView.frame), 1);
-    
-    [footer.layer addSublayer:rightBorder];
-    
-    return footer;
-}
-
 #pragma mark - UITableViewDataSource
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -112,10 +95,6 @@
     return cell;
 }
 
-- (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section {
-    return [self footerView];
-}
-
 #pragma mark - UITableViewDelegate
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -123,7 +102,7 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
-    return 40;
+    return 0;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -134,10 +113,38 @@
 }
 
 #pragma mark - Private
+
 - (void)doneButtonTouchUpInside:(id)sender {
-//    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-//    LoanerDetailViewController *vc = (LoanerDetailViewController *)[sb instantiateViewControllerWithIdentifier:@"LoanerDetailViewController"];
-//    [self.navigationController pushViewController:vc animated:YES];
+    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    BorrowerDetailsViewController *vc = (BorrowerDetailsViewController *)[sb instantiateViewControllerWithIdentifier:@"BorrowerDetailsViewController"];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
+#pragma mark - Public
+
+- (void)filterByAmount {
+    NSArray *sortedArray = [self.data sortedArrayUsingComparator:^NSComparisonResult(NSDictionary *p1, NSDictionary *p2){
+        NSInteger amount1 = [[p1 objectForKey:KeyLoanAmt] integerValue];
+        NSInteger amount2 = [[p2 objectForKey:KeyLoanAmt] integerValue];
+        return amount1  < amount2;
+    }];
+    self.data = sortedArray;
+    [self.tableView reloadData];
+}
+
+- (void)filterByRate {
+    NSArray *sortedArray = [self.data sortedArrayUsingComparator:^NSComparisonResult(NSDictionary *p1, NSDictionary *p2){
+        NSInteger amount1 = [[p1 objectForKey:KeyLoanReturnRate] integerValue];
+        NSInteger amount2 = [[p2 objectForKey:KeyLoanReturnRate] integerValue];
+        return amount1  < amount2;
+    }];
+    self.data = sortedArray;
+    [self.tableView reloadData];
+}
+
+- (void)filterByNone {
+    self.data = [[[DataModel sharedInstance] loanerDatas] copy];
+    [self.tableView reloadData];
 }
 
 @end

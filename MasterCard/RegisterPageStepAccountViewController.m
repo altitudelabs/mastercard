@@ -20,7 +20,41 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self renderNavigationBar];
     [self render];
+}
+
+//- (void)viewWillAppear:(BOOL)animated {
+//    [super viewWillAppear:animated];
+//    self.containerViewWidth.constant = self.scrollView.frame.size.width;
+//    self.containerViewHeight.constant = self.scrollView.frame.size.height;
+//}
+
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    self.containerViewWidth.constant = self.scrollView.frame.size.width;
+    self.containerViewHeight.constant = self.scrollView.frame.size.height;
+}
+
+# pragma mark - Private
+
+- (void)renderNavigationBar {
+    // Show navigation bar
+    [[self navigationController] setNavigationBarHidden:NO animated:NO];
+    
+    // Custom back button for all other pages
+    UIImage *backButtonImage = [[UIImage imageNamed:@"back@2x.png"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 0, 0, 0)];
+    [[UIBarButtonItem appearance] setBackButtonBackgroundImage:backButtonImage  forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
+    [[UIBarButtonItem appearance] setBackButtonTitlePositionAdjustment:UIOffsetMake(0, backButtonImage.size.height*2) forBarMetrics:UIBarMetricsDefault];
+    
+    // Title
+    UILabel *lblTitle = [[UILabel alloc] init];
+    lblTitle.text = @"Registration";
+    lblTitle.backgroundColor = [UIColor clearColor];
+    lblTitle.textColor = [UIColor whiteColor];
+    lblTitle.font = [UIFont fontWithName:UIFontRegularBook size:19.0];
+    [lblTitle sizeToFit];
+    self.navigationItem.titleView = lblTitle;
 }
 
 - (void)render {
@@ -51,6 +85,9 @@
     // Textbox
     self.textboxEmail.delegate = self;
     self.textboxPassword.delegate = self;
+    
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(dismissKeyboard)];
+    [self.scrollView addGestureRecognizer:tap];
 }
 
 - (void)updateBorrowerLenderButtons {
@@ -74,6 +111,11 @@
     }
 }
 
+- (void)dismissKeyboard {
+    [self.textboxEmail resignFirstResponder];
+    [self.textboxPassword resignFirstResponder];
+}
+
 #pragma mark - Outlet Actions
 
 - (IBAction)btnBorrowerTouchUpInside:(id)sender {
@@ -90,12 +132,6 @@
     
 }
 
-#pragma mark - UIResponder
-
-- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
-    [self.view endEditing:YES];
-}
-
 #pragma mark - UITextFieldDelegate
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
@@ -106,6 +142,17 @@
         [self.textboxPassword resignFirstResponder];
     }
     return YES;
+}
+
+- (void)textFieldDidBeginEditing:(UITextField *)textField {
+    if (textField == self.textboxPassword) {
+        NSLog(@"aa: %f", self.scrollView.contentOffset.y);
+        [self.scrollView setContentOffset:CGPointMake(0, 20) animated:YES];
+    }
+}
+
+- (void)textFieldDidEndEditing:(UITextField *)textField {
+    [self.scrollView setContentOffset:CGPointMake(0, -64) animated:YES];
 }
 
 @end

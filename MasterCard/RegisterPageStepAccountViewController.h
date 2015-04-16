@@ -10,6 +10,11 @@
 
 @interface RegisterPageStepAccountViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
+@property (weak, nonatomic) IBOutlet UIView *containerView;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *containerViewWidth;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *containerViewHeight;
+
 @property (weak, nonatomic) IBOutlet UIButton *btnOr;
 
 @property (weak, nonatomic) IBOutlet UIButton *btnBorrower;

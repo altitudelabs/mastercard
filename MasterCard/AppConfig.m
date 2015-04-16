@@ -16,11 +16,6 @@ NSString* const UIFontRegularRoman   = @"Avenir-Roman";
 NSString* const UIFontRegularBook    = @"Avenir-Book";
 NSString* const UIFontRegularMedium  = @"Avenir-Medium";
 
-// Font
-#define UIFontExtraLight @"SourceSansPro-ExtraLight"
-#define UIFontRegular @"SourceSansPro-Regular"
-#define UIFontLight @"SourceSansPro-Light"
-
 
 
 @end

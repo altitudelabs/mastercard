@@ -49,7 +49,7 @@
                         <constraints>
                             <constraint firstAttribute="width" constant="50" id="04s-3i-fs5"/>
                         </constraints>
-                        <state key="normal" title="&gt;">
+                        <state key="normal">
                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                         </state>
                     </button>
@@ -254,20 +254,37 @@
                             </mask>
                         </variation>
                     </view>
+                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LoanRequest_Arrow.png" translatesAutoresizingMaskIntoConstraints="NO" id="ZW7-UP-d62">
+                        <rect key="frame" x="357" y="0.0" width="50" height="82"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="h3V-dd-INz"/>
+                            <constraint firstAttribute="height" constant="40" id="mzX-TV-dYo"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="h3V-dd-INz"/>
+                                <exclude reference="mzX-TV-dYo"/>
+                            </mask>
+                        </variation>
+                    </imageView>
                 </subviews>
                 <constraints>
+                    <constraint firstItem="ZW7-UP-d62" firstAttribute="top" secondItem="I4U-O7-p3U" secondAttribute="top" id="0ud-r6-3ca"/>
                     <constraint firstAttribute="trailing" secondItem="I4U-O7-p3U" secondAttribute="trailing" id="Bp7-bS-ebO"/>
                     <constraint firstItem="M5c-2E-1JJ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="CQ9-gC-2Iu"/>
                     <constraint firstItem="7Vo-zg-Igc" firstAttribute="leading" secondItem="YOJ-e8-ISJ" secondAttribute="trailing" constant="13" id="CSp-Ai-UNP"/>
                     <constraint firstItem="I4U-O7-p3U" firstAttribute="leading" secondItem="M5c-2E-1JJ" secondAttribute="trailing" id="EJo-nJ-HlN"/>
                     <constraint firstAttribute="bottomMargin" secondItem="I4U-O7-p3U" secondAttribute="bottom" id="IKj-iC-exv"/>
+                    <constraint firstItem="I4U-O7-p3U" firstAttribute="leading" secondItem="ZW7-UP-d62" secondAttribute="leading" id="LFP-xr-pI0"/>
                     <constraint firstItem="I4U-O7-p3U" firstAttribute="leading" secondItem="7Vo-zg-Igc" secondAttribute="trailing" id="MKg-Iq-tjO"/>
                     <constraint firstAttribute="bottom" secondItem="M5c-2E-1JJ" secondAttribute="bottom" id="R1z-D2-BpN"/>
                     <constraint firstItem="I4U-O7-p3U" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Xj7-TC-Uba"/>
                     <constraint firstItem="YOJ-e8-ISJ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="cec-8B-NL7"/>
                     <constraint firstAttribute="bottom" secondItem="YOJ-e8-ISJ" secondAttribute="bottom" id="fyN-Bs-Hep"/>
                     <constraint firstItem="M5c-2E-1JJ" firstAttribute="leading" secondItem="YOJ-e8-ISJ" secondAttribute="trailing" id="gc3-N6-1Of"/>
+                    <constraint firstItem="I4U-O7-p3U" firstAttribute="height" secondItem="ZW7-UP-d62" secondAttribute="height" id="mXg-te-WXy"/>
                     <constraint firstItem="YOJ-e8-ISJ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="nle-i4-s0c"/>
+                    <constraint firstItem="I4U-O7-p3U" firstAttribute="trailing" secondItem="ZW7-UP-d62" secondAttribute="trailing" id="rTY-hU-FMi"/>
                 </constraints>
                 <variation key="default">
                     <mask key="constraints">
@@ -289,4 +306,7 @@
             <point key="canvasLocation" x="464.5" y="412"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="LoanRequest_Arrow.png" width="9" height="15"/>
+    </resources>
 </document>

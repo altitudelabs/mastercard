@@ -13,4 +13,8 @@
 
 @property (strong, nonatomic) NSArray *data;
 
+- (void)filterByAmount;
+- (void)filterByRate;
+- (void)filterByNone;
+
 @end

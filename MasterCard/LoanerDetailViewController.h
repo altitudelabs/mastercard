@@ -21,7 +21,6 @@
 @property (weak, nonatomic) IBOutlet UIView *detailContainerView;
 
 @property (weak, nonatomic) IBOutlet UILabel *fundityScore;
-@property (weak, nonatomic) IBOutlet UILabel *fundityMatchScore;
 
 @property (weak, nonatomic) IBOutlet UITextField *lendAmountTextField;
 @property (weak, nonatomic) IBOutlet UITextField *lendRateTextField;
@@ -32,6 +31,11 @@
 @property (weak, nonatomic) IBOutlet UILabel *lendRequireValue;
 @property (weak, nonatomic) IBOutlet UILabel *location;
 @property (weak, nonatomic) IBOutlet UILabel *countryLabel;
+
+@property (weak, nonatomic) IBOutlet UIView *containerViewLendAmount;
+@property (weak, nonatomic) IBOutlet UIView *containerViewLendRate;
+
+@property (weak, nonatomic) IBOutlet UIButton *buttonLendNow;
 
 - (IBAction)lendNowTouchUpInside:(id)sender;
 

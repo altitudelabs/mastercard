@@ -10,4 +10,15 @@
 
 @interface RegisterPageStepPaymentViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UIButton *btnChooseBank;
+@property (weak, nonatomic) IBOutlet UITextField *textFieldAcctNumber;
+@property (weak, nonatomic) IBOutlet UITextField *textFieldCreditCardNo;
+@property (weak, nonatomic) IBOutlet UIButton *btnExpiryMonth;
+@property (weak, nonatomic) IBOutlet UITextField *textFieldCVCCode;
+@property (weak, nonatomic) IBOutlet UIButton *btnSubmit;
+@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
+
+- (IBAction)pickBankTouchUpInside:(id)sender;
+- (IBAction)pickExpiryMonthTouchUpInside:(id)sender;
+
 @end
