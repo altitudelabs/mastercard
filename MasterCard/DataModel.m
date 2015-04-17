@@ -10,6 +10,8 @@
 
 @implementation DataModel
 
+// Loan data
+
 NSString* const KeyCompanyName = @"KeyCompanyName";
 NSString* const KeyCompanyDesciption = @"KeyCompanyDesciption";
 NSString* const KeyLoanAmt = @"KeyLoanAmt";
@@ -63,8 +65,8 @@ NSString* const KeyFundityMatchScore = @"KeyFundityMatchScore";
                                 
                                 KeyLoanerImg: @"Bailey & Martin.jpg",
                                 KeyCompanyDetails: @"Bailey & Martin is an American retailer that focuses on luxury urban wear for young consumers and is headquartered in Orange County, California. With 5 locations in the United States, Bailey & Martin is looking into smarter and more efficient ways to produce our products",
-                                KeyLenderNumber: @22,
-                                KeyLendedMoney: @6000,
+                                KeyLenderNumber: @13,
+                                KeyLendedMoney: @12200,
                                 KeyLoanerCountry: @"Hong Kong",
                                 KeyFundityScore: @9.1,
                                 KeyFundityMatchScore: @2.3

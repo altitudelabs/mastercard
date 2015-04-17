@@ -7,7 +7,9 @@
 //
 
 #import "RegisterPageStepAccountViewController.h"
+#import "RegisterPageStepPersonalViewController.h"
 #import "UITextField+WithPadding.h"
+#import "UIHelper.h"
 #import "AppConfig.h"
 
 #define SelectedBLueColor [UIColor colorWithRed:83/255.0  green:120/255.0 blue:216/255.0 alpha:1.0]
@@ -22,18 +24,6 @@
     [super viewDidLoad];
     [self renderNavigationBar];
     [self render];
-}
-
-//- (void)viewWillAppear:(BOOL)animated {
-//    [super viewWillAppear:animated];
-//    self.containerViewWidth.constant = self.scrollView.frame.size.width;
-//    self.containerViewHeight.constant = self.scrollView.frame.size.height;
-//}
-
-- (void)viewDidAppear:(BOOL)animated {
-    [super viewDidAppear:animated];
-    self.containerViewWidth.constant = self.scrollView.frame.size.width;
-    self.containerViewHeight.constant = self.scrollView.frame.size.height;
 }
 
 # pragma mark - Private
@@ -129,7 +119,22 @@
 }
 
 - (IBAction)btnNextTouchUpInside:(id)sender {
+    [[UIHelper sharedInstance] showLoadingSpinnerInView:self.view];
     
+    [self.registrationManager setAccountDataWithEmail:self.textboxEmail.text password:self.textboxPassword.text callback:^(BOOL success, NSString *error) {
+        [[UIHelper sharedInstance] hideLoadingSpinnerInView:self.view];
+        
+        if (success) {
+            dispatch_async(dispatch_get_main_queue(), ^{
+                UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+                RegisterPageStepPersonalViewController *vc = (RegisterPageStepPersonalViewController *)[sb instantiateViewControllerWithIdentifier:@"RegisterPageStepPersonalViewController"];
+                vc.registrationManager = self.registrationManager;
+                [self.navigationController pushViewController:vc animated:YES];
+            });
+        } else {
+            [[[UIAlertView alloc] initWithTitle:@"Error!" message:error delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil] show];
+        }
+    }];
 }
 
 #pragma mark - UITextFieldDelegate
@@ -146,8 +151,9 @@
 
 - (void)textFieldDidBeginEditing:(UITextField *)textField {
     if (textField == self.textboxPassword) {
-        NSLog(@"aa: %f", self.scrollView.contentOffset.y);
         [self.scrollView setContentOffset:CGPointMake(0, 20) animated:YES];
+    } else if (textField == self.textboxEmail) {
+        [self.scrollView setContentOffset:CGPointMake(0, 0) animated:YES];
     }
 }
 

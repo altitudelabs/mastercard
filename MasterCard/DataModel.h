@@ -10,6 +10,8 @@
 
 @interface DataModel : NSObject
 
+// Loan data
+
 extern NSString* const KeyCompanyName;
 extern NSString* const KeyCompanyDesciption;
 extern NSString* const KeyLoanAmt;

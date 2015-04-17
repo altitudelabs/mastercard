@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "UserAccountManager.h"
 
 @interface RegisterPageStepAccountViewController : UIViewController
 
@@ -28,6 +29,8 @@
 @property (weak, nonatomic) IBOutlet UITextField *textboxEmail;
 @property (weak, nonatomic) IBOutlet UITextField *textboxPassword;
 @property (weak, nonatomic) IBOutlet UIButton *btnNext;
+
+@property (strong, nonatomic) UserAccountManager *registrationManager;
 
 - (IBAction)btnBorrowerTouchUpInside:(id)sender;
 - (IBAction)btnLenderTouchUpInside:(id)sender;

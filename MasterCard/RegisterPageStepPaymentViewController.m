@@ -7,8 +7,10 @@
 //
 
 #import "RegisterPageStepPaymentViewController.h"
+#import "LoanRequestContainerViewController.h"
 #import "UITextField+WithPadding.h"
 #import "AppConfig.h"
+#import "UIHelper.h"
 #import <Masonry.h>
 
 typedef NS_ENUM(NSInteger, UIPickerOption) {
@@ -21,6 +23,9 @@ typedef NS_ENUM(NSInteger, UIPickerOption) {
 @property (assign, nonatomic) UIPickerOption pickerOption;
 @property (strong, nonatomic) UIPickerView *currentPicker;
 @property (strong, nonatomic) UIButton *doneBtn;
+
+@property (strong, nonatomic) NSString *btnChooseBankPlaceholder;
+@property (strong, nonatomic) NSString *btnExpiryMonthPlaceholder;
 @end
 
 @implementation RegisterPageStepPaymentViewController
@@ -29,6 +34,9 @@ typedef NS_ENUM(NSInteger, UIPickerOption) {
     [super viewDidLoad];
     [self render];
     [self renderNavigationBar];
+    
+    self.btnChooseBankPlaceholder = self.btnChooseBank.titleLabel.text;
+    self.btnExpiryMonthPlaceholder = self.btnExpiryMonth.titleLabel.text;
 }
 
 #pragma mark - Private
@@ -136,6 +144,30 @@ typedef NS_ENUM(NSInteger, UIPickerOption) {
     [self showPickerView:picker];
 }
 
+- (IBAction)submitTouchUpInside:(id)sender {
+    [[UIHelper sharedInstance] showLoadingSpinnerInView:self.view];
+    
+    NSString *bankName = self.btnChooseBank.titleLabel.text;
+    if ([bankName isEqual:self.btnChooseBankPlaceholder]) {
+        bankName = nil;
+    }
+    NSString *expiryMonth = self.btnExpiryMonth.titleLabel.text;
+    if ([expiryMonth isEqual:self.btnExpiryMonthPlaceholder]) {
+        expiryMonth = nil;
+    }
+    [self.registrationManager setBankName:bankName bankAccountNumber:self.textFieldAcctNumber.text creditCardNumber:self.textFieldCreditCardNo.text expiryDate:expiryMonth cvcCode:self.textFieldCVCCode.text callback:^(BOOL success, NSString *error) {
+        [[UIHelper sharedInstance] hideLoadingSpinnerInView:self.view];
+        
+        if (success) {
+            dispatch_async(dispatch_get_main_queue(), ^{
+                [self.navigationController popToRootViewControllerAnimated:YES];
+            });
+        } else {
+            [[[UIAlertView alloc] initWithTitle:@"Error!" message:error delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil] show];
+        }
+    }];
+}
+
 - (UIPickerView *)makePicker {
     UIPickerView *pickerView = [[UIPickerView alloc] initWithFrame:CGRectZero];
     pickerView.backgroundColor = [UIColor whiteColor];
@@ -219,6 +251,8 @@ typedef NS_ENUM(NSInteger, UIPickerOption) {
 - (void)textFieldDidBeginEditing:(UITextField *)textField {
     if (textField == self.textFieldCVCCode) {
         [self.scrollView setContentOffset:CGPointMake(0, 40) animated:YES];
+    } else if (textField == self.textFieldCreditCardNo) {
+        [self.scrollView setContentOffset:CGPointMake(0, 5) animated:YES];
     }
 }
 

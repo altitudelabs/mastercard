@@ -28,10 +28,32 @@ typedef NS_ENUM(NSInteger, UIImagePickerOption) {
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self renderNavigationBar];
     [self render];
 }
 
 #pragma mark - Private
+
+- (void)renderNavigationBar {
+    // Hide navigation bar
+    [[self navigationController] setNavigationBarHidden:NO animated:NO];
+    [self navigationController].navigationBar.barTintColor = ColorBlue;
+    [[UINavigationBar appearance] setBackgroundImage:nil forBarMetrics:UIBarMetricsDefault];
+    
+    // Custom back button for all other pages
+    UIImage *backButtonImage = [[UIImage imageNamed:@"back@2x.png"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 0, 0, 0)];
+    [[UIBarButtonItem appearance] setBackButtonBackgroundImage:backButtonImage  forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
+    [[UIBarButtonItem appearance] setBackButtonTitlePositionAdjustment:UIOffsetMake(0, backButtonImage.size.height*2) forBarMetrics:UIBarMetricsDefault];
+    
+    // Title
+    UILabel *lblTitle = [[UILabel alloc] init];
+    lblTitle.text = @"New Loan";
+    lblTitle.backgroundColor = [UIColor clearColor];
+    lblTitle.textColor = [UIColor whiteColor];
+    lblTitle.font = [UIFont fontWithName:UIFontRegularBook size:19.0];
+    [lblTitle sizeToFit];
+    self.navigationItem.titleView = lblTitle;
+}
 
 - (void)render {
     self.contentViewHeight.constant = CGRectGetHeight(self.view.frame) - BottomHeight;
@@ -82,6 +104,8 @@ typedef NS_ENUM(NSInteger, UIImagePickerOption) {
     [self.loanDurationDot2yr addTarget:self action:@selector(selectDot:) forControlEvents:UIControlEventTouchDown];
     [self.loanDurationDot3yr addTarget:self action:@selector(selectDot:) forControlEvents:UIControlEventTouchDown];
     [self.loanDurationDot4yr addTarget:self action:@selector(selectDot:) forControlEvents:UIControlEventTouchDown];
+    
+    [self selectDot:self.loanDurationDot2yr];
 }
 
 - (void)pickPhoto {
@@ -147,7 +171,11 @@ typedef NS_ENUM(NSInteger, UIImagePickerOption) {
 }
 
 - (IBAction)checkEligibilityTouchUpInside:(id)sender {
-    [[[UIAlertView alloc] initWithTitle:@"Alert!" message:@"Pending Approval" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil] show];
+    if (self.textFieldBorrowAmount.text.length == 0) {
+        [[[UIAlertView alloc] initWithTitle:@"Error" message:@"Please enter how much do you want to borrow." delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil] show];
+    } else {
+        [[[UIAlertView alloc] initWithTitle:@"" message:@"Pending Approval" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil] show];
+    }
 }
 
 #pragma mark - UIImagePickerControllerDelegate

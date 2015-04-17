@@ -12,6 +12,8 @@
 @interface LoanRequestViewController : FundityTableViewController
 
 @property (strong, nonatomic) NSArray *data;
+@property (strong, nonatomic) NSDictionary *userData;
+@property (assign, nonatomic) BOOL loggedIn; // Default is NO
 
 - (void)filterByAmount;
 - (void)filterByRate;

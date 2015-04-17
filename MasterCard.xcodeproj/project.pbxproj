@@ -88,7 +88,6 @@
 		D63B2F1B1ABE6D800088B99B /* app-icon3.png in Resources */ = {isa = PBXBuildFile; fileRef = D63B2F1A1ABE6D800088B99B /* app-icon3.png */; };
 		D63D838F1ADCAFF0004A9A17 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D63D838E1ADCAFF0004A9A17 /* CoreImage.framework */; };
 		D63D83921ADCB09C004A9A17 /* UIImage+Resizing.m in Sources */ = {isa = PBXBuildFile; fileRef = D63D83911ADCB09C004A9A17 /* UIImage+Resizing.m */; };
-		D63D83951ADCB5BF004A9A17 /* DataHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = D63D83941ADCB5BF004A9A17 /* DataHandler.m */; };
 		D63D83981ADCFC4F004A9A17 /* FundityFastPay@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = D63D83961ADCFC4F004A9A17 /* FundityFastPay@1x.png */; };
 		D63D83991ADCFC4F004A9A17 /* FundityFastPay@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D63D83971ADCFC4F004A9A17 /* FundityFastPay@2x.png */; };
 		D63D839B1ADD1758004A9A17 /* SourceSansPro-Semibold.otf in Sources */ = {isa = PBXBuildFile; fileRef = D63DB0151AD64B0200381F96 /* SourceSansPro-Semibold.otf */; };
@@ -106,9 +105,11 @@
 		D63DE18A1AD79DFA00A16C40 /* LoanerDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D63DE1891AD79DFA00A16C40 /* LoanerDetailViewController.m */; };
 		D63DE18D1AD7BDFA00A16C40 /* Pestona Family Winery.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = D63DE18C1AD7BDFA00A16C40 /* Pestona Family Winery.jpeg */; };
 		D63EAF201ADF4E08001B3A71 /* LoanRequestContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D63EAF1F1ADF4E08001B3A71 /* LoanRequestContainerViewController.m */; };
+		D63F21141AE0B452006A4BD2 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D63F21131AE0B452006A4BD2 /* SystemConfiguration.framework */; };
+		D63F21181AE0B7A9006A4BD2 /* UIHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = D63F21171AE0B7A9006A4BD2 /* UIHelper.m */; };
+		D63F211B1AE0BF42006A4BD2 /* DeviceHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = D63F211A1AE0BF42006A4BD2 /* DeviceHelper.m */; };
 		D64066681ADE177C00CCE997 /* CompanyProfile_GrayCircle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D64066661ADE177C00CCE997 /* CompanyProfile_GrayCircle@2x.png */; };
 		D64066691ADE177C00CCE997 /* CompanyProfile_GrayCircle@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D64066671ADE177C00CCE997 /* CompanyProfile_GrayCircle@3x.png */; };
-		D640666D1ADE1E8F00CCE997 /* BorrowerDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D640666C1ADE1E8F00CCE997 /* BorrowerDetailsViewController.m */; };
 		D64066701ADE1EA500CCE997 /* BorrowerApplyNewLoanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D640666F1ADE1EA500CCE997 /* BorrowerApplyNewLoanViewController.m */; };
 		D64066741ADE333000CCE997 /* NewLoan_Upload@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = D64066711ADE333000CCE997 /* NewLoan_Upload@1x.png */; };
 		D64066751ADE333000CCE997 /* NewLoan_Upload@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D64066721ADE333000CCE997 /* NewLoan_Upload@2x.png */; };
@@ -143,6 +144,8 @@
 		D6485C081ABD7137001FC4C0 /* BorrowerProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6485C071ABD7137001FC4C0 /* BorrowerProfileViewController.m */; };
 		D6485C0B1ABD714C001FC4C0 /* BorrowerNewLoanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6485C0A1ABD714C001FC4C0 /* BorrowerNewLoanViewController.m */; };
 		D6485C0E1ABD715D001FC4C0 /* BorrowerPayLoanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6485C0D1ABD715D001FC4C0 /* BorrowerPayLoanViewController.m */; };
+		D6F83D891ADFA807000A3EC6 /* MyProfileTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6F83D881ADFA807000A3EC6 /* MyProfileTableViewController.m */; };
+		D6F83D8C1ADFBF57000A3EC6 /* UserAccountManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D6F83D8B1ADFBF57000A3EC6 /* UserAccountManager.m */; };
 		FC822D941ABD3AFC00A7293D /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FC822D931ABD3AFC00A7293D /* DataManager.m */; };
 		FC954E251ABD883C001321E5 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = FC954E131ABD883C001321E5 /* AFHTTPRequestOperation.m */; };
 		FC954E261ABD883C001321E5 /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FC954E151ABD883C001321E5 /* AFHTTPRequestOperationManager.m */; };
@@ -260,8 +263,6 @@
 		D63D838E1ADCAFF0004A9A17 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
 		D63D83901ADCB09C004A9A17 /* UIImage+Resizing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Resizing.h"; sourceTree = "<group>"; };
 		D63D83911ADCB09C004A9A17 /* UIImage+Resizing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Resizing.m"; sourceTree = "<group>"; };
-		D63D83931ADCB5BF004A9A17 /* DataHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataHandler.h; sourceTree = "<group>"; };
-		D63D83941ADCB5BF004A9A17 /* DataHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataHandler.m; sourceTree = "<group>"; };
 		D63D83961ADCFC4F004A9A17 /* FundityFastPay@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "FundityFastPay@1x.png"; sourceTree = "<group>"; };
 		D63D83971ADCFC4F004A9A17 /* FundityFastPay@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "FundityFastPay@2x.png"; sourceTree = "<group>"; };
 		D63D839A1ADD1729004A9A17 /* SourceSansPro-SemiboldIt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-SemiboldIt.otf"; sourceTree = "<group>"; };
@@ -284,10 +285,13 @@
 		D63DE18C1AD7BDFA00A16C40 /* Pestona Family Winery.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Pestona Family Winery.jpeg"; sourceTree = "<group>"; };
 		D63EAF1E1ADF4E08001B3A71 /* LoanRequestContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoanRequestContainerViewController.h; sourceTree = "<group>"; };
 		D63EAF1F1ADF4E08001B3A71 /* LoanRequestContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoanRequestContainerViewController.m; sourceTree = "<group>"; };
+		D63F21131AE0B452006A4BD2 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		D63F21161AE0B7A9006A4BD2 /* UIHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIHelper.h; sourceTree = "<group>"; };
+		D63F21171AE0B7A9006A4BD2 /* UIHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIHelper.m; sourceTree = "<group>"; };
+		D63F21191AE0BF42006A4BD2 /* DeviceHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceHelper.h; sourceTree = "<group>"; };
+		D63F211A1AE0BF42006A4BD2 /* DeviceHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceHelper.m; sourceTree = "<group>"; };
 		D64066661ADE177C00CCE997 /* CompanyProfile_GrayCircle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CompanyProfile_GrayCircle@2x.png"; sourceTree = "<group>"; };
 		D64066671ADE177C00CCE997 /* CompanyProfile_GrayCircle@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CompanyProfile_GrayCircle@3x.png"; sourceTree = "<group>"; };
-		D640666B1ADE1E8F00CCE997 /* BorrowerDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BorrowerDetailsViewController.h; sourceTree = "<group>"; };
-		D640666C1ADE1E8F00CCE997 /* BorrowerDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BorrowerDetailsViewController.m; sourceTree = "<group>"; };
 		D640666E1ADE1EA500CCE997 /* BorrowerApplyNewLoanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BorrowerApplyNewLoanViewController.h; sourceTree = "<group>"; };
 		D640666F1ADE1EA500CCE997 /* BorrowerApplyNewLoanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BorrowerApplyNewLoanViewController.m; sourceTree = "<group>"; };
 		D64066711ADE333000CCE997 /* NewLoan_Upload@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "NewLoan_Upload@1x.png"; sourceTree = "<group>"; };
@@ -335,6 +339,10 @@
 		D6485C0A1ABD714C001FC4C0 /* BorrowerNewLoanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BorrowerNewLoanViewController.m; sourceTree = "<group>"; };
 		D6485C0C1ABD715D001FC4C0 /* BorrowerPayLoanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BorrowerPayLoanViewController.h; sourceTree = "<group>"; };
 		D6485C0D1ABD715D001FC4C0 /* BorrowerPayLoanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BorrowerPayLoanViewController.m; sourceTree = "<group>"; };
+		D6F83D871ADFA807000A3EC6 /* MyProfileTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyProfileTableViewController.h; sourceTree = "<group>"; };
+		D6F83D881ADFA807000A3EC6 /* MyProfileTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyProfileTableViewController.m; sourceTree = "<group>"; };
+		D6F83D8A1ADFBF57000A3EC6 /* UserAccountManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserAccountManager.h; sourceTree = "<group>"; };
+		D6F83D8B1ADFBF57000A3EC6 /* UserAccountManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserAccountManager.m; sourceTree = "<group>"; };
 		FC822D921ABD3AFC00A7293D /* DataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataManager.h; sourceTree = "<group>"; };
 		FC822D931ABD3AFC00A7293D /* DataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataManager.m; sourceTree = "<group>"; };
 		FC954E121ABD883C001321E5 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
@@ -374,6 +382,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D63F21141AE0B452006A4BD2 /* SystemConfiguration.framework in Frameworks */,
 				D63D838F1ADCAFF0004A9A17 /* CoreImage.framework in Frameworks */,
 				D6382BF11ADBEAB900A61229 /* CoreFoundation.framework in Frameworks */,
 				8C6FFBF9461B0535F61B97D9 /* libPods-MasterCard.a in Frameworks */,
@@ -462,6 +471,7 @@
 		D63DAFFC1AD63E6800381F96 /* Real app */ = {
 			isa = PBXGroup;
 			children = (
+				D63F21151AE0B754006A4BD2 /* Helpers */,
 				D6382BE91ADBAAC000A61229 /* Category */,
 				D63DE1821AD782FE00A16C40 /* Config */,
 				D63DE17E1AD778DC00A16C40 /* Model */,
@@ -510,6 +520,8 @@
 		D63DE17E1AD778DC00A16C40 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				D6F83D8A1ADFBF57000A3EC6 /* UserAccountManager.h */,
+				D6F83D8B1ADFBF57000A3EC6 /* UserAccountManager.m */,
 				D63DE17F1AD7792300A16C40 /* DataModel.h */,
 				D63DE1801AD7792300A16C40 /* DataModel.m */,
 			);
@@ -523,8 +535,6 @@
 				D63DAFFE1AD645D000381F96 /* FundityTableViewController.m */,
 				D6485C011ABD662C001FC4C0 /* AppConfig.h */,
 				D6485C021ABD662C001FC4C0 /* AppConfig.m */,
-				D63D83931ADCB5BF004A9A17 /* DataHandler.h */,
-				D63D83941ADCB5BF004A9A17 /* DataHandler.m */,
 			);
 			name = Config;
 			sourceTree = "<group>";
@@ -532,6 +542,8 @@
 		D63DE1831AD79DAA00A16C40 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				D6F83D871ADFA807000A3EC6 /* MyProfileTableViewController.h */,
+				D6F83D881ADFA807000A3EC6 /* MyProfileTableViewController.m */,
 				D640666A1ADE1E3C00CCE997 /* Borrower apply loan */,
 				D6382BDF1ADBA49800A61229 /* Registration */,
 				D63DE1841AD79DB800A16C40 /* Loan details */,
@@ -627,11 +639,20 @@
 			name = Images;
 			sourceTree = "<group>";
 		};
+		D63F21151AE0B754006A4BD2 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				D63F21161AE0B7A9006A4BD2 /* UIHelper.h */,
+				D63F21171AE0B7A9006A4BD2 /* UIHelper.m */,
+				D63F21191AE0BF42006A4BD2 /* DeviceHelper.h */,
+				D63F211A1AE0BF42006A4BD2 /* DeviceHelper.m */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
 		D640666A1ADE1E3C00CCE997 /* Borrower apply loan */ = {
 			isa = PBXGroup;
 			children = (
-				D640666B1ADE1E8F00CCE997 /* BorrowerDetailsViewController.h */,
-				D640666C1ADE1E8F00CCE997 /* BorrowerDetailsViewController.m */,
 				D640666E1ADE1EA500CCE997 /* BorrowerApplyNewLoanViewController.h */,
 				D640666F1ADE1EA500CCE997 /* BorrowerApplyNewLoanViewController.m */,
 			);
@@ -800,6 +821,7 @@
 		FECF197D7DE1AAEECE7FE6BF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D63F21131AE0B452006A4BD2 /* SystemConfiguration.framework */,
 				D63D838E1ADCAFF0004A9A17 /* CoreImage.framework */,
 				D6382BF01ADBEAB900A61229 /* CoreFoundation.framework */,
 				330E4D0D9E49CFBE07FDAD20 /* libPods-MasterCard.a */,
@@ -1052,13 +1074,14 @@
 				D6382BEF1ADBAB1F00A61229 /* UITextField+WithPadding.m in Sources */,
 				D6382BE21ADBA4BC00A61229 /* RegisterPageStepAccountViewController.m in Sources */,
 				D645D6351ABC0D4300890532 /* MasterCard.xcdatamodeld in Sources */,
+				D63F21181AE0B7A9006A4BD2 /* UIHelper.m in Sources */,
 				D6485BF31ABD5605001FC4C0 /* LeaderProfileViewController.m in Sources */,
 				D6382BE51ADBA4D100A61229 /* RegisterPageStepPersonalViewController.m in Sources */,
-				D640666D1ADE1E8F00CCE997 /* BorrowerDetailsViewController.m in Sources */,
 				D64066701ADE1EA500CCE997 /* BorrowerApplyNewLoanViewController.m in Sources */,
 				FC954E2D1ABD883C001321E5 /* AFURLSessionManager.m in Sources */,
 				D6485C081ABD7137001FC4C0 /* BorrowerProfileViewController.m in Sources */,
 				FC954E381ABD9671001321E5 /* MPAddress.m in Sources */,
+				D63F211B1AE0BF42006A4BD2 /* DeviceHelper.m in Sources */,
 				FC954E2A1ABD883C001321E5 /* AFURLConnectionOperation.m in Sources */,
 				FC954E261ABD883C001321E5 /* AFHTTPRequestOperationManager.m in Sources */,
 				D6485C0E1ABD715D001FC4C0 /* BorrowerPayLoanViewController.m in Sources */,
@@ -1078,7 +1101,8 @@
 				FC954E3A1ABD9671001321E5 /* MPLightboxViewController.m in Sources */,
 				D6485BF01ABD55CC001FC4C0 /* LoanDetailViewController.m in Sources */,
 				D6485C0B1ABD714C001FC4C0 /* BorrowerNewLoanViewController.m in Sources */,
-				D63D83951ADCB5BF004A9A17 /* DataHandler.m in Sources */,
+				D6F83D8C1ADFBF57000A3EC6 /* UserAccountManager.m in Sources */,
+				D6F83D891ADFA807000A3EC6 /* MyProfileTableViewController.m in Sources */,
 				D63DB0021AD6470E00381F96 /* LoanRequestViewController.m in Sources */,
 				FC954E271ABD883C001321E5 /* AFHTTPSessionManager.m in Sources */,
 				D63DE1811AD7792300A16C40 /* DataModel.m in Sources */,

@@ -9,29 +9,40 @@
 #import "LoginViewController.h"
 #import "BorrowerProfileViewController.h"
 #import "LoanRequestFeedViewController.h"
-
-#import "LoanRequestViewController.h"
-
+#import "LoanRequestContainerViewController.h"
+#import "RegisterPageStepAccountViewController.h"
+#import "UserAccountManager.h"
+#import "UIHelper.h"
 #import "AppConfig.h"
-
 #import "DataManager.h"
 
 @interface LoginViewController () <UITextFieldDelegate>
-//@property (assign, nonatomic) CGRect loginDialogOriginalFrame;
-//@property (assign, nonatomic) CGRect createAcctButtonOriginalFrame;
-//@property (assign, nonatomic) CGRect signInButtonOriginalFrame;
+@property (strong, nonatomic) UserAccountManager *registrationManager;
+@property (assign, nonatomic) BOOL loggedOnce;
 @end
 
 @implementation LoginViewController
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    [self render];
+}
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     [self renderNavigationBar];
 }
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    [self render];
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    UserAccountManager *acctManager = [UserAccountManager sharedInstance];
+    [acctManager tryAutoLogin:^(BOOL success, NSString *error, NSDictionary *userData) {
+        if (success) {
+            [self toMainPageWithLoggedState:YES userData:userData withDelay:NO];
+        } else {
+            NSLog(@"%s: %@", __func__,  error);
+        }
+    }];
 }
 
 - (void)renderNavigationBar {
@@ -64,6 +75,8 @@
     self.btnSignIn.layer.cornerRadius = 12;
     
     // Render Sign in view
+    self.textFieldSignInEmail.delegate = self;
+    self.textFieldSignInPassword.delegate = self;
     
     // Textboxes
     if ([self.textFieldSignInEmail respondsToSelector:@selector(setAttributedPlaceholder:)]) {
@@ -105,16 +118,74 @@
 }
 
 - (IBAction)continueWithoutAccountTouchUpInside:(id)sender {
-    
+    [self toMainPageWithLoggedState:NO userData:nil withDelay:NO];
 }
 
 - (IBAction)signInTouchUpInside:(id)sender {
-    
+    [self signInNow];
 }
 
 - (IBAction)signInCancelTouchUpInside:(id)sender {
     [self showSignInDialog:NO];
 }
 
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqual:@"createAccount"]) {
+        self.registrationManager = [UserAccountManager sharedInstance];
+        RegisterPageStepAccountViewController *destVC = segue.destinationViewController;
+        destVC.registrationManager = self.registrationManager;
+        
+    } else if ([segue.identifier isEqual:@"withoutLogin"]) {
+    }
+}
+
+- (void)signInNow {
+    NSString *email = self.textFieldSignInEmail.text;
+    NSString *password = self.textFieldSignInPassword.text;
+    UserAccountManager *acctManager = [UserAccountManager sharedInstance];
+    [acctManager loginWithEmail:email password:password callback:^(BOOL success, NSString *error, NSDictionary *userData) {
+        if (success) {
+            [self toMainPageWithLoggedState:YES userData:userData withDelay:YES];
+        } else {
+            [[[UIAlertView alloc] initWithTitle:@"Error" message:error delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil] show];
+        }
+    }];
+}
+
+- (void)toMainPageWithLoggedState:(BOOL)loggedIn userData:(NSDictionary *)userDataOrNil withDelay:(BOOL)delay {
+    int delayTime = 0;
+    if (delay) {
+        delayTime = arc4random() % 2 + 1;
+        [[UIHelper sharedInstance] showLoadingSpinnerInView:self.view];
+    }
+    
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, delayTime * NSEC_PER_SEC), dispatch_get_main_queue(), ^{
+        if (delay) {
+            [[UIHelper sharedInstance] hideLoadingSpinnerInView:self.view];
+        }
+        
+        UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+        LoanRequestContainerViewController *vc = (LoanRequestContainerViewController *)[sb instantiateViewControllerWithIdentifier:@"LoanRequestContainerViewController"];
+        vc.loggedIn = loggedIn;
+        vc.userData = userDataOrNil;
+        [self.navigationController pushViewController:vc animated:YES];
+    });
+}
+
+#pragma mark - UITextFieldDelegate
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    if (textField == self.textFieldSignInEmail) {
+        [self.textFieldSignInPassword becomeFirstResponder];
+    } else if (textField == self.textFieldSignInPassword) {
+        [self.view endEditing:YES];
+        [self signInNow];
+    }
+    return YES;
+}
+
+#pragma mark - UIResponder
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+    [self.view endEditing:YES];
+}
 
 @end

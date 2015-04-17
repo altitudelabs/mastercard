@@ -8,7 +8,7 @@
 
 #import "LoanRequestContainerViewController.h"
 #import "LoanRequestViewController.h"
-#import "BorrowerDetailsViewController.h"
+#import "MyProfileTableViewController.h"
 #import "AppConfig.h"
 #import <Masonry.h>
 
@@ -41,6 +41,8 @@
 - (void)render {
     UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
     self.tableViewController = (LoanRequestViewController *)[sb instantiateViewControllerWithIdentifier:@"LoanRequestViewController"];
+    self.tableViewController.loggedIn = self.loggedIn;
+    self.tableViewController.userData = self.userData;
     [self addChildViewController:self.tableViewController];
     [self.view addSubview:self.tableViewController.view];
     CGRect tableViewFrame = self.tableViewController.view.frame;
@@ -72,24 +74,33 @@
     [lblTitle sizeToFit];
     self.navigationItem.titleView = lblTitle;
     
-    //    // Right button
-    UIButton* buttonDone = [UIButton buttonWithType: UIButtonTypeCustom];
-    buttonDone.frame = CGRectMake(0, 0, 30, 30);
-    buttonDone.titleLabel.font = [UIFont fontWithName:UIFontRegularBook size:12];
-    //    [buttonDone setTitle:@" " forState:UIControlStateNormal];
-    [buttonDone setImage:[UIImage imageNamed:@"profile.png"] forState:UIControlStateNormal];
-    [buttonDone setTitle:@"" forState:UIControlStateNormal];
-    [buttonDone addTarget:self action:@selector(doneButtonTouchUpInside:) forControlEvents:UIControlEventTouchUpInside];
-    
-    UIBarButtonItem *anotherButton = [[UIBarButtonItem alloc] initWithCustomView:buttonDone];
-    self.navigationItem.rightBarButtonItem = anotherButton;
+    // Right button
+    [self showRightButtonInNavigationBar:self.loggedIn];
+}
+
+- (void)showRightButtonInNavigationBar:(BOOL)show {
+    if (show) {
+        // Right button
+        UIButton* buttonDone = [UIButton buttonWithType: UIButtonTypeCustom];
+        buttonDone.frame = CGRectMake(0, 0, 30, 30);
+        buttonDone.titleLabel.font = [UIFont fontWithName:UIFontRegularBook size:12];
+        //    [buttonDone setTitle:@" " forState:UIControlStateNormal];
+        [buttonDone setImage:[UIImage imageNamed:@"profile.png"] forState:UIControlStateNormal];
+        [buttonDone setTitle:@"" forState:UIControlStateNormal];
+        [buttonDone addTarget:self action:@selector(doneButtonTouchUpInside:) forControlEvents:UIControlEventTouchUpInside];
+        
+        UIBarButtonItem *anotherButton = [[UIBarButtonItem alloc] initWithCustomView:buttonDone];
+        self.navigationItem.rightBarButtonItem = anotherButton;
+    } else {
+        self.navigationItem.rightBarButtonItem = nil;
+    }
 }
 
 #pragma mark - Private
 
 - (void)doneButtonTouchUpInside:(id)sender {
     UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-    BorrowerDetailsViewController *vc = (BorrowerDetailsViewController *)[sb instantiateViewControllerWithIdentifier:@"BorrowerDetailsViewController"];
+    MyProfileTableViewController *vc = (MyProfileTableViewController *)[sb instantiateViewControllerWithIdentifier:@"MyProfileTableViewController"];
     [self.navigationController pushViewController:vc animated:YES];
 }
 
@@ -162,7 +173,7 @@
         make.top.equalTo(self.filterByAmountButton.mas_top);
     }];
     
-    [self addFilterButton:self.filterByRateButton withCenterText:@"Amount" leftLabelText:@"Low" rightLabelText:@"High"];
+    [self addFilterButton:self.filterByRateButton withCenterText:@"Rate" leftLabelText:@"Low" rightLabelText:@"High"];
     
     return footer;
 }
@@ -296,6 +307,14 @@
     
     self.filterByAmountButton.backgroundColor = [UIColor clearColor];
     self.filterByRateButton.backgroundColor = [UIColor whiteColor];
+}
+
+#pragma mark - Accessors
+
+- (void)setLoggedIn:(BOOL)loggedIn {
+    _loggedIn = loggedIn;
+    if (self.tableViewController) self.tableViewController.loggedIn = _loggedIn;
+    [self showRightButtonInNavigationBar:_loggedIn];
 }
 
 @end

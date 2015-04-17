@@ -7,6 +7,7 @@
 //
 
 #import "RegisterPageStepPersonalViewController.h"
+#import "RegisterPageStepPaymentViewController.h"
 #import "UITextField+WithPadding.h"
 #import "UIImage+Resizing.h"
 #import "AppConfig.h"
@@ -24,6 +25,11 @@ typedef NS_ENUM(NSInteger, UIImagePickerOption) {
 @end
 
 @implementation RegisterPageStepPersonalViewController
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [self.scrollView setContentOffset:CGPointMake(0, -64) animated:YES];
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -145,6 +151,26 @@ typedef NS_ENUM(NSInteger, UIImagePickerOption) {
     [self pickPhoto];
 }
 
+- (IBAction)nextButtonTouchUpInside:(id)sender {
+    NSString *fullAddress = self.textFieldAddressLine1.text;
+    if (self.textFieldAddressLine2.text) {
+        fullAddress = [fullAddress stringByAppendingString:self.textFieldAddressLine2.text];
+    }
+    
+    [self.registrationManager setProfilePage:self.profilePhotoImageView.image userName:self.textFieldFullName.text companyName:self.textFieldCompanyName.text phoneNumber:self.textFieldPhoneNumber.text address:fullAddress callback:^(BOOL success, NSString *error) {
+        if (success) {
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+                    RegisterPageStepPaymentViewController *vc = (RegisterPageStepPaymentViewController *)[sb instantiateViewControllerWithIdentifier:@"RegisterPageStepPaymentViewController"];
+                    vc.registrationManager = self.registrationManager;
+                    [self.navigationController pushViewController:vc animated:YES];
+                });
+        } else {
+            [[[UIAlertView alloc] initWithTitle:@"Error!" message:error delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil] show];
+        }
+    }];
+}
+
 #pragma mark - UIResponder
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
@@ -174,11 +200,11 @@ typedef NS_ENUM(NSInteger, UIImagePickerOption) {
     } else if (textField == self.textFieldCompanyName) {
         [self.scrollView setContentOffset:CGPointMake(0, 0) animated:YES];
     } else if (textField == self.textFieldPhoneNumber) {
-        [self.scrollView setContentOffset:CGPointMake(0, 0) animated:YES];
+        [self.scrollView setContentOffset:CGPointMake(0, 0 + self.containerViewHeight.constant * 0.4) animated:YES];
     } else if (textField == self.textFieldAddressLine1) {
-        [self.scrollView setContentOffset:CGPointMake(0, 40) animated:YES];
+        [self.scrollView setContentOffset:CGPointMake(0, 40 + self.containerViewHeight.constant * 0.4) animated:YES];
     } else if (textField == self.textFieldAddressLine2) {
-        [self.scrollView setContentOffset:CGPointMake(0, 90) animated:YES];
+        [self.scrollView setContentOffset:CGPointMake(0, 90 + self.containerViewHeight.constant * 0.4) animated:YES];
     }
 }
 
@@ -209,7 +235,8 @@ didFinishPickingMediaWithInfo:(NSDictionary *)info {
             self.imageViewLicense.image = originalImage;
             self.uploadedImageViewHeight.constant = 280;
             self.uploadedBtnHeight.constant = 280;
-            self.scrollView.contentSize = CGSizeMake(self.scrollView.contentSize.width, CGRectGetHeight(self.scrollView.frame) + 280);
+            self.containerViewHeight.constant = CGRectGetHeight(self.scrollView.frame) + 180;
+            
             self.imageViewLicense.hidden = NO;
 //            self.btnUploadLicense.hidden = YES;
             

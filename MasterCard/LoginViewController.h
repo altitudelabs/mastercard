@@ -19,7 +19,6 @@
 @property (weak, nonatomic) IBOutlet UIButton *btnSignIn;
 @property (weak, nonatomic) IBOutlet UIButton *btnCancelSignIn;
 
-
 - (IBAction)signupButtonPressed:(id)sender;
 - (IBAction)showSignInDialogButtonPressed:(id)sender;
 - (IBAction)continueWithoutAccountTouchUpInside:(id)sender;

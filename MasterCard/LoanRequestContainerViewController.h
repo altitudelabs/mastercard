@@ -10,4 +10,7 @@
 
 @interface LoanRequestContainerViewController : UIViewController
 
+@property (assign, nonatomic) BOOL loggedIn;
+@property (strong, nonatomic) NSDictionary *userData;
+
 @end

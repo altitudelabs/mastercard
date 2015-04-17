@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "UserAccountManager.h"
 
 @interface RegisterPageStepPaymentViewController : UIViewController
 
@@ -17,8 +18,10 @@
 @property (weak, nonatomic) IBOutlet UITextField *textFieldCVCCode;
 @property (weak, nonatomic) IBOutlet UIButton *btnSubmit;
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
+@property (strong, nonatomic) UserAccountManager *registrationManager;
 
 - (IBAction)pickBankTouchUpInside:(id)sender;
 - (IBAction)pickExpiryMonthTouchUpInside:(id)sender;
+- (IBAction)submitTouchUpInside:(id)sender;
 
 @end

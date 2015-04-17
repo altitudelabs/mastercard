@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "UserAccountManager.h"
 
 @interface RegisterPageStepPersonalViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UIView *containerView;
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 @property (weak, nonatomic) IBOutlet UIButton *btnEditProfilePicture;
 @property (weak, nonatomic) IBOutlet UIImageView *profilePhotoImageView;
@@ -25,9 +27,11 @@
 @property (weak, nonatomic) IBOutlet UITextField *textFieldAddressLine2;
 @property (weak, nonatomic) IBOutlet UIButton *btnNext;
 
+@property (strong, nonatomic) UserAccountManager *registrationManager;
+
 @property (weak, nonatomic) IBOutlet UIButton *uploadedImageView;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *uploadedImageViewHeight;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *uploadedBtnHeight;
-
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *containerViewHeight;
 
 @end
