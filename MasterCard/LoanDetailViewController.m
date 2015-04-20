@@ -111,7 +111,7 @@
 ////                    self.btnMoneySend.alpha = 0;
 ////                    [[[UIAlertView alloc] initWithTitle:@"Success!" message:@"Money sent!" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil] show];
 //                } else {
-//                    [[[UIAlertView alloc] initWithTitle:@"Money Send" message:@"Error." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil] show];
+//                    [[[UIAlertView alloc] initWithTitle:@"Money Send" message:@"Oops" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil] show];
 //                }
 //            }];
 //            

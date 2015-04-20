@@ -16,6 +16,7 @@
 
 @interface RegisterPageStepAccountViewController () <UITextFieldDelegate>
 @property (assign, nonatomic) BOOL borrowerSelected;
+@property (assign, nonatomic) CGPoint originalScrollerOffset;
 @end
 
 @implementation RegisterPageStepAccountViewController
@@ -24,6 +25,7 @@
     [super viewDidLoad];
     [self renderNavigationBar];
     [self render];
+    self.originalScrollerOffset = self.scrollView.contentOffset;
 }
 
 # pragma mark - Private
@@ -132,7 +134,7 @@
                 [self.navigationController pushViewController:vc animated:YES];
             });
         } else {
-            [[[UIAlertView alloc] initWithTitle:@"Error!" message:error delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil] show];
+            [[[UIAlertView alloc] initWithTitle:@"Oops" message:error delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil] show];
         }
     }];
 }
@@ -145,6 +147,7 @@
         [self.textboxPassword becomeFirstResponder];
     } else if (textField == self.textboxPassword) {
         [self.textboxPassword resignFirstResponder];
+        [self btnNextTouchUpInside:self.btnNext];
     }
     return YES;
 }

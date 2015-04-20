@@ -37,7 +37,7 @@ extern NSString* const KeyUserProfileImage;
 
 - (void)setAccountDataWithEmail:(NSString *)email password:(NSString *)password callback:(RegistrationResultCallback)resultCallback;
 
-- (void)setProfilePage:(UIImage *)profileImage userName:(NSString *)userName companyName:(NSString *)companyName phoneNumber:(NSString *)phoneNumber address:(NSString *)address callback:(RegistrationResultCallback) resultCallback;
+- (void)setProfilePage:(UIImage *)profileImage userName:(NSString *)userName companyName:(NSString *)companyName phoneNumber:(NSString *)phoneNumber address:(NSString *)address licenseImage:(UIImage *)licenseImage callback:(RegistrationResultCallback) resultCallback;
 
 - (void)setBankName:(NSString *)bankName bankAccountNumber:(NSString *) bankAccountNumber creditCardNumber:(NSString *)creditCardNumber expiryDate:(NSString *)expiryDate cvcCode:(NSString *)cvcCode callback:(RegistrationResultCallback) resultCallback;
 

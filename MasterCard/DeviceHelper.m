@@ -14,7 +14,7 @@
 + (BOOL)isNetworkAvailable {
     SCNetworkReachabilityFlags flags;
     SCNetworkReachabilityRef address;
-    address = SCNetworkReachabilityCreateWithName(NULL, "www.apple.com" );
+    address = SCNetworkReachabilityCreateWithName(NULL, "www.google.com" );
     Boolean success = SCNetworkReachabilityGetFlags(address, &flags);
     CFRelease(address);
     

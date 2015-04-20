@@ -27,25 +27,25 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="0.0" reuseIdentifier="LoanRequestTableViewCell" rowHeight="90" id="KGk-i7-Jjw" customClass="LoanRequestTableViewCell">
-            <rect key="frame" x="0.0" y="0.0" width="407" height="90"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="0.0" reuseIdentifier="LoanRequestTableViewCell" rowHeight="102" id="KGk-i7-Jjw" customClass="LoanRequestTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="407" height="122"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
                 <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YOJ-e8-ISJ">
-                        <rect key="frame" x="0.0" y="0.0" width="32" height="90"/>
+                        <rect key="frame" x="0.0" y="0.0" width="42" height="121.5"/>
                         <color key="backgroundColor" red="0.92549019607843142" green="0.92549019607843142" blue="0.92549019607843142" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="32" id="EBp-cM-JGf"/>
+                            <constraint firstAttribute="width" constant="42" id="EBp-cM-JGf"/>
                         </constraints>
                         <fontDescription key="fontDescription" name="SourceSansPro-Semibold" family="Source Sans Pro" pointSize="26"/>
                         <color key="textColor" red="0.5490196078431373" green="0.64313725490196083" blue="0.89411764705882357" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I4U-O7-p3U">
-                        <rect key="frame" x="357" y="0.0" width="50" height="82"/>
+                        <rect key="frame" x="357" y="0.0" width="50" height="113.5"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="50" id="04s-3i-fs5"/>
                         </constraints>
@@ -54,48 +54,39 @@
                         </state>
                     </button>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M5c-2E-1JJ">
-                        <rect key="frame" x="32" y="0.0" width="325" height="90"/>
+                        <rect key="frame" x="42" y="0.0" width="315" height="121.5"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Giodano Ltd." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v4q-Jc-Q0H">
-                                <rect key="frame" x="14" y="9" width="297" height="18"/>
+                                <rect key="frame" x="14" y="9" width="287" height="20"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="18" id="cwP-GX-HFc"/>
+                                    <constraint firstAttribute="height" constant="20" id="cwP-GX-HFc"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="SourceSansPro-Bold" family="Source Sans Pro" pointSize="15"/>
+                                <fontDescription key="fontDescription" name="SourceSansPro-Bold" family="Source Sans Pro" pointSize="17"/>
                                 <color key="textColor" red="0.93725490196078431" green="0.46274509803921571" blue="0.47843137254901957" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="heightClass=compact-widthClass=compact"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Growth Capital" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qyc-aD-uyy">
-                                <rect key="frame" x="14" y="27" width="297" height="18"/>
+                                <rect key="frame" x="14" y="29" width="287" height="20"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="18" id="UNI-2P-24l"/>
+                                    <constraint firstAttribute="height" constant="20" id="UNI-2P-24l"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="13"/>
+                                <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="15"/>
                                 <color key="textColor" red="0.41960784313725491" green="0.41960784313725491" blue="0.41960784313725491" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Vo-zg-Igc">
-                                <rect key="frame" x="13" y="43" width="246" height="47"/>
+                                <rect key="frame" x="13" y="46" width="300" height="75.5"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amount" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OtV-uS-Lwn">
-                                        <rect key="frame" x="0.0" y="8" width="46" height="16"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="46" id="FRr-iw-E5E"/>
-                                            <constraint firstAttribute="height" constant="16" id="USn-fx-XnJ"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="SourceSansPro-Semibold" family="Source Sans Pro" pointSize="13"/>
-                                        <color key="textColor" red="0.41960784313725491" green="0.41960784313725491" blue="0.41960784313725491" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$16000" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cBr-RX-zvL">
-                                        <rect key="frame" x="0.0" y="24" width="51" height="16"/>
+                                        <rect key="frame" x="0.0" y="24" width="61" height="16"/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="51" id="4Tj-gd-XH0"/>
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="17" id="ZaP-fa-G2a"/>
                                             <constraint firstAttribute="height" constant="16" id="oCV-6H-w4B"/>
-                                            <constraint firstAttribute="width" constant="51" id="rLD-b8-zWZ"/>
+                                            <constraint firstAttribute="width" constant="61" id="rLD-b8-zWZ"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="SourceSansPro-Semibold" family="Source Sans Pro" pointSize="13"/>
+                                        <fontDescription key="fontDescription" name="SourceSansPro-Semibold" family="Source Sans Pro" pointSize="15"/>
                                         <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                         <variation key="default">
@@ -106,44 +97,44 @@
                                         </variation>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rate" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UP2-HM-SAA">
-                                        <rect key="frame" x="60" y="8" width="27" height="16"/>
+                                        <rect key="frame" x="70" y="8" width="37" height="16"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="27" id="0h1-qG-Mr6"/>
+                                            <constraint firstAttribute="width" constant="37" id="0h1-qG-Mr6"/>
                                             <constraint firstAttribute="height" constant="16" id="LaC-Bw-azs"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="SourceSansPro-Semibold" family="Source Sans Pro" pointSize="13"/>
+                                        <fontDescription key="fontDescription" name="SourceSansPro-Semibold" family="Source Sans Pro" pointSize="15"/>
                                         <color key="textColor" red="0.41960784309999999" green="0.41960784309999999" blue="0.41960784309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Risk" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LWD-UH-8fQ">
-                                        <rect key="frame" x="101" y="8" width="27" height="16"/>
+                                        <rect key="frame" x="121" y="8" width="37" height="16"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="16" id="2bO-HW-f07"/>
-                                            <constraint firstAttribute="width" constant="27" id="3zm-Tl-yFH"/>
+                                            <constraint firstAttribute="width" constant="37" id="3zm-Tl-yFH"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="SourceSansPro-Semibold" family="Source Sans Pro" pointSize="13"/>
+                                        <fontDescription key="fontDescription" name="SourceSansPro-Semibold" family="Source Sans Pro" pointSize="15"/>
                                         <color key="textColor" red="0.41960784309999999" green="0.41960784309999999" blue="0.41960784309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Term" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NhJ-pA-Wy5">
-                                        <rect key="frame" x="142" y="8" width="30" height="16"/>
+                                        <rect key="frame" x="172" y="8" width="40" height="16"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="16" id="5eS-5y-t8e"/>
-                                            <constraint firstAttribute="width" constant="30" id="hRR-5t-Dsi"/>
+                                            <constraint firstAttribute="width" constant="40" id="hRR-5t-Dsi"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="SourceSansPro-Semibold" family="Source Sans Pro" pointSize="13"/>
+                                        <fontDescription key="fontDescription" name="SourceSansPro-Semibold" family="Source Sans Pro" pointSize="15"/>
                                         <color key="textColor" red="0.41960784309999999" green="0.41960784309999999" blue="0.41960784309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2%" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aK3-K9-POX">
-                                        <rect key="frame" x="60" y="24" width="51" height="16"/>
+                                        <rect key="frame" x="70" y="24" width="61" height="16"/>
                                         <constraints>
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="17" id="Je8-Ra-jke"/>
                                             <constraint firstAttribute="height" constant="16" id="c86-f4-87I"/>
-                                            <constraint firstAttribute="width" constant="51" id="def-U2-wma"/>
+                                            <constraint firstAttribute="width" constant="61" id="def-U2-wma"/>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="51" id="qUR-kC-C0i"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="SourceSansPro-Semibold" family="Source Sans Pro" pointSize="13"/>
+                                        <fontDescription key="fontDescription" name="SourceSansPro-Semibold" family="Source Sans Pro" pointSize="15"/>
                                         <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                         <variation key="default">
@@ -154,16 +145,16 @@
                                         </variation>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="D+" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eAY-c1-kO9">
-                                        <rect key="frame" x="101" y="24" width="51" height="16"/>
+                                        <rect key="frame" x="121" y="24" width="61" height="16"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="51" id="G3R-gH-Cp5"/>
+                                            <constraint firstAttribute="width" constant="61" id="G3R-gH-Cp5"/>
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="17" id="Qug-lg-ffO"/>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="51" id="Ytr-nh-1Y2"/>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="51" id="dcE-p4-jSD"/>
                                             <constraint firstAttribute="height" constant="16" id="g0n-fe-2zw"/>
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="17" id="guM-nh-XWx"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="SourceSansPro-Semibold" family="Source Sans Pro" pointSize="13"/>
+                                        <fontDescription key="fontDescription" name="SourceSansPro-Semibold" family="Source Sans Pro" pointSize="15"/>
                                         <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                         <variation key="default">
@@ -176,7 +167,7 @@
                                         </variation>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6 Months" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mct-59-2zv">
-                                        <rect key="frame" x="142" y="24" width="51" height="16"/>
+                                        <rect key="frame" x="172" y="24" width="61" height="16"/>
                                         <constraints>
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="17" id="0ZP-yS-4Ls"/>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="DtQ-Ix-zpe"/>
@@ -185,9 +176,9 @@
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="17" id="Qst-PV-WTn"/>
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="17" id="Zgr-39-R5y"/>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="51" id="nLd-01-yT2"/>
-                                            <constraint firstAttribute="width" constant="51" id="ob9-yl-3Et"/>
+                                            <constraint firstAttribute="width" constant="61" id="ob9-yl-3Et"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="SourceSansPro-Semibold" family="Source Sans Pro" pointSize="13"/>
+                                        <fontDescription key="fontDescription" name="SourceSansPro-Semibold" family="Source Sans Pro" pointSize="15"/>
                                         <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                         <variation key="default">
@@ -201,6 +192,16 @@
                                             </mask>
                                         </variation>
                                     </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amount" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OtV-uS-Lwn">
+                                        <rect key="frame" x="0.0" y="8" width="56" height="16"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="56" id="FRr-iw-E5E"/>
+                                            <constraint firstAttribute="height" constant="16" id="USn-fx-XnJ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="SourceSansPro-Semibold" family="Source Sans Pro" pointSize="15"/>
+                                        <color key="textColor" red="0.41960784313725491" green="0.41960784313725491" blue="0.41960784313725491" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="OtV-uS-Lwn" firstAttribute="baseline" secondItem="UP2-HM-SAA" secondAttribute="baseline" id="1oH-Ms-NS7"/>
@@ -208,7 +209,7 @@
                                     <constraint firstItem="UP2-HM-SAA" firstAttribute="leading" secondItem="OtV-uS-Lwn" secondAttribute="trailing" constant="14" id="5jO-2a-8lo"/>
                                     <constraint firstItem="cBr-RX-zvL" firstAttribute="leading" secondItem="OtV-uS-Lwn" secondAttribute="leading" id="FyP-hh-0hV"/>
                                     <constraint firstItem="OtV-uS-Lwn" firstAttribute="top" secondItem="7Vo-zg-Igc" secondAttribute="topMargin" id="GHH-P3-ZOY"/>
-                                    <constraint firstAttribute="width" constant="246" id="LpV-Po-Gu3"/>
+                                    <constraint firstAttribute="width" constant="300" id="LpV-Po-Gu3"/>
                                     <constraint firstItem="Mct-59-2zv" firstAttribute="top" secondItem="NhJ-pA-Wy5" secondAttribute="bottom" id="PZA-Ax-nsE"/>
                                     <constraint firstItem="OtV-uS-Lwn" firstAttribute="baseline" secondItem="LWD-UH-8fQ" secondAttribute="baseline" id="QD4-Kl-5Z1"/>
                                     <constraint firstItem="OtV-uS-Lwn" firstAttribute="leading" secondItem="7Vo-zg-Igc" secondAttribute="leading" id="Shx-Q6-qUe"/>
@@ -243,7 +244,7 @@
                             <constraint firstItem="7Vo-zg-Igc" firstAttribute="leading" secondItem="M5c-2E-1JJ" secondAttribute="leading" id="Mi4-Pa-Zwk"/>
                             <constraint firstAttribute="trailing" secondItem="v4q-Jc-Q0H" secondAttribute="trailing" constant="14" id="WHy-dT-tXb"/>
                             <constraint firstAttribute="centerX" secondItem="7Vo-zg-Igc" secondAttribute="centerX" constant="26.5" id="bfY-wJ-UFu"/>
-                            <constraint firstItem="7Vo-zg-Igc" firstAttribute="top" secondItem="Qyc-aD-uyy" secondAttribute="bottom" constant="-2" id="iHk-TY-gcR"/>
+                            <constraint firstItem="7Vo-zg-Igc" firstAttribute="top" secondItem="Qyc-aD-uyy" secondAttribute="bottom" constant="-3" id="iHk-TY-gcR"/>
                             <constraint firstAttribute="trailing" secondItem="Qyc-aD-uyy" secondAttribute="trailing" constant="14" id="uPa-Pm-y2U"/>
                             <constraint firstItem="Qyc-aD-uyy" firstAttribute="top" secondItem="v4q-Jc-Q0H" secondAttribute="bottom" id="yZU-rZ-2Yu"/>
                         </constraints>
@@ -254,8 +255,8 @@
                             </mask>
                         </variation>
                     </view>
-                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LoanRequest_Arrow.png" translatesAutoresizingMaskIntoConstraints="NO" id="ZW7-UP-d62">
-                        <rect key="frame" x="357" y="0.0" width="50" height="82"/>
+                    <imageView contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LoanRequest_Arrow.png" translatesAutoresizingMaskIntoConstraints="NO" id="ZW7-UP-d62">
+                        <rect key="frame" x="357" y="0.0" width="50" height="113.5"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="40" id="h3V-dd-INz"/>
                             <constraint firstAttribute="height" constant="40" id="mzX-TV-dYo"/>
@@ -296,14 +297,20 @@
             <connections>
                 <outlet property="CompanyDescriptionLabel" destination="Qyc-aD-uyy" id="pQO-gp-E34"/>
                 <outlet property="amountLabel" destination="cBr-RX-zvL" id="kdq-f7-9gh"/>
+                <outlet property="amountTextLabel" destination="OtV-uS-Lwn" id="vVP-y3-IXc"/>
                 <outlet property="arrowButton" destination="I4U-O7-p3U" id="A88-sk-3HR"/>
                 <outlet property="cellNumberLabel" destination="YOJ-e8-ISJ" id="U9u-x8-Chv"/>
+                <outlet property="companyDescriptionHeight" destination="UNI-2P-24l" id="gUh-p5-VdC"/>
+                <outlet property="companyNameHeight" destination="cwP-GX-HFc" id="SXv-Fo-Fe3"/>
                 <outlet property="companyNameLabel" destination="v4q-Jc-Q0H" id="PHa-Tp-S5b"/>
                 <outlet property="rateLabel" destination="aK3-K9-POX" id="S8E-XS-CRg"/>
+                <outlet property="rateTextLabel" destination="UP2-HM-SAA" id="2G7-OP-GXU"/>
                 <outlet property="riskLabel" destination="eAY-c1-kO9" id="xIR-QM-3Ef"/>
+                <outlet property="riskTextLabel" destination="LWD-UH-8fQ" id="GxX-Ua-TAZ"/>
                 <outlet property="termLabel" destination="Mct-59-2zv" id="K1a-P0-LAu"/>
+                <outlet property="termTextLabel" destination="NhJ-pA-Wy5" id="9fw-Qz-Fno"/>
             </connections>
-            <point key="canvasLocation" x="464.5" y="412"/>
+            <point key="canvasLocation" x="464.5" y="418"/>
         </tableViewCell>
     </objects>
     <resources>

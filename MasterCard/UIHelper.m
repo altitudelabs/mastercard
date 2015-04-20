@@ -7,6 +7,7 @@
 //
 
 #import "UIHelper.h"
+#import "DeviceHelper.h"
 
 NSString* const KeySpinner = @"spinner";
 NSString* const KeyView = @"view";
@@ -46,6 +47,18 @@ NSString* const KeyView = @"view";
     [self.spinnersOfViews addObject:saveDict];
 }
 
+- (void)showLoadingSpinnerInView:(UIView *)view withOffset:(CGPoint)offset {
+    UIView *spinner = [self loadingSpinner];
+    spinner.center = CGPointMake(view.center.x + offset.x, view.center.y + offset.y);
+    [view addSubview:spinner];
+    
+    view.userInteractionEnabled = NO;
+    
+    NSDictionary *saveDict = @{KeySpinner : spinner,
+                               KeyView : view};
+    [self.spinnersOfViews addObject:saveDict];
+}
+
 - (void)hideLoadingSpinnerInView:(UIView *)view {
     view.userInteractionEnabled = YES;
     
@@ -58,6 +71,19 @@ NSString* const KeyView = @"view";
             break;
         }
     }
+}
+
+- (void)showPaymentEventInView:(UIView *)view spinnerOffset:(CGPoint)offset successDialogTitle:(NSString *)successDialogTitle successDialogMessage:(NSString *)successDialogMessage {
+    [self showLoadingSpinnerInView:view withOffset:offset];
+    dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, 1.3 * NSEC_PER_SEC);
+    dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
+        [self hideLoadingSpinnerInView:view];
+        if (![DeviceHelper isNetworkAvailable]) {
+            [[[UIAlertView alloc] initWithTitle:@"Oops" message:@"Please check your internet connection and try again." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil] show];
+        } else {
+            [[[UIAlertView alloc] initWithTitle:successDialogTitle message:successDialogMessage delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil] show];
+        }
+    });
 }
 
 #pragma mark - Private

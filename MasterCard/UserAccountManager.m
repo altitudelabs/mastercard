@@ -68,13 +68,13 @@ NSString* const KeyUserProfileImage = @"KeyUserProfileImage";
             resultCallback(NO, @"Please check internet connection and try again.");
             return;
         } else if (![self validateEmail:email]) {
-            resultCallback(NO, @"Invalid email!");
+            resultCallback(NO, @"Invalid email");
             return;
         } else if ([self emailUsed:email]) {
-            resultCallback(NO, @"This email has been registered!");
+            resultCallback(NO, @"This email is already in use.");
             return;
         } else if (password == nil || password.length < 6) {
-            resultCallback(NO, @"Password need to be at least 6 characters!");
+            resultCallback(NO, @"Password needs to be at least 6 characters");
             return;
         }
         
@@ -85,20 +85,26 @@ NSString* const KeyUserProfileImage = @"KeyUserProfileImage";
     });
 }
 
-- (void)setProfilePage:(UIImage *)profileImage userName:(NSString *)userName companyName:(NSString *)companyName phoneNumber:(NSString *)phoneNumber address:(NSString *)address callback:(RegistrationResultCallback) resultCallback {
+- (void)setProfilePage:(UIImage *)profileImage userName:(NSString *)userName companyName:(NSString *)companyName phoneNumber:(NSString *)phoneNumber address:(NSString *)address licenseImage:(UIImage *)licenseImage callback:(RegistrationResultCallback) resultCallback {
     
     // Error
     if (userName == nil || userName.length == 0) {
-        resultCallback(NO, @"User name cannot be empty!");
+        resultCallback(NO, @"Username cannot be empty.");
         return;
     } else if (companyName == nil || companyName.length == 0) {
-        resultCallback(NO, @"Company name cannot be empty!");
+        resultCallback(NO, @"Company name cannot be empty.");
         return;
     } else if (phoneNumber == nil || phoneNumber.length == 0) {
-        resultCallback(NO, @"Phone number cannot be empty!");
+        resultCallback(NO, @"Phone number cannot be empty.");
         return;
     } else if (address == nil || address.length == 0) {
-        resultCallback(NO, @"Address cannot be empty");
+        resultCallback(NO, @"Address cannot be empty.");
+        return;
+    } else if (profileImage == nil) {
+        resultCallback(NO, @"Please add a profile picture.");
+        return;
+    } else if (licenseImage == nil) {
+        resultCallback(NO, @"Please upload your BR for verification purposes.");
         return;
     }
     
@@ -107,11 +113,7 @@ NSString* const KeyUserProfileImage = @"KeyUserProfileImage";
     [self.data setObject:companyName forKey:KeyUserCompany];
     [self.data setObject:phoneNumber forKey:KeyUserPhoneNumber];
     [self.data setObject:address forKey:KeyUserAddress];
-    
-    // Optional
-    if (profileImage) {
-        [self setProfilePhotoForThisUser:profileImage];
-    }
+    [self setProfilePhotoForThisUser:profileImage];
     
     resultCallback(YES, nil);
 }
@@ -150,7 +152,7 @@ NSString* const KeyUserProfileImage = @"KeyUserProfileImage";
         
     } else {
         // Error
-        resultCallback(NO, @"Payment info is not complete.");
+        resultCallback(NO, @"Payment information incomplete.");
     }
 }
 
@@ -172,7 +174,7 @@ NSString* const KeyUserProfileImage = @"KeyUserProfileImage";
 }
 
 - (void)setProfilePhotoForThisUser:(UIImage *)profilePhoto {
-    NSString *imageFilePath = [self saveImageToAppFolder:profilePhoto withName:[self.data objectForKey:KeyUserName]];
+    NSString *imageFilePath = [self saveImageToAppFolder:profilePhoto withName:[self.data objectForKey:KeyUserEmail]];
     [self.data setObject:imageFilePath forKey:KeyUserProfileImage];
 }
 
@@ -209,7 +211,7 @@ NSString* const KeyUserProfileImage = @"KeyUserProfileImage";
                 callback(YES, nil, userData);
                 return;
             } else {
-                callback(NO, @"Incorrect password.", nil);
+                callback(NO, @"Incorrect email or password.", nil);
                 return;
             }
         }
@@ -245,7 +247,8 @@ NSString* const KeyUserProfileImage = @"KeyUserProfileImage";
     NSData *pngData = UIImagePNGRepresentation(image);
     NSString *filePath = [DeviceHelper documentsPathForFileName:[fileName stringByAppendingString:@".png"]];
     [pngData writeToFile:filePath atomically:YES]; //Write the file
-    return filePath;
+//    return filePath;
+    return fileName;
 }
 
 #pragma Create/ modify user account helper methods
@@ -281,7 +284,7 @@ NSString* const KeyUserProfileImage = @"KeyUserProfileImage";
 
 - (NSMutableArray *)userAccountArrayFromPref {
     NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
-    NSMutableArray *userArray = [userDefaults objectForKey:KeyUserAccountArray];
+    NSMutableArray *userArray = [[userDefaults objectForKey:KeyUserAccountArray] mutableCopy];
     if (userArray == nil) {
         userArray = [NSMutableArray array];
     }

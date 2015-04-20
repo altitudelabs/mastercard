@@ -13,6 +13,9 @@
 + (UIHelper*)sharedInstance;
 
 - (void)showLoadingSpinnerInView:(UIView *)view;
+- (void)showLoadingSpinnerInView:(UIView *)view withOffset:(CGPoint)offset;
 - (void)hideLoadingSpinnerInView:(UIView *)view;
+
+- (void)showPaymentEventInView:(UIView *)view spinnerOffset:(CGPoint)offset successDialogTitle:(NSString *)successDialogTitle successDialogMessage:(NSString *)successDialogMessage;
 
 @end

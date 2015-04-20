@@ -23,6 +23,17 @@
 @property (weak, nonatomic) IBOutlet UILabel *riskLabel;
 @property (weak, nonatomic) IBOutlet UILabel *termLabel;
 
+// Text label
+@property (weak, nonatomic) IBOutlet UILabel *amountTextLabel;
+@property (weak, nonatomic) IBOutlet UILabel *rateTextLabel;
+@property (weak, nonatomic) IBOutlet UILabel *riskTextLabel;
+@property (weak, nonatomic) IBOutlet UILabel *termTextLabel;
+
+
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *companyNameHeight;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *companyDescriptionHeight;
+
+
 + (NSString *)assignIdentifier;
 - (void)updateLayout;
 

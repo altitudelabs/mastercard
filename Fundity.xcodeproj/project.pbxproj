@@ -85,7 +85,6 @@
 		D63B2F131ABE5E490088B99B /* Loan_Detail@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D63B2F121ABE5E490088B99B /* Loan_Detail@2x.png */; };
 		D63B2F151ABE68C80088B99B /* My_Profile@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D63B2F141ABE68C80088B99B /* My_Profile@2x.png */; };
 		D63B2F171ABE694F0088B99B /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = D63B2F161ABE694F0088B99B /* home.png */; };
-		D63B2F1B1ABE6D800088B99B /* app-icon3.png in Resources */ = {isa = PBXBuildFile; fileRef = D63B2F1A1ABE6D800088B99B /* app-icon3.png */; };
 		D63D838F1ADCAFF0004A9A17 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D63D838E1ADCAFF0004A9A17 /* CoreImage.framework */; };
 		D63D83921ADCB09C004A9A17 /* UIImage+Resizing.m in Sources */ = {isa = PBXBuildFile; fileRef = D63D83911ADCB09C004A9A17 /* UIImage+Resizing.m */; };
 		D63D83981ADCFC4F004A9A17 /* FundityFastPay@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = D63D83961ADCFC4F004A9A17 /* FundityFastPay@1x.png */; };
@@ -104,12 +103,14 @@
 		D63DE1811AD7792300A16C40 /* DataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D63DE1801AD7792300A16C40 /* DataModel.m */; };
 		D63DE18A1AD79DFA00A16C40 /* LoanerDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D63DE1891AD79DFA00A16C40 /* LoanerDetailViewController.m */; };
 		D63DE18D1AD7BDFA00A16C40 /* Pestona Family Winery.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = D63DE18C1AD7BDFA00A16C40 /* Pestona Family Winery.jpeg */; };
+		D63E5E901AE1F3A5000E6A85 /* CompanyProfile_GrayCircle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D63E5E8F1AE1F3A5000E6A85 /* CompanyProfile_GrayCircle@2x.png */; };
+		D63E5E921AE1F4D6000E6A85 /* CompanyProfile_GrayCircle@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D63E5E911AE1F4D6000E6A85 /* CompanyProfile_GrayCircle@3x.png */; };
+		D63E5E951AE2165D000E6A85 /* Fundity_Connection@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D63E5E931AE2165D000E6A85 /* Fundity_Connection@2x.png */; };
+		D63E5E961AE2165D000E6A85 /* Fundity_Connection@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D63E5E941AE2165D000E6A85 /* Fundity_Connection@3x.png */; };
 		D63EAF201ADF4E08001B3A71 /* LoanRequestContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D63EAF1F1ADF4E08001B3A71 /* LoanRequestContainerViewController.m */; };
 		D63F21141AE0B452006A4BD2 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D63F21131AE0B452006A4BD2 /* SystemConfiguration.framework */; };
 		D63F21181AE0B7A9006A4BD2 /* UIHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = D63F21171AE0B7A9006A4BD2 /* UIHelper.m */; };
 		D63F211B1AE0BF42006A4BD2 /* DeviceHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = D63F211A1AE0BF42006A4BD2 /* DeviceHelper.m */; };
-		D64066681ADE177C00CCE997 /* CompanyProfile_GrayCircle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D64066661ADE177C00CCE997 /* CompanyProfile_GrayCircle@2x.png */; };
-		D64066691ADE177C00CCE997 /* CompanyProfile_GrayCircle@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D64066671ADE177C00CCE997 /* CompanyProfile_GrayCircle@3x.png */; };
 		D64066701ADE1EA500CCE997 /* BorrowerApplyNewLoanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D640666F1ADE1EA500CCE997 /* BorrowerApplyNewLoanViewController.m */; };
 		D64066741ADE333000CCE997 /* NewLoan_Upload@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = D64066711ADE333000CCE997 /* NewLoan_Upload@1x.png */; };
 		D64066751ADE333000CCE997 /* NewLoan_Upload@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D64066721ADE333000CCE997 /* NewLoan_Upload@2x.png */; };
@@ -144,6 +145,13 @@
 		D6485C081ABD7137001FC4C0 /* BorrowerProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6485C071ABD7137001FC4C0 /* BorrowerProfileViewController.m */; };
 		D6485C0B1ABD714C001FC4C0 /* BorrowerNewLoanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6485C0A1ABD714C001FC4C0 /* BorrowerNewLoanViewController.m */; };
 		D6485C0E1ABD715D001FC4C0 /* BorrowerPayLoanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6485C0D1ABD715D001FC4C0 /* BorrowerPayLoanViewController.m */; };
+		D64F4AED1AE4E692007CA551 /* home 640x1136.png in Resources */ = {isa = PBXBuildFile; fileRef = D64F4AEB1AE4E692007CA551 /* home 640x1136.png */; };
+		D64F4AEE1AE4E692007CA551 /* home 640x960.png in Resources */ = {isa = PBXBuildFile; fileRef = D64F4AEC1AE4E692007CA551 /* home 640x960.png */; };
+		D64F4AF51AE4E940007CA551 /* app-icon58.png in Resources */ = {isa = PBXBuildFile; fileRef = D64F4AF01AE4E940007CA551 /* app-icon58.png */; };
+		D64F4AF61AE4E940007CA551 /* app-icon80.png in Resources */ = {isa = PBXBuildFile; fileRef = D64F4AF11AE4E940007CA551 /* app-icon80.png */; };
+		D64F4AF71AE4E940007CA551 /* app-icon87.png in Resources */ = {isa = PBXBuildFile; fileRef = D64F4AF21AE4E940007CA551 /* app-icon87.png */; };
+		D64F4AF81AE4E940007CA551 /* app-icon120.png in Resources */ = {isa = PBXBuildFile; fileRef = D64F4AF31AE4E940007CA551 /* app-icon120.png */; };
+		D64F4AF91AE4E940007CA551 /* app-icon180.png in Resources */ = {isa = PBXBuildFile; fileRef = D64F4AF41AE4E940007CA551 /* app-icon180.png */; };
 		D6F83D891ADFA807000A3EC6 /* MyProfileTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6F83D881ADFA807000A3EC6 /* MyProfileTableViewController.m */; };
 		D6F83D8C1ADFBF57000A3EC6 /* UserAccountManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D6F83D8B1ADFBF57000A3EC6 /* UserAccountManager.m */; };
 		FC822D941ABD3AFC00A7293D /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FC822D931ABD3AFC00A7293D /* DataManager.m */; };
@@ -259,7 +267,6 @@
 		D63B2F121ABE5E490088B99B /* Loan_Detail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Loan_Detail@2x.png"; sourceTree = "<group>"; };
 		D63B2F141ABE68C80088B99B /* My_Profile@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "My_Profile@2x.png"; sourceTree = "<group>"; };
 		D63B2F161ABE694F0088B99B /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home.png; sourceTree = "<group>"; };
-		D63B2F1A1ABE6D800088B99B /* app-icon3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "app-icon3.png"; sourceTree = "<group>"; };
 		D63D838E1ADCAFF0004A9A17 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
 		D63D83901ADCB09C004A9A17 /* UIImage+Resizing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Resizing.h"; sourceTree = "<group>"; };
 		D63D83911ADCB09C004A9A17 /* UIImage+Resizing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Resizing.m"; sourceTree = "<group>"; };
@@ -283,6 +290,10 @@
 		D63DE1881AD79DFA00A16C40 /* LoanerDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoanerDetailViewController.h; sourceTree = "<group>"; };
 		D63DE1891AD79DFA00A16C40 /* LoanerDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoanerDetailViewController.m; sourceTree = "<group>"; };
 		D63DE18C1AD7BDFA00A16C40 /* Pestona Family Winery.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Pestona Family Winery.jpeg"; sourceTree = "<group>"; };
+		D63E5E8F1AE1F3A5000E6A85 /* CompanyProfile_GrayCircle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CompanyProfile_GrayCircle@2x.png"; sourceTree = "<group>"; };
+		D63E5E911AE1F4D6000E6A85 /* CompanyProfile_GrayCircle@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CompanyProfile_GrayCircle@3x.png"; sourceTree = "<group>"; };
+		D63E5E931AE2165D000E6A85 /* Fundity_Connection@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Fundity_Connection@2x.png"; sourceTree = "<group>"; };
+		D63E5E941AE2165D000E6A85 /* Fundity_Connection@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Fundity_Connection@3x.png"; sourceTree = "<group>"; };
 		D63EAF1E1ADF4E08001B3A71 /* LoanRequestContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoanRequestContainerViewController.h; sourceTree = "<group>"; };
 		D63EAF1F1ADF4E08001B3A71 /* LoanRequestContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoanRequestContainerViewController.m; sourceTree = "<group>"; };
 		D63F21131AE0B452006A4BD2 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
@@ -290,8 +301,6 @@
 		D63F21171AE0B7A9006A4BD2 /* UIHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIHelper.m; sourceTree = "<group>"; };
 		D63F21191AE0BF42006A4BD2 /* DeviceHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceHelper.h; sourceTree = "<group>"; };
 		D63F211A1AE0BF42006A4BD2 /* DeviceHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceHelper.m; sourceTree = "<group>"; };
-		D64066661ADE177C00CCE997 /* CompanyProfile_GrayCircle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CompanyProfile_GrayCircle@2x.png"; sourceTree = "<group>"; };
-		D64066671ADE177C00CCE997 /* CompanyProfile_GrayCircle@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CompanyProfile_GrayCircle@3x.png"; sourceTree = "<group>"; };
 		D640666E1ADE1EA500CCE997 /* BorrowerApplyNewLoanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BorrowerApplyNewLoanViewController.h; sourceTree = "<group>"; };
 		D640666F1ADE1EA500CCE997 /* BorrowerApplyNewLoanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BorrowerApplyNewLoanViewController.m; sourceTree = "<group>"; };
 		D64066711ADE333000CCE997 /* NewLoan_Upload@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "NewLoan_Upload@1x.png"; sourceTree = "<group>"; };
@@ -309,7 +318,7 @@
 		D64066861ADE71AD00CCE997 /* LoanRequest_Filter@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LoanRequest_Filter@1x.png"; sourceTree = "<group>"; };
 		D64066871ADE71AD00CCE997 /* LoanRequest_Filter@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LoanRequest_Filter@2x.png"; sourceTree = "<group>"; };
 		D64066881ADE71AD00CCE997 /* LoanRequest_Filter@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LoanRequest_Filter@3x.png"; sourceTree = "<group>"; };
-		D645D6291ABC0D4300890532 /* MasterCard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MasterCard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D645D6291ABC0D4300890532 /* Fundity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fundity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D645D62D1ABC0D4300890532 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D645D62E1ABC0D4300890532 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D645D6301ABC0D4300890532 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -318,7 +327,7 @@
 		D645D63A1ABC0D4300890532 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D645D63C1ABC0D4300890532 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D645D63F1ABC0D4300890532 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		D645D6451ABC0D4300890532 /* MasterCardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MasterCardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D645D6451ABC0D4300890532 /* FundityTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FundityTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D645D64A1ABC0D4300890532 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D645D64B1ABC0D4300890532 /* MasterCardTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterCardTests.m; sourceTree = "<group>"; };
 		D6485BEB1ABD55BC001FC4C0 /* LoanRequestFeedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoanRequestFeedViewController.h; sourceTree = "<group>"; };
@@ -339,6 +348,13 @@
 		D6485C0A1ABD714C001FC4C0 /* BorrowerNewLoanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BorrowerNewLoanViewController.m; sourceTree = "<group>"; };
 		D6485C0C1ABD715D001FC4C0 /* BorrowerPayLoanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BorrowerPayLoanViewController.h; sourceTree = "<group>"; };
 		D6485C0D1ABD715D001FC4C0 /* BorrowerPayLoanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BorrowerPayLoanViewController.m; sourceTree = "<group>"; };
+		D64F4AEB1AE4E692007CA551 /* home 640x1136.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home 640x1136.png"; sourceTree = "<group>"; };
+		D64F4AEC1AE4E692007CA551 /* home 640x960.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home 640x960.png"; sourceTree = "<group>"; };
+		D64F4AF01AE4E940007CA551 /* app-icon58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "app-icon58.png"; sourceTree = "<group>"; };
+		D64F4AF11AE4E940007CA551 /* app-icon80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "app-icon80.png"; sourceTree = "<group>"; };
+		D64F4AF21AE4E940007CA551 /* app-icon87.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "app-icon87.png"; sourceTree = "<group>"; };
+		D64F4AF31AE4E940007CA551 /* app-icon120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "app-icon120.png"; sourceTree = "<group>"; };
+		D64F4AF41AE4E940007CA551 /* app-icon180.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "app-icon180.png"; sourceTree = "<group>"; };
 		D6F83D871ADFA807000A3EC6 /* MyProfileTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyProfileTableViewController.h; sourceTree = "<group>"; };
 		D6F83D881ADFA807000A3EC6 /* MyProfileTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyProfileTableViewController.m; sourceTree = "<group>"; };
 		D6F83D8A1ADFBF57000A3EC6 /* UserAccountManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserAccountManager.h; sourceTree = "<group>"; };
@@ -564,6 +580,10 @@
 		D63DE18B1AD7BDE200A16C40 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				D63E5E931AE2165D000E6A85 /* Fundity_Connection@2x.png */,
+				D63E5E941AE2165D000E6A85 /* Fundity_Connection@3x.png */,
+				D63E5E8F1AE1F3A5000E6A85 /* CompanyProfile_GrayCircle@2x.png */,
+				D63E5E911AE1F4D6000E6A85 /* CompanyProfile_GrayCircle@3x.png */,
 				D64066831ADE71AD00CCE997 /* LoanRequest_Arrow@1x.png */,
 				D64066841ADE71AD00CCE997 /* LoanRequest_Arrow@2x.png */,
 				D64066851ADE71AD00CCE997 /* LoanRequest_Arrow@3x.png */,
@@ -573,8 +593,6 @@
 				D64066711ADE333000CCE997 /* NewLoan_Upload@1x.png */,
 				D64066721ADE333000CCE997 /* NewLoan_Upload@2x.png */,
 				D64066731ADE333000CCE997 /* NewLoan_Upload@3x.png */,
-				D64066661ADE177C00CCE997 /* CompanyProfile_GrayCircle@2x.png */,
-				D64066671ADE177C00CCE997 /* CompanyProfile_GrayCircle@3x.png */,
 				D6382B6D1ADB9ACE00A61229 /* Fundity_BG@2x.png */,
 				D6382B6E1ADB9ACE00A61229 /* Fundity_BG@3x.png */,
 				D6382B6F1ADB9ACE00A61229 /* Fundity_Drop@1x.png */,
@@ -674,8 +692,8 @@
 		D645D62A1ABC0D4300890532 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D645D6291ABC0D4300890532 /* MasterCard.app */,
-				D645D6451ABC0D4300890532 /* MasterCardTests.xctest */,
+				D645D6291ABC0D4300890532 /* Fundity.app */,
+				D645D6451ABC0D4300890532 /* FundityTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -732,8 +750,10 @@
 		D6485BF41ABD5FBB001FC4C0 /* images */ = {
 			isa = PBXGroup;
 			children = (
-				D63B2F1A1ABE6D800088B99B /* app-icon3.png */,
+				D64F4AEF1AE4E936007CA551 /* app icon */,
 				D63B2F161ABE694F0088B99B /* home.png */,
+				D64F4AEB1AE4E692007CA551 /* home 640x1136.png */,
+				D64F4AEC1AE4E692007CA551 /* home 640x960.png */,
 				D62460711ABDBC4900CECE2D /* login page */,
 				D62460701ABDBC4200CECE2D /* new loan */,
 				D624606E1ABDB84700CECE2D /* Borrower's_Profile@2x.png */,
@@ -748,6 +768,18 @@
 				D6485BF91ABD5FC6001FC4C0 /* profile@2x.png */,
 			);
 			name = images;
+			sourceTree = "<group>";
+		};
+		D64F4AEF1AE4E936007CA551 /* app icon */ = {
+			isa = PBXGroup;
+			children = (
+				D64F4AF01AE4E940007CA551 /* app-icon58.png */,
+				D64F4AF11AE4E940007CA551 /* app-icon80.png */,
+				D64F4AF21AE4E940007CA551 /* app-icon87.png */,
+				D64F4AF31AE4E940007CA551 /* app-icon120.png */,
+				D64F4AF41AE4E940007CA551 /* app-icon180.png */,
+			);
+			name = "app icon";
 			sourceTree = "<group>";
 		};
 		FC954E111ABD883C001321E5 /* AFNetworking */ = {
@@ -832,9 +864,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D645D6281ABC0D4300890532 /* MasterCard */ = {
+		D645D6281ABC0D4300890532 /* Fundity */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D645D64F1ABC0D4300890532 /* Build configuration list for PBXNativeTarget "MasterCard" */;
+			buildConfigurationList = D645D64F1ABC0D4300890532 /* Build configuration list for PBXNativeTarget "Fundity" */;
 			buildPhases = (
 				8E314474A69ED560CE3CCF91 /* Check Pods Manifest.lock */,
 				D645D6251ABC0D4300890532 /* Sources */,
@@ -846,14 +878,14 @@
 			);
 			dependencies = (
 			);
-			name = MasterCard;
+			name = Fundity;
 			productName = MasterCard;
-			productReference = D645D6291ABC0D4300890532 /* MasterCard.app */;
+			productReference = D645D6291ABC0D4300890532 /* Fundity.app */;
 			productType = "com.apple.product-type.application";
 		};
-		D645D6441ABC0D4300890532 /* MasterCardTests */ = {
+		D645D6441ABC0D4300890532 /* FundityTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D645D6521ABC0D4300890532 /* Build configuration list for PBXNativeTarget "MasterCardTests" */;
+			buildConfigurationList = D645D6521ABC0D4300890532 /* Build configuration list for PBXNativeTarget "FundityTests" */;
 			buildPhases = (
 				D645D6411ABC0D4300890532 /* Sources */,
 				D645D6421ABC0D4300890532 /* Frameworks */,
@@ -864,9 +896,9 @@
 			dependencies = (
 				D645D6471ABC0D4300890532 /* PBXTargetDependency */,
 			);
-			name = MasterCardTests;
+			name = FundityTests;
 			productName = MasterCardTests;
-			productReference = D645D6451ABC0D4300890532 /* MasterCardTests.xctest */;
+			productReference = D645D6451ABC0D4300890532 /* FundityTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -876,10 +908,11 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0610;
-				ORGANIZATIONNAME = MasterCard;
+				ORGANIZATIONNAME = "Altitude Labs";
 				TargetAttributes = {
 					D645D6281ABC0D4300890532 = {
 						CreatedOnToolsVersion = 6.1;
+						DevelopmentTeam = Y42P2AUC8J;
 					};
 					D645D6441ABC0D4300890532 = {
 						CreatedOnToolsVersion = 6.1;
@@ -887,7 +920,7 @@
 					};
 				};
 			};
-			buildConfigurationList = D645D6241ABC0D4300890532 /* Build configuration list for PBXProject "MasterCard" */;
+			buildConfigurationList = D645D6241ABC0D4300890532 /* Build configuration list for PBXProject "Fundity" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -900,8 +933,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D645D6281ABC0D4300890532 /* MasterCard */,
-				D645D6441ABC0D4300890532 /* MasterCardTests */,
+				D645D6281ABC0D4300890532 /* Fundity */,
+				D645D6441ABC0D4300890532 /* FundityTests */,
 			);
 		};
 /* End PBXProject section */
@@ -914,9 +947,12 @@
 				D63D839C1ADD17FF004A9A17 /* SourceSansPro-SemiboldIt.otf in Resources */,
 				D6382BAB1ADB9ACE00A61229 /* FundityFastPay@3x.png in Resources */,
 				D63DB0161AD64B1600381F96 /* SourceSansPro-Bold.otf in Resources */,
+				D64F4AF51AE4E940007CA551 /* app-icon58.png in Resources */,
 				D64066751ADE333000CCE997 /* NewLoan_Upload@2x.png in Resources */,
 				D6382BC41ADB9ACE00A61229 /* Registration_GrayProgressBar@1x.png in Resources */,
+				D64F4AF61AE4E940007CA551 /* app-icon80.png in Resources */,
 				D63DB0171AD64B1600381F96 /* SourceSansPro-Semibold.otf in Resources */,
+				D63E5E921AE1F4D6000E6A85 /* CompanyProfile_GrayCircle@3x.png in Resources */,
 				D6382BA81ADB9ACE00A61229 /* Fundity_Drop@1x.png in Resources */,
 				D6382BD91ADB9ACE00A61229 /* Registration_WhiteCircle@1x.png in Resources */,
 				D6382BD51ADB9ACE00A61229 /* Registration_UploadLicense@3x.png in Resources */,
@@ -944,6 +980,7 @@
 				D640667D1ADE65CB00CCE997 /* At the Big Lifting Force Inc.png in Resources */,
 				D6382BC21ADB9ACE00A61229 /* Registration_GrayCircle@2x.png in Resources */,
 				D6382BD31ADB9ACE00A61229 /* Registration_UploadLicense@1x.png in Resources */,
+				D64F4AF81AE4E940007CA551 /* app-icon120.png in Resources */,
 				D6382BBD1ADB9ACE00A61229 /* Registration_CreditCard@3x.png in Resources */,
 				D63DE18D1AD7BDFA00A16C40 /* Pestona Family Winery.jpeg in Resources */,
 				D62460811ABDBC6800CECE2D /* slider.png in Resources */,
@@ -955,7 +992,6 @@
 				D6382BC61ADB9ACE00A61229 /* Registration_GrayProgressBar@3x.png in Resources */,
 				D6382BBB1ADB9ACE00A61229 /* Registration_CreditCard@1x.png in Resources */,
 				D62460781ABDBC5600CECE2D /* inactive.png in Resources */,
-				D64066681ADE177C00CCE997 /* CompanyProfile_GrayCircle@2x.png in Resources */,
 				D6382BB81ADB9ACE00A61229 /* Registration_Borrower@1x.png in Resources */,
 				D63185601ABD948200331BF5 /* Loan_Request@2x.png in Resources */,
 				D6382BB51ADB9ACE00A61229 /* Registration_BlueCircle@1x.png in Resources */,
@@ -965,6 +1001,8 @@
 				D645D6401ABC0D4300890532 /* LaunchScreen.xib in Resources */,
 				D6485BFD1ABD5FC6001FC4C0 /* menu@2x.png in Resources */,
 				D640668A1ADE71AD00CCE997 /* LoanRequest_Arrow@2x.png in Resources */,
+				D64F4AF91AE4E940007CA551 /* app-icon180.png in Resources */,
+				D64F4AED1AE4E692007CA551 /* home 640x1136.png in Resources */,
 				D6382BD11ADB9ACE00A61229 /* Registration_MiddleBlueProgressBar@2x.png in Resources */,
 				D645D63D1ABC0D4300890532 /* Images.xcassets in Resources */,
 				D6382BD61ADB9ACE00A61229 /* Registration_UploadPicture@1x.png in Resources */,
@@ -994,13 +1032,16 @@
 				D6382BA61ADB9ACE00A61229 /* Fundity_BG@2x.png in Resources */,
 				D6382BAE1ADB9ACE00A61229 /* LoanDetail_FilterArrow@3x.png in Resources */,
 				D6382BC31ADB9ACE00A61229 /* Registration_GrayCircle@3x.png in Resources */,
-				D63B2F1B1ABE6D800088B99B /* app-icon3.png in Resources */,
+				D63E5E961AE2165D000E6A85 /* Fundity_Connection@3x.png in Resources */,
 				D640667F1ADE65CB00CCE997 /* The Lumina Cab Company.jpg in Resources */,
 				D63D83991ADCFC4F004A9A17 /* FundityFastPay@2x.png in Resources */,
 				D6382BD41ADB9ACE00A61229 /* Registration_UploadLicense@2x.png in Resources */,
 				D6382BC91ADB9ACE00A61229 /* Registration_InActiveBorrower@3x.png in Resources */,
+				D63E5E951AE2165D000E6A85 /* Fundity_Connection@2x.png in Resources */,
 				D6382BCF1ADB9ACE00A61229 /* Registration_Lender@3x.png in Resources */,
+				D64F4AF71AE4E940007CA551 /* app-icon87.png in Resources */,
 				D6382BBF1ADB9ACE00A61229 /* Registration_FullBlueProgressBar@2x.png in Resources */,
+				D64F4AEE1AE4E692007CA551 /* home 640x960.png in Resources */,
 				D6382BAC1ADB9ACE00A61229 /* LoanDetail_FilterArrow@1x.png in Resources */,
 				D6382BB71ADB9ACE00A61229 /* Registration_BlueCircle@3x.png in Resources */,
 				D6485C051ABD6D9F001FC4C0 /* back@2x.png in Resources */,
@@ -1014,9 +1055,9 @@
 				D6382BCE1ADB9ACE00A61229 /* Registration_Lender@2x.png in Resources */,
 				D64066891ADE71AD00CCE997 /* LoanRequest_Arrow@1x.png in Resources */,
 				D6382BB01ADB9ACE00A61229 /* MyProfile_Graph@2x.png in Resources */,
+				D63E5E901AE1F3A5000E6A85 /* CompanyProfile_GrayCircle@2x.png in Resources */,
 				D6382BD81ADB9ACE00A61229 /* Registration_UploadPicture@3x.png in Resources */,
 				D624606D1ABDAE5500CECE2D /* Congratulations.png in Resources */,
-				D64066691ADE177C00CCE997 /* CompanyProfile_GrayCircle@3x.png in Resources */,
 				D6382BC81ADB9ACE00A61229 /* Registration_InActiveBorrower@2x.png in Resources */,
 				D631855F1ABD948200331BF5 /* filterBtn.png in Resources */,
 			);
@@ -1127,7 +1168,7 @@
 /* Begin PBXTargetDependency section */
 		D645D6471ABC0D4300890532 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D645D6281ABC0D4300890532 /* MasterCard */;
+			target = D645D6281ABC0D4300890532 /* Fundity */;
 			targetProxy = D645D6461ABC0D4300890532 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -1235,9 +1276,15 @@
 			baseConfigurationReference = A4EE3E7054AAD4EBA0D18E69 /* Pods-MasterCard.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = MasterCard/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Fundity;
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -1246,9 +1293,15 @@
 			baseConfigurationReference = A69ED836F185622D379CAD31 /* Pods-MasterCard.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = MasterCard/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Fundity;
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -1266,7 +1319,7 @@
 				);
 				INFOPLIST_FILE = MasterCardTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = FundityTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MasterCard.app/MasterCard";
 			};
 			name = Debug;
@@ -1281,7 +1334,7 @@
 				);
 				INFOPLIST_FILE = MasterCardTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = FundityTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MasterCard.app/MasterCard";
 			};
 			name = Release;
@@ -1289,7 +1342,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D645D6241ABC0D4300890532 /* Build configuration list for PBXProject "MasterCard" */ = {
+		D645D6241ABC0D4300890532 /* Build configuration list for PBXProject "Fundity" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D645D64D1ABC0D4300890532 /* Debug */,
@@ -1298,7 +1351,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D645D64F1ABC0D4300890532 /* Build configuration list for PBXNativeTarget "MasterCard" */ = {
+		D645D64F1ABC0D4300890532 /* Build configuration list for PBXNativeTarget "Fundity" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D645D6501ABC0D4300890532 /* Debug */,
@@ -1307,7 +1360,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D645D6521ABC0D4300890532 /* Build configuration list for PBXNativeTarget "MasterCardTests" */ = {
+		D645D6521ABC0D4300890532 /* Build configuration list for PBXNativeTarget "FundityTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D645D6531ABC0D4300890532 /* Debug */,

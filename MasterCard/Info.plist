@@ -7,7 +7,7 @@
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.MasterCard.$(PRODUCT_NAME:rfc1034identifier)</string>
+	<string>com.altitudelabs.Fundity</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
@@ -22,6 +22,15 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>UIAppFonts</key>
+	<array>
+		<string>SourceSansPro-SemiboldIt.otf</string>
+		<string>SourceSansPro-Bold.otf</string>
+		<string>SourceSansPro-Semibold.otf</string>
+		<string>source-sans-pro.extralight.ttf</string>
+		<string>SourceSansPro-Light.otf</string>
+		<string>SourceSansPro-Regular.otf</string>
+	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
@@ -40,15 +49,6 @@
 		<string>UIInterfaceOrientationPortraitUpsideDown</string>
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
-	</array>
-	<key>UIAppFonts</key>
-	<array>
-		<string>SourceSansPro-SemiboldIt.otf</string>
-		<string>SourceSansPro-Bold.otf</string>
-		<string>SourceSansPro-Semibold.otf</string>
-		<string>source-sans-pro.extralight.ttf</string>
-		<string>SourceSansPro-Light.otf</string>
-		<string>SourceSansPro-Regular.otf</string>
 	</array>
 </dict>
 </plist>

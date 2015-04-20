@@ -8,6 +8,7 @@
 
 #import "BorrowerApplyNewLoanViewController.h"
 #import "AppConfig.h"
+#import "UIHelper.h"
 #import <Masonry.h>
 #import <CoreFoundation/CoreFoundation.h>
 #import <MobileCoreServices/MobileCoreServices.h>
@@ -172,9 +173,13 @@ typedef NS_ENUM(NSInteger, UIImagePickerOption) {
 
 - (IBAction)checkEligibilityTouchUpInside:(id)sender {
     if (self.textFieldBorrowAmount.text.length == 0) {
-        [[[UIAlertView alloc] initWithTitle:@"Error" message:@"Please enter how much do you want to borrow." delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil] show];
+        [[[UIAlertView alloc] initWithTitle:@"Oops" message:@"Please fill in all input fields." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil] show];
+    } else if ([self.textFieldBorrowAmount.text integerValue] == 0) {
+        [[[UIAlertView alloc] initWithTitle:@"Oops" message:@"Please enter valid amount." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil] show];
+    } else if (self.verificationImageView1.image == nil && self.verificationImageView1.image == nil) {
+        [[[UIAlertView alloc] initWithTitle:@"Oops" message:@"Please upload at least one verification photo." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil] show];
     } else {
-        [[[UIAlertView alloc] initWithTitle:@"" message:@"Pending Approval" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil] show];
+        [[UIHelper sharedInstance] showPaymentEventInView:self.view spinnerOffset:CGPointMake(0, -60 + 40) successDialogTitle:@"Loan Request Sent" successDialogMessage:@"Our Fundity customer manager will get back to you."];
     }
 }
 

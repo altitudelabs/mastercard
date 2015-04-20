@@ -21,6 +21,8 @@
 @property (weak, nonatomic) IBOutlet UIView *detailContainerView;
 
 @property (weak, nonatomic) IBOutlet UILabel *fundityScore;
+@property (weak, nonatomic) IBOutlet UILabel *fundityScore2;
+
 
 @property (weak, nonatomic) IBOutlet UITextField *lendAmountTextField;
 @property (weak, nonatomic) IBOutlet UITextField *lendRateTextField;
@@ -36,6 +38,8 @@
 @property (weak, nonatomic) IBOutlet UIView *containerViewLendRate;
 
 @property (weak, nonatomic) IBOutlet UIButton *buttonLendNow;
+
+@property (assign, nonatomic) BOOL loggedIn;
 
 - (IBAction)lendNowTouchUpInside:(id)sender;
 

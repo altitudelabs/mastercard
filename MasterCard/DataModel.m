@@ -50,11 +50,11 @@ NSString* const KeyFundityMatchScore = @"KeyFundityMatchScore";
                                 
                                 KeyLoanerImg: @"Pestona Family Winery.jpeg",
                                 KeyCompanyDetails: @"Pestona Family Winery has been in the winemaking and distribution business for over 50 years. We are a Sonoma based vineyard producing a Bordeaux style blend based on a Provence Cabernet Savingon.",
-                                KeyLenderNumber: @22,
-                                KeyLendedMoney: @6000,
+                                KeyLenderNumber: @4,
+                                KeyLendedMoney: @40000,
                                 KeyLoanerCountry: @"Hong Kong",
                                 KeyFundityScore: @9.1,
-                                KeyFundityMatchScore: @2.3
+                                KeyFundityMatchScore: @8.1
                                 },
                              @{ KeyCompanyName: @"Bailey & Martin Inc",
                                 KeyCompanyDesciption : @"Clothing design and manufacturing",
@@ -64,12 +64,12 @@ NSString* const KeyFundityMatchScore = @"KeyFundityMatchScore";
                                 KeyLoanTerm: @"6 Months",
                                 
                                 KeyLoanerImg: @"Bailey & Martin.jpg",
-                                KeyCompanyDetails: @"Bailey & Martin is an American retailer that focuses on luxury urban wear for young consumers and is headquartered in Orange County, California. With 5 locations in the United States, Bailey & Martin is looking into smarter and more efficient ways to produce our products",
-                                KeyLenderNumber: @13,
-                                KeyLendedMoney: @12200,
+                                KeyCompanyDetails: @"Bailey & Martin is an American retailer that focuses on luxury urban wear for young consumers and is headquartered in Orange County, California. With 5 locations in the United States, Bailey & Martin is looking into smarter ways to produce our products.",
+                                KeyLenderNumber: @10,
+                                KeyLendedMoney: @45000,
                                 KeyLoanerCountry: @"Hong Kong",
-                                KeyFundityScore: @9.1,
-                                KeyFundityMatchScore: @2.3
+                                KeyFundityScore: @6.7,
+                                KeyFundityMatchScore: @5.5
                                 },
                              @{ KeyCompanyName: @"Daylight Laundry Company",
                                 KeyCompanyDesciption : @"Growth Capital",
@@ -79,12 +79,12 @@ NSString* const KeyFundityMatchScore = @"KeyFundityMatchScore";
                                 KeyLoanTerm: @"1 Year",
                                 
                                 KeyLoanerImg: @" The Daylight Laundry Company .jpeg",
-                                KeyCompanyDetails: @"The Daylight Laundry Company has been a long standing commercial laundry company in Hong Kong servicing hotel, retail, clubhouse and airline industries. With 200 staff on hand, the company is looking to expand its outlets to new residential areas and purchase better hardware for processing.",
-                                KeyLenderNumber: @22,
-                                KeyLendedMoney: @6000,
+                                KeyCompanyDetails: @"The Daylight Laundry Company has been a long standing commercial laundry company in Hong Kong servicing hotel, retail, clubhouse and airline industries. With 200 staff on hand, the company is looking to expand its outlets to new residential areas.",
+                                KeyLenderNumber: @3,
+                                KeyLendedMoney: @12000,
                                 KeyLoanerCountry: @"Hong Kong",
-                                KeyFundityScore: @9.1,
-                                KeyFundityMatchScore: @2.3
+                                KeyFundityScore: @8.5,
+                                KeyFundityMatchScore: @6.5
                                 },
                              @{ KeyCompanyName: @"Biomedic Sequencing Group",
                                 KeyCompanyDesciption : @"Research and Development",
@@ -95,11 +95,11 @@ NSString* const KeyFundityMatchScore = @"KeyFundityMatchScore";
                                 
                                 KeyLoanerImg: @"The Biomedic Sequencing Group.jpg",
                                 KeyCompanyDetails: @"The Biomedic Sequencing Group is a bioinformatics company focusing on DNA sequencing. Our R&D lab based in Hong Kong will need substantial support in the realm of manpower and research. BSG is planning a roll out DNA diagnostic kits in 2016.",
-                                KeyLenderNumber: @22,
-                                KeyLendedMoney: @6000,
+                                KeyLenderNumber: @5,
+                                KeyLendedMoney: @108000,
                                 KeyLoanerCountry: @"Hong Kong",
-                                KeyFundityScore: @9.1,
-                                KeyFundityMatchScore: @2.3
+                                KeyFundityScore: @7.1,
+                                KeyFundityMatchScore: @7.3
                                 },
                              @{ KeyCompanyName: @"Micro Unity Shipping Company",
                                 KeyCompanyDesciption : @"Production and shipping",
@@ -110,11 +110,11 @@ NSString* const KeyFundityMatchScore = @"KeyFundityMatchScore";
                                 
                                 KeyLoanerImg: @"Micro Unity Shipping Company.jpg",
                                 KeyCompanyDetails: @"Micro Unity Shipping Company is a boutique shipping and transportation conglomerate. Our container ships and bulk carriers are seen at major ports of the world. We are looking to streamline our logistics processes to provide better returns to our stakeholders.",
-                                KeyLenderNumber: @22,
-                                KeyLendedMoney: @6000,
+                                KeyLenderNumber: @1,
+                                KeyLendedMoney: @38000,
                                 KeyLoanerCountry: @"Hong Kong",
-                                KeyFundityScore: @9.1,
-                                KeyFundityMatchScore: @2.3
+                                KeyFundityScore: @9.3,
+                                KeyFundityMatchScore: @8.8
                                 },
                              @{ KeyCompanyName: @"Big Lifting Force Inc",
                                 KeyCompanyDesciption : @"Regional Team Expansion",
@@ -124,27 +124,27 @@ NSString* const KeyFundityMatchScore = @"KeyFundityMatchScore";
                                 KeyLoanTerm: @"9 Months",
                                 
                                 KeyLoanerImg: @"At the Big Lifting Force Inc.png",
-                                KeyCompanyDetails: @"At the Big Lifting Force Inc. we provide a unique experience of moving to your new home or office. We have been serving the local community for over 10 years and our guys are the best movers there is to find. Our goal is to franchise the brand to ASEAN countries and we are looking forward to kickstarting this expansion.",
-                                KeyLenderNumber: @22,
-                                KeyLendedMoney: @6000,
+                                KeyCompanyDetails: @"At the Big Lifting Force Inc. we provide a unique experience of moving to your new home or office. We have been serving the local community for over 10 years and our guys are the best movers there is to find.",
+                                KeyLenderNumber: @3,
+                                KeyLendedMoney: @113000,
                                 KeyLoanerCountry: @"Hong Kong",
                                 KeyFundityScore: @9.1,
-                                KeyFundityMatchScore: @2.3
+                                KeyFundityMatchScore: @9.3
                                 },
                              @{ KeyCompanyName: @"Lumina Cab Company",
                                 KeyCompanyDesciption : @"Working Capital",
-                                KeyLoanAmt: @1000000,
+                                KeyLoanAmt: @900000,
                                 KeyLoanReturnRate: @5,
                                 KeyLoanerRisk: @"C",
                                 KeyLoanTerm: @"3 Years",
                                 
                                 KeyLoanerImg: @"The Lumina Cab Company.jpg",
                                 KeyCompanyDetails: @"The Lumina Cab Company is a prominent taxi licensing and call and demand taxi servicing company. Our vehicles are well serviced and our fleet runs on petrol. We would like to transition into all electric in the coming few years for better returns.",
-                                KeyLenderNumber: @22,
-                                KeyLendedMoney: @6000,
+                                KeyLenderNumber: @30,
+                                KeyLendedMoney: @503000,
                                 KeyLoanerCountry: @"Hong Kong",
-                                KeyFundityScore: @9.1,
-                                KeyFundityMatchScore: @2.3
+                                KeyFundityScore: @8.0,
+                                KeyFundityMatchScore: @7.3
                                 },
                              ];
     }

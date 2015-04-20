@@ -157,7 +157,7 @@ typedef NS_ENUM(NSInteger, UIImagePickerOption) {
         fullAddress = [fullAddress stringByAppendingString:self.textFieldAddressLine2.text];
     }
     
-    [self.registrationManager setProfilePage:self.profilePhotoImageView.image userName:self.textFieldFullName.text companyName:self.textFieldCompanyName.text phoneNumber:self.textFieldPhoneNumber.text address:fullAddress callback:^(BOOL success, NSString *error) {
+    [self.registrationManager setProfilePage:self.profilePhotoImageView.image userName:self.textFieldFullName.text companyName:self.textFieldCompanyName.text phoneNumber:self.textFieldPhoneNumber.text address:fullAddress licenseImage:self.imageViewLicense.image callback:^(BOOL success, NSString *error) {
         if (success) {
                 dispatch_async(dispatch_get_main_queue(), ^{
                     UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
@@ -166,7 +166,7 @@ typedef NS_ENUM(NSInteger, UIImagePickerOption) {
                     [self.navigationController pushViewController:vc animated:YES];
                 });
         } else {
-            [[[UIAlertView alloc] initWithTitle:@"Error!" message:error delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil] show];
+            [[[UIAlertView alloc] initWithTitle:@"Oops" message:error delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil] show];
         }
     }];
 }
@@ -200,11 +200,11 @@ typedef NS_ENUM(NSInteger, UIImagePickerOption) {
     } else if (textField == self.textFieldCompanyName) {
         [self.scrollView setContentOffset:CGPointMake(0, 0) animated:YES];
     } else if (textField == self.textFieldPhoneNumber) {
-        [self.scrollView setContentOffset:CGPointMake(0, 0 + self.containerViewHeight.constant * 0.4) animated:YES];
+        [self.scrollView setContentOffset:CGPointMake(0, 0 + self.containerViewHeight.constant * 0.20 + self.uploadedImageViewHeight.constant - 45) animated:YES];
     } else if (textField == self.textFieldAddressLine1) {
-        [self.scrollView setContentOffset:CGPointMake(0, 40 + self.containerViewHeight.constant * 0.4) animated:YES];
+        [self.scrollView setContentOffset:CGPointMake(0, self.containerViewHeight.constant * 0.25 + self.uploadedImageViewHeight.constant - 45) animated:YES];
     } else if (textField == self.textFieldAddressLine2) {
-        [self.scrollView setContentOffset:CGPointMake(0, 90 + self.containerViewHeight.constant * 0.4) animated:YES];
+        [self.scrollView setContentOffset:CGPointMake(0, self.containerViewHeight.constant * 0.25 + self.uploadedImageViewHeight.constant - 45) animated:YES];
     }
 }
 

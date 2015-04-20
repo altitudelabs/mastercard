@@ -163,7 +163,7 @@ typedef NS_ENUM(NSInteger, UIPickerOption) {
                 [self.navigationController popToRootViewControllerAnimated:YES];
             });
         } else {
-            [[[UIAlertView alloc] initWithTitle:@"Error!" message:error delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil] show];
+            [[[UIAlertView alloc] initWithTitle:@"Oops" message:error delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil] show];
         }
     }];
 }

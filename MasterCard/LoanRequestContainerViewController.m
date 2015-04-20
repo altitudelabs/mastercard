@@ -10,6 +10,8 @@
 #import "LoanRequestViewController.h"
 #import "MyProfileTableViewController.h"
 #import "AppConfig.h"
+#import "UIHelper.h"
+#import "DeviceHelper.h"
 #import <Masonry.h>
 
 #define FilterButtonHeight 44.0
@@ -23,6 +25,8 @@
 @property (strong, nonatomic) UIButton *filterByRateButton;
 @property (strong, nonatomic) UIView *footer;
 @property (assign, nonatomic) BOOL showingFooter;
+
+@property (strong, nonatomic) UIButton *refreshButton;
 @end
 
 @implementation LoanRequestContainerViewController
@@ -36,6 +40,7 @@
     [super viewDidLoad];
     [self renderNavigationBar];
     [self render];
+    [self showContentWithDelay];
 }
 
 - (void)render {
@@ -60,11 +65,6 @@
     // Hide navigation bar
     [[self navigationController] setNavigationBarHidden:NO animated:NO];
     
-    // Custom back button for all other pages
-    UIImage *backButtonImage = [[UIImage imageNamed:@"back@2x.png"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 0, 0, 0)];
-    [[UIBarButtonItem appearance] setBackButtonBackgroundImage:backButtonImage  forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
-    [[UIBarButtonItem appearance] setBackButtonTitlePositionAdjustment:UIOffsetMake(0, backButtonImage.size.height*2) forBarMetrics:UIBarMetricsDefault];
-    
     // Title
     UILabel *lblTitle = [[UILabel alloc] init];
     lblTitle.text = @"Loan Requests";
@@ -76,6 +76,7 @@
     
     // Right button
     [self showRightButtonInNavigationBar:self.loggedIn];
+    [self showBackButton:!self.loggedIn];
 }
 
 - (void)showRightButtonInNavigationBar:(BOOL)show {
@@ -94,6 +95,41 @@
     } else {
         self.navigationItem.rightBarButtonItem = nil;
     }
+}
+
+- (void)showBackButton:(BOOL)show {
+//    UIImage *backButtonImage = [[UIImage imageNamed:@"back@2x.png"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 0, 0, 0)];
+//    [[UIBarButtonItem appearance] setBackButtonBackgroundImage:nil  forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
+//    [[UIBarButtonItem appearance] setBackButtonTitlePositionAdjustment:UIOffsetMake(0, backButtonImage.size.height*2) forBarMetrics:UIBarMetricsDefault];
+    self.navigationItem.hidesBackButton = !show;
+}
+
+- (void)showContentWithDelay {
+    self.tableViewController.view.hidden = YES;
+    [[UIHelper sharedInstance] showLoadingSpinnerInView:self.view];
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 1 * NSEC_PER_SEC), dispatch_get_main_queue(), ^{
+        [[UIHelper sharedInstance] hideLoadingSpinnerInView:self.view];
+        if ([DeviceHelper isNetworkAvailable]) {
+            self.tableViewController.view.hidden = NO;
+            [self.refreshButton removeFromSuperview];
+        } else {
+            [[[UIAlertView alloc] initWithTitle:@"Oops" message:@"Please check your internet connect and try again." delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil] show];
+            
+            self.refreshButton = [UIButton buttonWithType:UIButtonTypeCustom];
+            self.refreshButton.frame = CGRectMake(0, 0, 192, 132);
+            self.refreshButton.center = self.view.center;
+//            [self.refreshButton setTitle:@"Retry" forState:UIControlStateNormal];
+            [self.refreshButton setImage:[UIImage imageNamed:@"Fundity_Connection.png"] forState:UIControlStateNormal];
+            [self.refreshButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+            self.refreshButton.titleLabel.font = [UIFont fontWithName:UIFontLight size:15];
+            [self.refreshButton addTarget:self action:@selector(showContentWithDelay) forControlEvents:UIControlEventTouchUpInside];
+            [self.view addSubview:self.refreshButton];
+            
+            // Navigation bar
+            [self showRightButtonInNavigationBar:self.loggedIn];
+            [self showBackButton:!self.loggedIn];
+        }
+    });
 }
 
 #pragma mark - Private
@@ -315,6 +351,7 @@
     _loggedIn = loggedIn;
     if (self.tableViewController) self.tableViewController.loggedIn = _loggedIn;
     [self showRightButtonInNavigationBar:_loggedIn];
+    [self showBackButton:!_loggedIn];
 }
 
 @end

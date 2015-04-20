@@ -29,5 +29,7 @@ extern NSString* const UIFontRegularMedium;
 #define UIFontExtraLight @"SourceSansPro-ExtraLight"
 #define UIFontRegular @"SourceSansPro-Regular"
 #define UIFontLight @"SourceSansPro-Light"
+#define UIFontBold @"SourceSansPro-Bold"
+#define UIFontSemiBold @"SourceSansPro-Semibold"
 
 @end

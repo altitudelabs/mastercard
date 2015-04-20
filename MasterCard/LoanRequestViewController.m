@@ -11,10 +11,13 @@
 #import "LoanerDetailViewController.h"
 #import "MyProfileTableViewController.h"
 #import "DataModel.h"
+#import "UIHelper.h"
+#import "DeviceHelper.h"
 #import "AppConfig.h"
 #import <Masonry.h>
 
 @interface LoanRequestViewController ()
+@property (assign, nonatomic) BOOL iPhone6Above;
 @end
 
 @implementation LoanRequestViewController
@@ -38,55 +41,60 @@
 - (void)prepare {
     self.data = [[[DataModel sharedInstance] loanerDatas] copy];
     self.loggedIn = NO;
+    if ([UIScreen mainScreen].bounds.size.width > 320) { // iPhone 6 or 6+
+        self.iPhone6Above = YES;
+    } else {
+        self.iPhone6Above = NO;
+    }
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self renderNavigationBar];
+//    [self renderNavigationBar];
     [self render];
     
     NSLog(@"%s : userData: %@", __func__, self.userData);
 }
 
-- (void)renderNavigationBar {
-    // Hide navigation bar
-    [[self navigationController] setNavigationBarHidden:NO animated:NO];
-    
-    // Custom back button for all other pages
-    UIImage *backButtonImage = [[UIImage imageNamed:@"back@2x.png"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 0, 0, 0)];
-    [[UIBarButtonItem appearance] setBackButtonBackgroundImage:backButtonImage  forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
-    [[UIBarButtonItem appearance] setBackButtonTitlePositionAdjustment:UIOffsetMake(0, backButtonImage.size.height*2) forBarMetrics:UIBarMetricsDefault];
-    
-    // Title
-    UILabel *lblTitle = [[UILabel alloc] init];
-    lblTitle.text = @"Loan Requests";
-    lblTitle.backgroundColor = [UIColor clearColor];
-    lblTitle.textColor = [UIColor whiteColor];
-    lblTitle.font = [UIFont fontWithName:UIFontRegularBook size:19.0];
-    [lblTitle sizeToFit];
-    self.navigationItem.titleView = lblTitle;
-    
-    // Right button
-    [self showRightButtonInNavigationBar:self.loggedIn];
-}
-
-- (void)showRightButtonInNavigationBar:(BOOL)show {
-    if (show) {
-        // Right button
-        UIButton* buttonDone = [UIButton buttonWithType: UIButtonTypeCustom];
-        buttonDone.frame = CGRectMake(0, 0, 30, 30);
-        buttonDone.titleLabel.font = [UIFont fontWithName:UIFontRegularBook size:12];
-        //    [buttonDone setTitle:@" " forState:UIControlStateNormal];
-        [buttonDone setImage:[UIImage imageNamed:@"profile.png"] forState:UIControlStateNormal];
-        [buttonDone setTitle:@"" forState:UIControlStateNormal];
-        [buttonDone addTarget:self action:@selector(doneButtonTouchUpInside:) forControlEvents:UIControlEventTouchUpInside];
-        
-        UIBarButtonItem *anotherButton = [[UIBarButtonItem alloc] initWithCustomView:buttonDone];
-        self.navigationItem.rightBarButtonItem = anotherButton;
-    } else {
-        self.navigationItem.rightBarButtonItem = nil;
-    }
-}
+//- (void)renderNavigationBar {
+//    // Hide navigation bar
+//    [[self navigationController] setNavigationBarHidden:NO animated:NO];
+//    
+//    // Custom back button for all other pages
+//    UIImage *backButtonImage = [[UIImage imageNamed:@"back@2x.png"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 0, 0, 0)];
+//    [[UIBarButtonItem appearance] setBackButtonBackgroundImage:backButtonImage  forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
+//    [[UIBarButtonItem appearance] setBackButtonTitlePositionAdjustment:UIOffsetMake(0, backButtonImage.size.height*2) forBarMetrics:UIBarMetricsDefault];
+//    
+//    // Title
+//    UILabel *lblTitle = [[UILabel alloc] init];
+//    lblTitle.text = @"Loan Requests";
+//    lblTitle.backgroundColor = [UIColor clearColor];
+//    lblTitle.textColor = [UIColor whiteColor];
+//    lblTitle.font = [UIFont fontWithName:UIFontRegularBook size:19.0];
+//    [lblTitle sizeToFit];
+//    self.navigationItem.titleView = lblTitle;
+//    
+//    // Right button
+//    [self showRightButtonInNavigationBar:self.loggedIn];
+//}
+//
+//- (void)showRightButtonInNavigationBar:(BOOL)show {
+//    if (show) {
+//        // Right button
+//        UIButton* buttonDone = [UIButton buttonWithType: UIButtonTypeCustom];
+//        buttonDone.frame = CGRectMake(0, 0, 30, 30);
+//        buttonDone.titleLabel.font = [UIFont fontWithName:UIFontRegularBook size:12];
+//        //    [buttonDone setTitle:@" " forState:UIControlStateNormal];
+//        [buttonDone setImage:[UIImage imageNamed:@"profile.png"] forState:UIControlStateNormal];
+//        [buttonDone setTitle:@"" forState:UIControlStateNormal];
+//        [buttonDone addTarget:self action:@selector(doneButtonTouchUpInside:) forControlEvents:UIControlEventTouchUpInside];
+//        
+//        UIBarButtonItem *anotherButton = [[UIBarButtonItem alloc] initWithCustomView:buttonDone];
+//        self.navigationItem.rightBarButtonItem = anotherButton;
+//    } else {
+//        self.navigationItem.rightBarButtonItem = nil;
+//    }
+//}
 
 - (void)render {
     [self.tableView registerNib:[UINib nibWithNibName:@"LoanRequestTableViewCell" bundle:nil] forCellReuseIdentifier:[LoanRequestTableViewCell assignIdentifier]];
@@ -104,6 +112,7 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     LoanRequestTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:[LoanRequestTableViewCell assignIdentifier] forIndexPath:indexPath];
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
     cell.cellNumber = indexPath.row + 1;
     cell.data = [self.data objectAtIndex:indexPath.row];
     [cell updateLayout];
@@ -114,7 +123,11 @@
 #pragma mark - UITableViewDelegate
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 90;
+    if (self.iPhone6Above) {
+        return 102;
+    } else {
+        return 96;
+    }
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
@@ -124,6 +137,7 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
     LoanerDetailViewController *vc = (LoanerDetailViewController *)[sb instantiateViewControllerWithIdentifier:@"LoanerDetailViewController"];
+    vc.loggedIn = self.loggedIn;
     vc.data = [self.data objectAtIndex:indexPath.row];
     [self.navigationController pushViewController:vc animated:YES];
 }
@@ -167,7 +181,7 @@
 
 - (void)setLoggedIn:(BOOL)loggedIn {
     _loggedIn = loggedIn;
-    [self showRightButtonInNavigationBar:_loggedIn];
+//    [self showRightButtonInNavigationBar:_loggedIn];
 }
 
 @end

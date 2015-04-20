@@ -52,7 +52,7 @@
     [[UINavigationBar appearance] setBackgroundImage:nil forBarMetrics:UIBarMetricsDefault];
     
     // Custom back button for all other pages
-    UIImage *backButtonImage = [[UIImage imageNamed:@"back@2x.png"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 0, 0, 0)];
+    UIImage *backButtonImage = [[UIImage imageNamed:@"back.png"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 0, 0, 0)];
     [[UIBarButtonItem appearance] setBackButtonBackgroundImage:backButtonImage  forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
     [[UIBarButtonItem appearance] setBackButtonTitlePositionAdjustment:UIOffsetMake(0, backButtonImage.size.height*2) forBarMetrics:UIBarMetricsDefault];
     
@@ -126,6 +126,8 @@
 }
 
 - (IBAction)signInCancelTouchUpInside:(id)sender {
+    self.textFieldSignInEmail.text = @"";
+    self.textFieldSignInPassword.text = @"";
     [self showSignInDialog:NO];
 }
 
@@ -146,8 +148,10 @@
     [acctManager loginWithEmail:email password:password callback:^(BOOL success, NSString *error, NSDictionary *userData) {
         if (success) {
             [self toMainPageWithLoggedState:YES userData:userData withDelay:YES];
+            self.textFieldSignInEmail.text = @"";
+            self.textFieldSignInPassword.text = @"";
         } else {
-            [[[UIAlertView alloc] initWithTitle:@"Error" message:error delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil] show];
+            [[[UIAlertView alloc] initWithTitle:@"Oops" message:error delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil] show];
         }
     }];
 }
