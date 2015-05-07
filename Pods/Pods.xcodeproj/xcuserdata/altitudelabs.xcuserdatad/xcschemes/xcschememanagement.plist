@@ -4,29 +4,25 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Pods-MasterCard-Masonry.xcscheme</key>
+		<key>Pods-Fundity-Masonry.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>3</integer>
 		</dict>
-		<key>Pods-MasterCard.xcscheme</key>
+		<key>Pods-Fundity.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>2</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>59028203FC5439F74DF49F04</key>
+		<key>0334DA29413B5380F95C9E5E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>84E4C6A906E055A251725743</key>
+		<key>72266D585BF10B1314DCC40E</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8C6FFBF9461B0535F61B97D9 /* libPods-MasterCard.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 330E4D0D9E49CFBE07FDAD20 /* libPods-MasterCard.a */; };
+		8BBE1E12FADA59DB641889A1 /* libPods-Fundity.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 61584457D8BBA4DF9E637E31 /* libPods-Fundity.a */; };
 		D624606D1ABDAE5500CECE2D /* Congratulations.png in Resources */ = {isa = PBXBuildFile; fileRef = D624606C1ABDAE5500CECE2D /* Congratulations.png */; };
 		D624606F1ABDB84700CECE2D /* Borrower's_Profile@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D624606E1ABDB84700CECE2D /* Borrower's_Profile@2x.png */; };
 		D62460761ABDBC5600CECE2D /* active.png in Resources */ = {isa = PBXBuildFile; fileRef = D62460721ABDBC5600CECE2D /* active.png */; };
@@ -183,7 +183,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		09D4728559AC7DC7809F9A01 /* Pods-Fundity.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fundity.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Fundity/Pods-Fundity.debug.xcconfig"; sourceTree = "<group>"; };
+		2A642411FD71D4F1375557DB /* Pods-Fundity.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fundity.release.xcconfig"; path = "Pods/Target Support Files/Pods-Fundity/Pods-Fundity.release.xcconfig"; sourceTree = "<group>"; };
 		330E4D0D9E49CFBE07FDAD20 /* libPods-MasterCard.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MasterCard.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		61584457D8BBA4DF9E637E31 /* libPods-Fundity.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Fundity.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4EE3E7054AAD4EBA0D18E69 /* Pods-MasterCard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MasterCard.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MasterCard/Pods-MasterCard.debug.xcconfig"; sourceTree = "<group>"; };
 		A69ED836F185622D379CAD31 /* Pods-MasterCard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MasterCard.release.xcconfig"; path = "Pods/Target Support Files/Pods-MasterCard/Pods-MasterCard.release.xcconfig"; sourceTree = "<group>"; };
 		D624606C1ABDAE5500CECE2D /* Congratulations.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Congratulations.png; sourceTree = "<group>"; };
@@ -401,7 +404,7 @@
 				D63F21141AE0B452006A4BD2 /* SystemConfiguration.framework in Frameworks */,
 				D63D838F1ADCAFF0004A9A17 /* CoreImage.framework in Frameworks */,
 				D6382BF11ADBEAB900A61229 /* CoreFoundation.framework in Frameworks */,
-				8C6FFBF9461B0535F61B97D9 /* libPods-MasterCard.a in Frameworks */,
+				8BBE1E12FADA59DB641889A1 /* libPods-Fundity.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,6 +423,8 @@
 			children = (
 				A4EE3E7054AAD4EBA0D18E69 /* Pods-MasterCard.debug.xcconfig */,
 				A69ED836F185622D379CAD31 /* Pods-MasterCard.release.xcconfig */,
+				09D4728559AC7DC7809F9A01 /* Pods-Fundity.debug.xcconfig */,
+				2A642411FD71D4F1375557DB /* Pods-Fundity.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -718,8 +723,7 @@
 				D645D6331ABC0D4300890532 /* MasterCard.xcdatamodeld */,
 				D645D62C1ABC0D4300890532 /* Supporting Files */,
 			);
-			name = Fundity;
-			path = MasterCard;
+			path = Fundity;
 			sourceTree = "<group>";
 		};
 		D645D62C1ABC0D4300890532 /* Supporting Files */ = {
@@ -859,6 +863,7 @@
 				D63D838E1ADCAFF0004A9A17 /* CoreImage.framework */,
 				D6382BF01ADBEAB900A61229 /* CoreFoundation.framework */,
 				330E4D0D9E49CFBE07FDAD20 /* libPods-MasterCard.a */,
+				61584457D8BBA4DF9E637E31 /* libPods-Fundity.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -1087,7 +1092,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MasterCard/Pods-MasterCard-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Fundity/Pods-Fundity-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		8E314474A69ED560CE3CCF91 /* Check Pods Manifest.lock */ = {
@@ -1275,13 +1280,13 @@
 		};
 		D645D6501ABC0D4300890532 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A4EE3E7054AAD4EBA0D18E69 /* Pods-MasterCard.debug.xcconfig */;
+			baseConfigurationReference = 09D4728559AC7DC7809F9A01 /* Pods-Fundity.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				INFOPLIST_FILE = MasterCard/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Fundity/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = Fundity;
@@ -1292,13 +1297,13 @@
 		};
 		D645D6511ABC0D4300890532 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A69ED836F185622D379CAD31 /* Pods-MasterCard.release.xcconfig */;
+			baseConfigurationReference = 2A642411FD71D4F1375557DB /* Pods-Fundity.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				INFOPLIST_FILE = MasterCard/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Fundity/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = Fundity;
