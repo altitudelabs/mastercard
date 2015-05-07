@@ -16,8 +16,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "D645D6281ABC0D4300890532"
                BuildableName = "Fundity.app"
-               BlueprintName = "MasterCard"
-               ReferencedContainer = "container:MasterCard.xcodeproj">
+               BlueprintName = "Fundity"
+               ReferencedContainer = "container:Fundity.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -30,8 +30,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "D645D6441ABC0D4300890532"
                BuildableName = "FundityTests.xctest"
-               BlueprintName = "MasterCardTests"
-               ReferencedContainer = "container:MasterCard.xcodeproj">
+               BlueprintName = "FundityTests"
+               ReferencedContainer = "container:Fundity.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -48,8 +48,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "D645D6441ABC0D4300890532"
                BuildableName = "FundityTests.xctest"
-               BlueprintName = "MasterCardTests"
-               ReferencedContainer = "container:MasterCard.xcodeproj">
+               BlueprintName = "FundityTests"
+               ReferencedContainer = "container:Fundity.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -58,8 +58,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D645D6281ABC0D4300890532"
             BuildableName = "Fundity.app"
-            BlueprintName = "MasterCard"
-            ReferencedContainer = "container:MasterCard.xcodeproj">
+            BlueprintName = "Fundity"
+            ReferencedContainer = "container:Fundity.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -77,8 +77,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D645D6281ABC0D4300890532"
             BuildableName = "Fundity.app"
-            BlueprintName = "MasterCard"
-            ReferencedContainer = "container:MasterCard.xcodeproj">
+            BlueprintName = "Fundity"
+            ReferencedContainer = "container:Fundity.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -95,8 +95,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D645D6281ABC0D4300890532"
             BuildableName = "Fundity.app"
-            BlueprintName = "MasterCard"
-            ReferencedContainer = "container:MasterCard.xcodeproj">
+            BlueprintName = "Fundity"
+            ReferencedContainer = "container:Fundity.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

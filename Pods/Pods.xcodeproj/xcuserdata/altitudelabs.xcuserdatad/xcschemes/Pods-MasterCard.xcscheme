@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "001B7E57A5E4956BB11049DC"
+               BlueprintIdentifier = "84E4C6A906E055A251725743"
                BuildableName = "libPods-MasterCard.a"
                BlueprintName = "Pods-MasterCard"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -39,6 +39,15 @@
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       allowLocationSimulation = "YES">
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "84E4C6A906E055A251725743"
+            BuildableName = "libPods-MasterCard.a"
+            BlueprintName = "Pods-MasterCard"
+            ReferencedContainer = "container:Pods.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
