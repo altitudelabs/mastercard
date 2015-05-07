@@ -318,7 +318,7 @@
 		D64066861ADE71AD00CCE997 /* LoanRequest_Filter@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LoanRequest_Filter@1x.png"; sourceTree = "<group>"; };
 		D64066871ADE71AD00CCE997 /* LoanRequest_Filter@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LoanRequest_Filter@2x.png"; sourceTree = "<group>"; };
 		D64066881ADE71AD00CCE997 /* LoanRequest_Filter@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LoanRequest_Filter@3x.png"; sourceTree = "<group>"; };
-		D645D6291ABC0D4300890532 /* Fundity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fundity.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D645D6291ABC0D4300890532 /* MasterCard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MasterCard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D645D62D1ABC0D4300890532 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D645D62E1ABC0D4300890532 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D645D6301ABC0D4300890532 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -327,7 +327,7 @@
 		D645D63A1ABC0D4300890532 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D645D63C1ABC0D4300890532 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D645D63F1ABC0D4300890532 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		D645D6451ABC0D4300890532 /* FundityTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FundityTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D645D6451ABC0D4300890532 /* MasterCardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MasterCardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D645D64A1ABC0D4300890532 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D645D64B1ABC0D4300890532 /* MasterCardTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterCardTests.m; sourceTree = "<group>"; };
 		D6485BEB1ABD55BC001FC4C0 /* LoanRequestFeedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoanRequestFeedViewController.h; sourceTree = "<group>"; };
@@ -692,8 +692,8 @@
 		D645D62A1ABC0D4300890532 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D645D6291ABC0D4300890532 /* Fundity.app */,
-				D645D6451ABC0D4300890532 /* FundityTests.xctest */,
+				D645D6291ABC0D4300890532 /* MasterCard.app */,
+				D645D6451ABC0D4300890532 /* MasterCardTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -864,9 +864,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D645D6281ABC0D4300890532 /* Fundity */ = {
+		D645D6281ABC0D4300890532 /* MasterCard */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D645D64F1ABC0D4300890532 /* Build configuration list for PBXNativeTarget "Fundity" */;
+			buildConfigurationList = D645D64F1ABC0D4300890532 /* Build configuration list for PBXNativeTarget "MasterCard" */;
 			buildPhases = (
 				8E314474A69ED560CE3CCF91 /* Check Pods Manifest.lock */,
 				D645D6251ABC0D4300890532 /* Sources */,
@@ -878,14 +878,14 @@
 			);
 			dependencies = (
 			);
-			name = Fundity;
+			name = MasterCard;
 			productName = MasterCard;
-			productReference = D645D6291ABC0D4300890532 /* Fundity.app */;
+			productReference = D645D6291ABC0D4300890532 /* MasterCard.app */;
 			productType = "com.apple.product-type.application";
 		};
-		D645D6441ABC0D4300890532 /* FundityTests */ = {
+		D645D6441ABC0D4300890532 /* MasterCardTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D645D6521ABC0D4300890532 /* Build configuration list for PBXNativeTarget "FundityTests" */;
+			buildConfigurationList = D645D6521ABC0D4300890532 /* Build configuration list for PBXNativeTarget "MasterCardTests" */;
 			buildPhases = (
 				D645D6411ABC0D4300890532 /* Sources */,
 				D645D6421ABC0D4300890532 /* Frameworks */,
@@ -896,9 +896,9 @@
 			dependencies = (
 				D645D6471ABC0D4300890532 /* PBXTargetDependency */,
 			);
-			name = FundityTests;
+			name = MasterCardTests;
 			productName = MasterCardTests;
-			productReference = D645D6451ABC0D4300890532 /* FundityTests.xctest */;
+			productReference = D645D6451ABC0D4300890532 /* MasterCardTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -920,7 +920,7 @@
 					};
 				};
 			};
-			buildConfigurationList = D645D6241ABC0D4300890532 /* Build configuration list for PBXProject "Fundity" */;
+			buildConfigurationList = D645D6241ABC0D4300890532 /* Build configuration list for PBXProject "MasterCard" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -933,8 +933,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D645D6281ABC0D4300890532 /* Fundity */,
-				D645D6441ABC0D4300890532 /* FundityTests */,
+				D645D6281ABC0D4300890532 /* MasterCard */,
+				D645D6441ABC0D4300890532 /* MasterCardTests */,
 			);
 		};
 /* End PBXProject section */
@@ -1168,7 +1168,7 @@
 /* Begin PBXTargetDependency section */
 		D645D6471ABC0D4300890532 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D645D6281ABC0D4300890532 /* Fundity */;
+			target = D645D6281ABC0D4300890532 /* MasterCard */;
 			targetProxy = D645D6461ABC0D4300890532 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -1282,7 +1282,7 @@
 				INFOPLIST_FILE = MasterCard/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = Fundity;
+				PRODUCT_NAME = MasterCard;
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -1299,7 +1299,7 @@
 				INFOPLIST_FILE = MasterCard/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = Fundity;
+				PRODUCT_NAME = MasterCard;
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -1319,7 +1319,7 @@
 				);
 				INFOPLIST_FILE = MasterCardTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = FundityTests;
+				PRODUCT_NAME = MasterCardTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MasterCard.app/MasterCard";
 			};
 			name = Debug;
@@ -1334,7 +1334,7 @@
 				);
 				INFOPLIST_FILE = MasterCardTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = FundityTests;
+				PRODUCT_NAME = MasterCardTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MasterCard.app/MasterCard";
 			};
 			name = Release;
@@ -1342,7 +1342,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D645D6241ABC0D4300890532 /* Build configuration list for PBXProject "Fundity" */ = {
+		D645D6241ABC0D4300890532 /* Build configuration list for PBXProject "MasterCard" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D645D64D1ABC0D4300890532 /* Debug */,
@@ -1351,7 +1351,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D645D64F1ABC0D4300890532 /* Build configuration list for PBXNativeTarget "Fundity" */ = {
+		D645D64F1ABC0D4300890532 /* Build configuration list for PBXNativeTarget "MasterCard" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D645D6501ABC0D4300890532 /* Debug */,
@@ -1360,7 +1360,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D645D6521ABC0D4300890532 /* Build configuration list for PBXNativeTarget "FundityTests" */ = {
+		D645D6521ABC0D4300890532 /* Build configuration list for PBXNativeTarget "MasterCardTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D645D6531ABC0D4300890532 /* Debug */,
